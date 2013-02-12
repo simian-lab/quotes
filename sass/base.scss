@@ -1,0 +1,101 @@
+$black: #000;
+
+body {
+	margin: 0;
+	font-family: sans-serif; 
+}
+
+#project-title {
+	display: block;
+	text-align: center;
+	margin: 0.5em 1em 0;
+	line-height: 1em;
+}
+
+#project-description {
+	display: block;
+	text-align: center;
+	font-size: 2em;
+	margin: 0.25em 1em;
+}
+
+section {
+	margin: 0 10%;
+	max-width: 1100px;
+
+	&#timescale {
+		width: 100%;
+		max-width: 100%;
+		margin: 0 !important;
+
+		h1 {
+			margin: 1em 10%;
+		}
+
+		.storyjs-embed.sized-embed {
+			border: 0 !important;
+		}
+	}
+
+	h1 {
+		font-size: 3em;
+		border-bottom: 1px solid;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+}
+
+p {
+	font-size: 1.25em;
+}
+
+.budget {
+	margin: 0 auto;
+	border: 1px solid;
+	border-spacing: 0;
+
+	th {
+		padding: 0.9em 1em;
+		border-bottom: 1px dashed;
+	}
+
+	tr {
+		&.budget-summary {
+			font-weight: bold;
+
+			.title {
+				text-align: right;
+				text-transform: uppercase;
+			}	
+		}
+	}
+
+	td {
+		padding: 0.9em 1em;
+
+		&.money {
+			text-align: right;
+
+			&:before {
+				content: '$';
+				display: inline;
+				font-size: 0.7em;
+				padding-right: 5px;
+				vertical-align: middle;
+			}
+		}
+
+		&.time {
+			text-align: center;
+		}
+	}
+}
+
+footer {
+	margin: 50px 10%;
+	padding: 30px 0;
+	max-width: 1100px;
+	border-top: 1px solid;
+}

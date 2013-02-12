@@ -1,0 +1,62 @@
+$red: #E40101;
+$ptSans: 'PT Sans Narrow', sans-serif;
+
+#logo {
+	display: none;
+	margin: 0;
+	padding: 5px 20px 3px 50px;
+	background: $red;
+	position: fixed;
+	@include box-shadow(1px 4px 5px #999);
+}
+
+#project-title {
+	font-family: $ptSans;
+	color: $red;
+}
+
+#project-description {
+	font-family: $ptSans;
+}
+
+section {
+	h1,
+	h2 {
+		font-family: $ptSans;
+		color: $red;
+	}
+}
+
+.budget {
+	border-color: $red;
+
+	th {
+		border-color: $red;
+		color: $red;
+	}
+
+	td { border-color: 1px solid transparent; }
+	
+	tr {
+		&:nth-child(even) { background: lighten($red, 52%) }
+
+		&.budget-summary {
+			color: $red;
+			background: lighten($red, 50%)
+		}
+	}
+
+	.money {
+		&:before {
+			color: $red;
+		}
+	}
+}
+
+footer {
+	border-color: $red;
+
+	a {
+		color: $red;
+	}
+}

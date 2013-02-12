@@ -1,0 +1,104 @@
+/* line 3, ../sass/base.scss */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* line 8, ../sass/base.scss */
+#project-title {
+  display: block;
+  text-align: center;
+  margin: 0.5em 1em 0;
+  line-height: 1em;
+}
+
+/* line 15, ../sass/base.scss */
+#project-description {
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  margin: 0.25em 1em;
+}
+
+/* line 22, ../sass/base.scss */
+section {
+  margin: 0 10%;
+  max-width: 1100px;
+}
+/* line 26, ../sass/base.scss */
+section#timescale {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 !important;
+}
+/* line 31, ../sass/base.scss */
+section#timescale h1 {
+  margin: 1em 10%;
+}
+/* line 35, ../sass/base.scss */
+section#timescale .storyjs-embed.sized-embed {
+  border: 0 !important;
+}
+/* line 40, ../sass/base.scss */
+section h1 {
+  font-size: 3em;
+  border-bottom: 1px solid;
+}
+/* line 45, ../sass/base.scss */
+section h2 {
+  font-size: 2em;
+}
+
+/* line 50, ../sass/base.scss */
+p {
+  font-size: 1.25em;
+}
+
+/* line 54, ../sass/base.scss */
+.budget {
+  margin: 0 auto;
+  border: 1px solid;
+  border-spacing: 0;
+}
+/* line 59, ../sass/base.scss */
+.budget th {
+  padding: 0.9em 1em;
+  border-bottom: 1px dashed;
+}
+/* line 65, ../sass/base.scss */
+.budget tr.budget-summary {
+  font-weight: bold;
+}
+/* line 68, ../sass/base.scss */
+.budget tr.budget-summary .title {
+  text-align: right;
+  text-transform: uppercase;
+}
+/* line 75, ../sass/base.scss */
+.budget td {
+  padding: 0.9em 1em;
+}
+/* line 78, ../sass/base.scss */
+.budget td.money {
+  text-align: right;
+}
+/* line 81, ../sass/base.scss */
+.budget td.money:before {
+  content: '$';
+  display: inline;
+  font-size: 0.7em;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+/* line 90, ../sass/base.scss */
+.budget td.time {
+  text-align: center;
+}
+
+/* line 96, ../sass/base.scss */
+footer {
+  margin: 50px 10%;
+  padding: 30px 0;
+  max-width: 1100px;
+  border-top: 1px solid;
+}
