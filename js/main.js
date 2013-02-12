@@ -13,3 +13,10 @@ require(["lib/storyjs-embed"], function(util) {
         font: 			'PTSerif-PTSans'
     });
 });
+
+require(["lib/jquery-ui.widget.min", "lib/rwd-table"], function(util){
+	$(".budget").table({
+      idprefix: "co-",
+      persist: "persist"
+   });
+});

@@ -40,6 +40,10 @@ section {
 	tr {
 		&:nth-child(even) { background: lighten($red, 52%) }
 
+		&:hover {
+			background: lighten($red, 45%);
+		}
+
 		&.budget-summary {
 			color: $red;
 			background: lighten($red, 50%)
@@ -51,6 +55,10 @@ section {
 			color: $red;
 		}
 	}
+}
+
+.table-menu-btn {
+	color: $red;
 }
 
 footer {
