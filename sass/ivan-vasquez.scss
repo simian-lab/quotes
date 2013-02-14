@@ -27,6 +27,20 @@ section {
 	}
 }
 
+em {
+	color: $red;
+	font-style: normal;
+	font-weight: bold;
+}
+
+a:hover {
+	color: darken($red, 20%);
+}
+
+li:before {
+	color: $red;
+}
+
 .budget {
 	border-color: $red;
 

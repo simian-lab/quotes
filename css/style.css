@@ -54,41 +54,78 @@ section h1 {
 section h2 {
   font-size: 2em;
 }
+/* line 54, ../sass/base.scss */
+section li {
+  margin: 15px 0;
+}
 
-/* line 55, ../sass/base.scss */
+/* line 59, ../sass/base.scss */
+ul {
+  list-style: none;
+}
+
+/* line 64, ../sass/base.scss */
+li:before {
+  content: '\25A0';
+  display: block;
+  position: relative;
+  max-width: 0px;
+  max-height: 0px;
+  left: -20px;
+  top: -0px;
+  font-size: 20px;
+}
+
+/* line 78, ../sass/base.scss */
+ul > ul li:before {
+  font-size: 20px;
+  content: '\2022';
+}
+
+/* line 86, ../sass/base.scss */
+li,
 p {
   font-size: 1.25em;
 }
 
-/* line 59, ../sass/base.scss */
+/* line 90, ../sass/base.scss */
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 95, ../sass/base.scss */
 .budget {
   margin: 0 auto;
   border: 1px solid;
   border-spacing: 0;
 }
-/* line 64, ../sass/base.scss */
+/* line 100, ../sass/base.scss */
 .budget th {
   padding: 0.9em 1em;
   border-bottom: 1px dashed;
 }
-/* line 70, ../sass/base.scss */
+/* line 106, ../sass/base.scss */
 .budget tr.budget-summary {
   font-weight: bold;
 }
-/* line 73, ../sass/base.scss */
+/* line 109, ../sass/base.scss */
 .budget tr.budget-summary .title {
   text-align: right;
   text-transform: uppercase;
 }
-/* line 80, ../sass/base.scss */
+/* line 116, ../sass/base.scss */
 .budget td {
   padding: 0.9em 1em;
 }
-/* line 83, ../sass/base.scss */
+/* line 119, ../sass/base.scss */
 .budget td.money {
   text-align: right;
 }
-/* line 86, ../sass/base.scss */
+/* line 122, ../sass/base.scss */
 .budget td.money:before {
   content: '$';
   display: inline;
@@ -96,38 +133,38 @@ p {
   padding-right: 5px;
   vertical-align: middle;
 }
-/* line 95, ../sass/base.scss */
+/* line 131, ../sass/base.scss */
 .budget td.time {
   text-align: center;
 }
 
-/* line 102, ../sass/base.scss */
+/* line 138, ../sass/base.scss */
 .enhanced th,
 .enhanced td {
   display: none;
 }
 @media screen and (min-width: 400px) {
-  /* line 102, ../sass/base.scss */
+  /* line 138, ../sass/base.scss */
   .enhanced th,
   .enhanced td {
     display: table-cell;
   }
 }
 
-/* line 111, ../sass/base.scss */
+/* line 147, ../sass/base.scss */
 .enhanced th.essential,
 .enhanced td.essential {
   display: table-cell;
 }
 
-/* line 115, ../sass/base.scss */
+/* line 151, ../sass/base.scss */
 .table-menu-wrapper {
   position: absolute;
   top: -3em;
   right: 0;
 }
 
-/* line 121, ../sass/base.scss */
+/* line 157, ../sass/base.scss */
 .table-menu-btn {
   text-decoration: none;
   font-size: 1.2em;
@@ -136,7 +173,7 @@ p {
   border: 1px solid #cccccc;
 }
 
-/* line 129, ../sass/base.scss */
+/* line 165, ../sass/base.scss */
 .table-menu {
   position: absolute;
   right: 0;
@@ -147,29 +184,34 @@ p {
   font-size: 1.2em;
   width: 12em;
 }
-/* line 139, ../sass/base.scss */
+/* line 175, ../sass/base.scss */
 .table-menu ul {
   list-style: none;
 }
 
-/* line 144, ../sass/base.scss */
+/* line 180, ../sass/base.scss */
 .table-menu-hidden {
   left: -999em;
   right: auto;
 }
 
-/* line 149, ../sass/base.scss */
+/* line 185, ../sass/base.scss */
 .table-wrapper {
   position: relative;
   margin: 5em 5%;
 }
 
-/* line 154, ../sass/base.scss */
+/* line 190, ../sass/base.scss */
 footer {
   margin: 50px 10%;
   padding: 30px 0;
   max-width: 1100px;
   border-top: 1px solid;
+}
+
+/* line 197, ../sass/base.scss */
+.print {
+  float: right;
 }
 
 /* line 4, ../sass/ivan-vasquez.scss */
@@ -203,46 +245,63 @@ section h2 {
 }
 
 /* line 30, ../sass/ivan-vasquez.scss */
+em {
+  color: #e40101;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* line 36, ../sass/ivan-vasquez.scss */
+a:hover {
+  color: #7e0101;
+}
+
+/* line 40, ../sass/ivan-vasquez.scss */
+li:before {
+  color: #e40101;
+}
+
+/* line 44, ../sass/ivan-vasquez.scss */
 .budget {
   border-color: #e40101;
 }
-/* line 33, ../sass/ivan-vasquez.scss */
+/* line 47, ../sass/ivan-vasquez.scss */
 .budget th {
   border-color: #e40101;
   color: #e40101;
 }
-/* line 38, ../sass/ivan-vasquez.scss */
+/* line 52, ../sass/ivan-vasquez.scss */
 .budget td {
   border-color: 1px solid transparent;
 }
-/* line 41, ../sass/ivan-vasquez.scss */
+/* line 55, ../sass/ivan-vasquez.scss */
 .budget tr:nth-child(even) {
   background: #ffefef;
 }
-/* line 43, ../sass/ivan-vasquez.scss */
+/* line 57, ../sass/ivan-vasquez.scss */
 .budget tr:hover {
   background: #ffcccc;
 }
-/* line 47, ../sass/ivan-vasquez.scss */
+/* line 61, ../sass/ivan-vasquez.scss */
 .budget tr.budget-summary {
   color: #e40101;
   background: #ffe5e5;
 }
-/* line 54, ../sass/ivan-vasquez.scss */
+/* line 68, ../sass/ivan-vasquez.scss */
 .budget .money:before {
   color: #e40101;
 }
 
-/* line 60, ../sass/ivan-vasquez.scss */
+/* line 74, ../sass/ivan-vasquez.scss */
 .table-menu-btn {
   color: #e40101;
 }
 
-/* line 64, ../sass/ivan-vasquez.scss */
+/* line 78, ../sass/ivan-vasquez.scss */
 footer {
   border-color: #e40101;
 }
-/* line 67, ../sass/ivan-vasquez.scss */
+/* line 81, ../sass/ivan-vasquez.scss */
 footer a {
   color: #e40101;
 }
