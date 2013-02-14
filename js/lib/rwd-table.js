@@ -11,7 +11,8 @@
     options: { 
       idprefix: null,   // specify a prefix for the id/headers values
       persist: null, // specify a class assigned to column headers (th) that should always be present; the script not create a checkbox for these columns
-      checkContainer: null // container element where the hide/show checkboxes will be inserted; if none specified, the script creates a menu
+      checkContainer: null, // container element where the hide/show checkboxes will be inserted; if none specified, the script creates a menu
+      displayText: 'Display'
     },
  
     // Set up the widget
@@ -83,7 +84,7 @@
       // if no container specified for the checkboxes, create a "Display" menu      
       if (!o.checkContainer) {
          var menuWrapper = $('<div class="table-menu-wrapper" />'),
-               menuBtn = $('<a href="#" class="table-menu-btn">Display</a>');
+               menuBtn = $('<a href="#" class="table-menu-btn">'+o.displayText+'</a>');
                
          menuBtn.click(function(){
             container.toggleClass("table-menu-hidden");            

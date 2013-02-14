@@ -3,11 +3,14 @@ require(["lib/jquery.fittext"], function(util) {
 });
 
 require(["lib/storyjs-embed"], function(util) {
+
+  var dataSource = $('#timeline-placeholder').data('spreadsheet');
+
    createStoryJS({
         type:       'timeline',
         width:      '100%',
         height:     '600',
-        source:     'https://docs.google.com/spreadsheet/pub?key=0ApmzOmCth734dG0wWFdQcmkyTDUtajVCaWlrUTJXcUE&single=true&gid=0&output=html',
+        source:     dataSource,
         embed_id:   'timeline-placeholder',
         js:         'js/lib/timeline-min.js',
         font: 			'PTSerif-PTSans'
@@ -17,6 +20,7 @@ require(["lib/storyjs-embed"], function(util) {
 require(["lib/jquery-ui.widget.min", "lib/rwd-table"], function(util){
 	$(".budget").table({
       idprefix: "co-",
-      persist: "persist"
+      persist: "persist",
+      displayText: "Show",
    });
 });
