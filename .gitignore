@@ -1,2 +1,3 @@
 config.rb
 Guardfile
+node_modules

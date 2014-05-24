@@ -3,7 +3,7 @@ $breakpoint:  400px;
 
 body {
   margin: 0;
-  font-family: sans-serif; 
+  font-family: sans-serif;
 }
 
 #project-title {
@@ -89,7 +89,7 @@ p {
 
 a {
   text-decoration: none;
-  @include transition(all 0.3s ease-in-out);
+  //@include transition(all 0.3s ease-in-out);
 }
 
 .budget {
@@ -109,7 +109,7 @@ a {
       .title {
         text-align: right;
         text-transform: uppercase;
-      } 
+      }
     }
   }
 
@@ -143,7 +143,7 @@ a {
   }
 }
 
-.enhanced th.essential, 
+.enhanced th.essential,
 .enhanced td.essential {
    display: table-cell;
 }
@@ -163,7 +163,7 @@ a {
 }
 
 .table-menu {
-   position: absolute;   
+   position: absolute;
    right: 0;
    left: auto;
    background-color: #fff;

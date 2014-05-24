@@ -1,70 +1,44 @@
-/* line 4, ../sass/base.scss */
 body {
   margin: 0;
-  font-family: sans-serif;
-}
+  font-family: sans-serif; }
 
-/* line 9, ../sass/base.scss */
 #project-title {
   display: block;
   text-align: center;
   margin: 0.5em 1em 0;
-  line-height: 1em;
-}
+  line-height: 1em; }
 
-/* line 16, ../sass/base.scss */
 #project-description {
   display: block;
   text-align: center;
   font-size: 2em;
-  margin: 0.25em 1em;
-}
+  margin: 0.25em 1em; }
 
-/* line 23, ../sass/base.scss */
 section {
   margin: 0 10%;
-  max-width: 1100px;
-}
-@media screen and (max-width: 400px) {
-  /* line 23, ../sass/base.scss */
-  section {
-    margin: 0 5%;
-  }
-}
-/* line 31, ../sass/base.scss */
-section#timescale {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 !important;
-}
-/* line 36, ../sass/base.scss */
-section#timescale h1 {
-  margin: 1em 10% 0;
-}
-/* line 40, ../sass/base.scss */
-section#timescale .storyjs-embed.sized-embed {
-  border: 0 !important;
-}
-/* line 45, ../sass/base.scss */
-section h1 {
-  font-size: 3em;
-  border-bottom: 1px solid;
-}
-/* line 50, ../sass/base.scss */
-section h2 {
-  font-size: 2em;
-}
-/* line 54, ../sass/base.scss */
-section li {
-  margin: 15px 0;
-}
+  max-width: 1100px; }
+  @media screen and (max-width: 400px) {
+    section {
+      margin: 0 5%; } }
+  section#timescale {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 !important; }
+    section#timescale h1 {
+      margin: 1em 10% 0; }
+    section#timescale .storyjs-embed.sized-embed {
+      border: 0 !important; }
+  section h1 {
+    font-size: 3em;
+    border-bottom: 1px solid; }
+  section h2 {
+    font-size: 2em; }
+  section li {
+    margin: 15px 0; }
 
-/* line 59, ../sass/base.scss */
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 64, ../sass/base.scss */
 li:before {
   content: '\25A0';
   display: block;
@@ -73,235 +47,143 @@ li:before {
   max-height: 0px;
   left: -20px;
   top: -0px;
-  font-size: 20px;
-}
+  font-size: 20px; }
 
-/* line 78, ../sass/base.scss */
 ul > ul li:before {
   font-size: 20px;
-  content: '\2022';
-}
+  content: '\2022'; }
 
-/* line 86, ../sass/base.scss */
-li,
-p {
-  font-size: 1.25em;
-}
+li, p {
+  font-size: 1.25em; }
 
-/* line 90, ../sass/base.scss */
 a {
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
+  text-decoration: none; }
 
-/* line 95, ../sass/base.scss */
 .budget {
   margin: 0 auto;
   border: 1px solid;
-  border-spacing: 0;
-}
-/* line 100, ../sass/base.scss */
-.budget th {
-  padding: 0.9em 1em;
-  border-bottom: 1px dashed;
-}
-/* line 106, ../sass/base.scss */
-.budget tr.budget-summary {
-  font-weight: bold;
-}
-/* line 109, ../sass/base.scss */
-.budget tr.budget-summary .title {
-  text-align: right;
-  text-transform: uppercase;
-}
-/* line 116, ../sass/base.scss */
-.budget td {
-  padding: 0.9em 1em;
-}
-/* line 119, ../sass/base.scss */
-.budget td.money {
-  text-align: right;
-}
-/* line 122, ../sass/base.scss */
-.budget td.money:before {
-  content: '$';
-  display: inline;
-  font-size: 0.7em;
-  padding-right: 5px;
-  vertical-align: middle;
-}
-/* line 131, ../sass/base.scss */
-.budget td.time {
-  text-align: center;
-}
+  border-spacing: 0; }
+  .budget th {
+    padding: 0.9em 1em;
+    border-bottom: 1px dashed; }
+  .budget tr.budget-summary {
+    font-weight: bold; }
+    .budget tr.budget-summary .title {
+      text-align: right;
+      text-transform: uppercase; }
+  .budget td {
+    padding: 0.9em 1em; }
+    .budget td.money {
+      text-align: right; }
+      .budget td.money:before {
+        content: '$';
+        display: inline;
+        font-size: 0.7em;
+        padding-right: 5px;
+        vertical-align: middle; }
+    .budget td.time {
+      text-align: center; }
 
-/* line 138, ../sass/base.scss */
-.enhanced th,
-.enhanced td {
-  display: none;
-}
-@media screen and (min-width: 400px) {
-  /* line 138, ../sass/base.scss */
-  .enhanced th,
-  .enhanced td {
-    display: table-cell;
-  }
-}
+.enhanced th, .enhanced td {
+  display: none; }
+  @media screen and (min-width: 400px) {
+    .enhanced th, .enhanced td {
+      display: table-cell; } }
 
-/* line 147, ../sass/base.scss */
-.enhanced th.essential,
-.enhanced td.essential {
-  display: table-cell;
-}
+.enhanced th.essential, .enhanced td.essential {
+  display: table-cell; }
 
-/* line 151, ../sass/base.scss */
 .table-menu-wrapper {
   position: absolute;
   top: -3em;
-  right: 0;
-}
+  right: 0; }
 
-/* line 157, ../sass/base.scss */
 .table-menu-btn {
   text-decoration: none;
   font-size: 1.2em;
   background: url(timeline.png) no-repeat -327px 10px;
   padding: 0.3em 10px 0.3em 22px;
-  border: 1px solid #cccccc;
-}
+  border: 1px solid #ccc; }
 
-/* line 165, ../sass/base.scss */
 .table-menu {
   position: absolute;
   right: 0;
   left: auto;
   background-color: #fff;
   padding: 10px;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   font-size: 1.2em;
-  width: 12em;
-}
-/* line 175, ../sass/base.scss */
-.table-menu ul {
-  list-style: none;
-}
+  width: 12em; }
+  .table-menu ul {
+    list-style: none; }
 
-/* line 180, ../sass/base.scss */
 .table-menu-hidden {
   left: -999em;
-  right: auto;
-}
+  right: auto; }
 
-/* line 185, ../sass/base.scss */
 .table-wrapper {
   position: relative;
-  margin: 5em 5%;
-}
+  margin: 5em 5%; }
 
-/* line 190, ../sass/base.scss */
 footer {
   margin: 50px 10%;
   padding: 30px 0;
   max-width: 1100px;
-  border-top: 1px solid;
-}
+  border-top: 1px solid; }
 
-/* line 197, ../sass/base.scss */
 .print {
-  float: right;
-}
+  float: right; }
 
-/* line 4, ../sass/ivan-vasquez.scss */
 #logo {
   display: none;
   margin: 0;
   padding: 5px 20px 3px 50px;
-  background: #e40101;
-  position: fixed;
-  -webkit-box-shadow: 1px 4px 5px #999999;
-  -moz-box-shadow: 1px 4px 5px #999999;
-  box-shadow: 1px 4px 5px #999999;
-}
+  background: #E40101;
+  position: fixed; }
 
-/* line 13, ../sass/ivan-vasquez.scss */
 #project-title {
-  font-family: "PT Sans Narrow", sans-serif;
-  color: #e40101;
-}
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: #E40101; }
 
-/* line 18, ../sass/ivan-vasquez.scss */
 #project-description {
-  font-family: "PT Sans Narrow", sans-serif;
-}
+  font-family: 'PT Sans Narrow', sans-serif; }
 
-/* line 24, ../sass/ivan-vasquez.scss */
-section h1,
-section h2 {
-  font-family: "PT Sans Narrow", sans-serif;
-  color: #e40101;
-}
+section h1, section h2 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: #E40101; }
 
-/* line 30, ../sass/ivan-vasquez.scss */
 em {
-  color: #e40101;
+  color: #E40101;
   font-style: normal;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
-/* line 36, ../sass/ivan-vasquez.scss */
 a:hover {
-  color: #7e0101;
-}
+  color: #7e0101; }
 
-/* line 40, ../sass/ivan-vasquez.scss */
 li:before {
-  color: #e40101;
-}
+  color: #E40101; }
 
-/* line 44, ../sass/ivan-vasquez.scss */
 .budget {
-  border-color: #e40101;
-}
-/* line 47, ../sass/ivan-vasquez.scss */
-.budget th {
-  border-color: #e40101;
-  color: #e40101;
-}
-/* line 52, ../sass/ivan-vasquez.scss */
-.budget td {
-  border-color: 1px solid transparent;
-}
-/* line 55, ../sass/ivan-vasquez.scss */
-.budget tr:nth-child(even) {
-  background: #ffefef;
-}
-/* line 57, ../sass/ivan-vasquez.scss */
-.budget tr:hover {
-  background: #ffcccc;
-}
-/* line 61, ../sass/ivan-vasquez.scss */
-.budget tr.budget-summary {
-  color: #e40101;
-  background: #ffe5e5;
-}
-/* line 68, ../sass/ivan-vasquez.scss */
-.budget .money:before {
-  color: #e40101;
-}
+  border-color: #E40101; }
+  .budget th {
+    border-color: #E40101;
+    color: #E40101; }
+  .budget td {
+    border-color: 1px solid transparent; }
+  .budget tr:nth-child(even) {
+    background: #ffefef; }
+  .budget tr:hover {
+    background: #ffcccc; }
+  .budget tr.budget-summary {
+    color: #E40101;
+    background: #ffe5e5; }
+  .budget .money:before {
+    color: #E40101; }
 
-/* line 74, ../sass/ivan-vasquez.scss */
 .table-menu-btn {
-  color: #e40101;
-}
+  color: #E40101; }
 
-/* line 78, ../sass/ivan-vasquez.scss */
 footer {
-  border-color: #e40101;
-}
-/* line 81, ../sass/ivan-vasquez.scss */
-footer a {
-  color: #e40101;
-}
+  border-color: #E40101; }
+  footer a {
+    color: #E40101; }
