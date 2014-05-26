@@ -68,6 +68,21 @@ section {
       }
     }
 
+    &.left,
+    &.right {
+      width: auto;
+      max-width: 100%;
+      margin: 1em;
+    }
+
+    &.left {
+      float: left;
+    }
+
+    &.right {
+      float: right;
+    }
+
     figcaption {
       display: block;
       width: 100%;

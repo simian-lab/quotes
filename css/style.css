@@ -193,6 +193,14 @@ section {
     @media screen and (max-width: 400px) {
       section figure.medium {
         max-width: 100%; } }
+  section figure.left, section figure.right {
+    width: auto;
+    max-width: 100%;
+    margin: 1em; }
+  section figure.left {
+    float: left; }
+  section figure.right {
+    float: right; }
   section figure figcaption {
     display: block;
     width: 100%;
