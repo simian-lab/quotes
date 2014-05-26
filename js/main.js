@@ -24,3 +24,7 @@ require(["lib/jquery-ui.widget.min", "lib/rwd-table"], function(util){
       displayText: "Show",
    });
 });
+
+require(["lib/menu"], function(util) {
+  $("#menu").menu();
+});

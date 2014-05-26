@@ -35,7 +35,7 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      scripts: {
+      sass: {
         files: ['**/*.scss'],
         tasks: ['sass'],
         options: {
@@ -47,6 +47,15 @@ module.exports = function(grunt) {
 
       documents: {
         files: ['**/*.html'],
+        options: {
+          livereload: {
+            port: LIVERELOAD_PORT
+          }
+        }
+      },
+
+      scripts: {
+        files: ['**/*.js'],
         options: {
           livereload: {
             port: LIVERELOAD_PORT

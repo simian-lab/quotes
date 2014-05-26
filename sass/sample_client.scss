@@ -1,12 +1,14 @@
 $red: #E40101;
 $ptSans: 'PT Sans Narrow', sans-serif;
 
-#logo {
-	margin: 0;
-	padding: 5px 20px 3px 50px;
-	background: $red;
-	position: fixed;
-	@include box-shadow(1px 4px 5px #999);
+.menu-toggle {
+	color: $red;
+}
+
+#menu {
+	a {
+		color: $red;
+	}
 }
 
 #project-title {

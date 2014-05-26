@@ -1,0 +1,30 @@
+#menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+
+  .menu-toggle {
+    @extend .icon-menu;
+    font-size: 1.5em;
+    display: block;
+    margin: 0.5em 1.5em;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    padding: 0.25em;
+
+    &:before {
+      @extend .icon;
+    }
+  }
+
+  .menu-list {
+    display: none;
+
+    &.visible {
+      display: block;
+    }
+  }
+}
