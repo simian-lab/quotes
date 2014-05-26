@@ -54,6 +54,34 @@ section {
     margin: 15px 0;
   }
 
+  img {
+    width: 100%;
+  }
+
+  figure {
+    &.medium {
+      max-width: 60%;
+      margin: 0 auto;
+
+      @media screen and (max-width: $breakpoint) {
+        max-width: 100%;
+      }
+    }
+
+    figcaption {
+      display: block;
+      width: 100%;
+      text-align: center;
+      border-top: 1px dashed;
+      padding: 10px 0;
+
+      &:before {
+        content: '\00bb';
+        padding: 0 5px;
+      }
+    }
+  }
+
   &#summary {
     h1 {
       @extend .icon-quill;

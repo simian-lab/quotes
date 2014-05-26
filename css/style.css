@@ -185,6 +185,23 @@ section {
     font-size: 2em; }
   section li {
     margin: 15px 0; }
+  section img {
+    width: 100%; }
+  section figure.medium {
+    max-width: 60%;
+    margin: 0 auto; }
+    @media screen and (max-width: 400px) {
+      section figure.medium {
+        max-width: 100%; } }
+  section figure figcaption {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-top: 1px dashed;
+    padding: 10px 0; }
+    section figure figcaption:before {
+      content: '\00bb';
+      padding: 0 5px; }
   section#timescale {
     width: 100%;
     max-width: 100%;
