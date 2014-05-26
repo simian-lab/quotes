@@ -34,6 +34,14 @@ em {
 	font-weight: bold;
 }
 
+blockquote {
+	font-family: $ptSans;
+
+	&:before {
+		color: $red;
+	}
+}
+
 a:hover {
 	color: darken($red, 20%);
 }

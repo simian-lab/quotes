@@ -210,6 +210,22 @@ section {
     section figure figcaption:before {
       content: '\00bb';
       padding: 0 5px; }
+  section blockquote {
+    position: relative;
+    padding: 0 0 0 4em;
+    font-size: 2em; }
+    section blockquote:before {
+      content: '\201D';
+      font-size: 15em;
+      font-family: Georgia;
+      height: 0.5em;
+      display: block;
+      position: absolute;
+      top: -3rem;
+      left: -0.15em;
+      vertical-align: super;
+      z-index: -1;
+      opacity: 0.35; }
   section#timescale {
     width: 100%;
     max-width: 100%;
@@ -269,6 +285,11 @@ em {
   color: #E40101;
   font-style: normal;
   font-weight: bold; }
+
+blockquote {
+  font-family: 'PT Sans Narrow', sans-serif; }
+  blockquote:before {
+    color: #E40101; }
 
 a:hover {
   color: #7e0101; }
