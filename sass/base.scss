@@ -68,6 +68,15 @@ section {
       }
     }
 
+    &.small {
+      max-width: 40%;
+      margin: 0 auto;
+
+      @media screen and (max-width: $breakpoint) {
+        max-width: 60%;
+      }
+    }
+
     &.left,
     &.right {
       width: auto;
