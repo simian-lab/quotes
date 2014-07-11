@@ -107,6 +107,11 @@ section {
     padding: 0 0 0 4em;
     font-size: 2em;
 
+    @media screen and (max-width: $breakpoint) {
+      padding: 0;
+      font-size: 1.25em;
+    }
+
     &:before {
       content: '\201D';
       font-size: 15em;
@@ -119,6 +124,10 @@ section {
       vertical-align: super;
       z-index: -1;
       opacity: 0.35;
+
+      @media screen and (max-width: $breakpoint) {
+        opacity: 0.15;
+      }
     }
   }
 

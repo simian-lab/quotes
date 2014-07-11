@@ -217,6 +217,10 @@ section {
     position: relative;
     padding: 0 0 0 4em;
     font-size: 2em; }
+    @media screen and (max-width: 400px) {
+      section blockquote {
+        padding: 0;
+        font-size: 1.25em; } }
     section blockquote:before {
       content: '\201D';
       font-size: 15em;
@@ -229,6 +233,9 @@ section {
       vertical-align: super;
       z-index: -1;
       opacity: 0.35; }
+      @media screen and (max-width: 400px) {
+        section blockquote:before {
+          opacity: 0.15; } }
   section#timescale {
     width: 100%;
     max-width: 100%;
