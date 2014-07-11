@@ -28,11 +28,7 @@ section {
   margin: 0 auto;
   max-width: $width-limit;
 
-  @media screen and (max-width: $width-limit*1.5) {
-    margin: 0 10%;
-  }
-
-  @media screen and (max-width: $breakpoint) {
+  @media screen and (max-width: $width-limit + 100px) {
     margin: 0 5%;
   }
 
