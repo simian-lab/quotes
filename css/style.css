@@ -190,6 +190,12 @@ section {
     @media screen and (max-width: 400px) {
       section figure.medium {
         max-width: 100%; } }
+  section figure.small {
+    max-width: 40%;
+    margin: 0 auto; }
+    @media screen and (max-width: 400px) {
+      section figure.small {
+        max-width: 60%; } }
   section figure.left, section figure.right {
     width: auto;
     max-width: 100%;
