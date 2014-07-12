@@ -50,8 +50,7 @@
 #menu {
   position: fixed;
   top: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.85); }
+  width: 100%; }
   #menu .menu-toggle {
     font-size: 1.5em;
     display: block;
@@ -277,8 +276,10 @@ a {
 .menu-toggle {
   color: #E40101; }
 
-#menu a {
-  color: #E40101; }
+#menu {
+  background: rgba(228, 1, 1, 0.5); }
+  #menu a {
+    color: #FFF; }
 
 #project-title {
   font-family: 'PT Sans Narrow', sans-serif;

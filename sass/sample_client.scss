@@ -1,93 +1,95 @@
-$red: #E40101;
-$ptSans: 'PT Sans Narrow', sans-serif;
+$mainColor: #E40101;
+$mainFont: 'PT Sans Narrow', sans-serif;
 
 .menu-toggle {
-	color: $red;
+	color: $mainColor;
 }
 
 #menu {
+	background: transparentize($mainColor, 0.5);
+
 	a {
-		color: $red;
+		color: #FFF;
 	}
 }
 
 #project-title {
-	font-family: $ptSans;
-	color: $red;
+	font-family: $mainFont;
+	color: $mainColor;
 }
 
 #project-description {
-	font-family: $ptSans;
+	font-family: $mainFont;
 }
 
 section {
 	h1,
 	h2 {
-		font-family: $ptSans;
-		color: $red;
+		font-family: $mainFont;
+		color: $mainColor;
 	}
 }
 
 em {
-	color: $red;
+	color: $mainColor;
 	font-style: normal;
 	font-weight: bold;
 }
 
 blockquote {
-	font-family: $ptSans;
+	font-family: $mainFont;
 
 	&:before {
-		color: $red;
+		color: $mainColor;
 	}
 }
 
 a:hover {
-	color: darken($red, 20%);
+	color: darken($mainColor, 20%);
 }
 
 li:before {
-	color: $red;
+	color: $mainColor;
 }
 
 .budget {
-	border-color: $red;
+	border-color: $mainColor;
 
 	th {
-		border-color: $red;
-		color: $red;
+		border-color: $mainColor;
+		color: $mainColor;
 	}
 
 	td { border-color: 1px solid transparent; }
 
 	tr {
-		&:nth-child(even) { background: lighten($red, 52%) }
+		&:nth-child(even) { background: lighten($mainColor, 52%) }
 
 		&:hover {
-			background: lighten($red, 45%);
+			background: lighten($mainColor, 45%);
 		}
 
 		&.budget-summary {
-			color: $red;
-			background: lighten($red, 50%)
+			color: $mainColor;
+			background: lighten($mainColor, 50%)
 		}
 	}
 
 	.money {
 		&:before {
-			color: $red;
+			color: $mainColor;
 		}
 	}
 }
 
 .table-menu-btn {
-	color: $red;
+	color: $mainColor;
 }
 
 footer {
-	border-color: $red;
+	border-color: $mainColor;
 
 	a {
-		color: $red;
+		color: $mainColor;
 	}
 }

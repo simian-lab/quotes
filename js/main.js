@@ -28,3 +28,7 @@ require(["lib/jquery-ui.widget.min", "lib/rwd-table"], function(util){
 require(["lib/menu"], function(util) {
   $("#menu").menu();
 });
+
+require(["lib/smooth-scroll"], function(util) {
+  // Do nothing :D
+});
