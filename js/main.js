@@ -1,5 +1,9 @@
 require(["lib/jquery.fittext"], function(util) {
-   $("#project-title").fitText( 1.01, { minFontSize: '50px' });
+  $("#project-title").fitText( 1.01, { minFontSize: '50px' });
+});
+
+require(["../bower_components/fitvids/jquery.fitvids"], function(util) {
+  $("figure").fitVids();
 });
 
 require(["lib/storyjs-embed"], function(util) {

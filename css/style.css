@@ -107,7 +107,7 @@
 .table-menu-btn {
   text-decoration: none;
   font-size: 1.2em;
-  padding: 0.3em;
+  padding: .3em;
   border: 1px solid #ccc; }
   .table-menu-btn:before {
     font-size: 0.85em;
@@ -254,7 +254,7 @@ li:before {
   max-width: 0px;
   max-height: 0px;
   left: -20px;
-  top: -0px;
+  top: 0px;
   font-size: 20px; }
 
 ul > ul li:before {
