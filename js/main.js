@@ -2,7 +2,7 @@ require(["lib/jquery.fittext"], function(util) {
   $("#project-title").fitText( 1.01, { minFontSize: '50px' });
 });
 
-require(["../bower_components/fitvids/jquery.fitvids"], function(util) {
+require(["lib/jquery.fitvids"], function(util) {
   $("figure").fitVids();
 
   // kinda ugly, but... meh
@@ -11,16 +11,16 @@ require(["../bower_components/fitvids/jquery.fitvids"], function(util) {
 
 require(["lib/storyjs-embed"], function(util) {
 
-  var dataSource = $('#timeline-placeholder').data('spreadsheet');
+    var dataSource = $('#timeline-placeholder').data('spreadsheet');
 
-   createStoryJS({
-        type:       'timeline',
-        width:      '100%',
-        height:     '600',
-        source:     dataSource,
-        embed_id:   'timeline-placeholder',
-        js:         'js/lib/timeline-min.js',
-        font: 			'PTSerif-PTSans'
+    createStoryJS({
+      type:       'timeline',
+      width:      '100%',
+      height:     '600',
+      source:     dataSource,
+      embed_id:   'timeline-placeholder',
+      js:         'js/lib/timeline-min.js',
+      font:       'PTSerif-PTSans'
     });
 });
 
