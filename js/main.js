@@ -4,6 +4,9 @@ require(["lib/jquery.fittext"], function(util) {
 
 require(["../bower_components/fitvids/jquery.fitvids"], function(util) {
   $("figure").fitVids();
+
+  // kinda ugly, but... meh
+  $("figure").fitVids({ customSelector: "iframe[src^='http://']"});
 });
 
 require(["lib/storyjs-embed"], function(util) {
