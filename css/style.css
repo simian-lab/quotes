@@ -182,7 +182,7 @@ section {
     font-size: 2em; }
   section li {
     margin: 15px 0; }
-  section img {
+  section img, section video {
     width: 100%; }
   section figure.medium {
     max-width: 60%;
