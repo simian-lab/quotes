@@ -49,6 +49,7 @@
 
 #menu {
   position: fixed;
+  z-index: 99;
   top: 0;
   width: 100%; }
   #menu .menu-toggle {
@@ -107,7 +108,7 @@
 .table-menu-btn {
   text-decoration: none;
   font-size: 1.2em;
-  padding: 0.3em;
+  padding: .3em;
   border: 1px solid #ccc; }
   .table-menu-btn:before {
     font-size: 0.85em;
@@ -181,7 +182,7 @@ section {
     font-size: 2em; }
   section li {
     margin: 15px 0; }
-  section img {
+  section img, section video {
     width: 100%; }
   section figure.medium {
     max-width: 60%;
@@ -254,7 +255,7 @@ li:before {
   max-width: 0px;
   max-height: 0px;
   left: -20px;
-  top: -0px;
+  top: 0px;
   font-size: 20px; }
 
 ul > ul li:before {
