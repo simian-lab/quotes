@@ -10,7 +10,7 @@ require(["lib/jquery.fitvids"], function(util) {
 });
 
 require(["lib/storyjs-embed"], function(util) {
-
+  if($('#timeline-placeholder')) {
     var dataSource = $('#timeline-placeholder').data('spreadsheet');
 
     createStoryJS({
@@ -22,6 +22,7 @@ require(["lib/storyjs-embed"], function(util) {
       js:         'js/lib/timeline-min.js',
       font:       'PTSerif-PTSans'
     });
+  }
 });
 
 require(["lib/jquery-ui.widget.min", "lib/rwd-table"], function(util){
