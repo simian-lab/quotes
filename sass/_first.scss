@@ -1,9 +1,20 @@
-.first {
+#first {
 	background: url('../img/title-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: contain;
 	height: calc(100vh - 64px);
 	overflow: hidden;
+
+	&:before {
+		background: url("../img/monkey-hand.png");
+		background-position-y: 2rem;
+		background-repeat: no-repeat;
+	    background-size: contain;
+	    content: '';
+	    height: 100vh;
+	    position: absolute;
+	    width: 23%;
+	}
 
 	.triangle {
 		height: 56%;

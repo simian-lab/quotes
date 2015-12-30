@@ -6,28 +6,108 @@ body {
 	margin: 0;
 }
 
-h1, h2, p, figcaption {
+h1, h2, h3, p, li, figcaption, table {
 	font-family: $font;
 }
 
 p {
 	color: $brown;
+    margin: 1rem 0 3rem;
+}
+
+strong {
+    font-style: italic;
+}
+
+figure {
+    figcaption {
+        color:  #979795;
+        font-size: 0.8rem;
+    }
+}
+
+ul {
+    list-style-image: url('../img/blue-bullet.png');
+    margin: 1rem 0 2rem;
+    padding: 0 6rem;
+
+    li {
+        color: $brown;
+        margin: 1rem 0;
+
+        ul {
+            list-style-image: url('../img/green-bullet.png');
+            padding: 0 1rem;
+        }
+    }
 }
 
 .content {
     margin: 0 auto;
     overflow: hidden;
     padding: 1rem 0;
-    width: 65rem;
+    max-width: 65rem;
 
     .section-title {
     	color: $green;
     	font-size: 1.6rem;
     	font-weight: 500;
-		margin: 0 auto;
+		margin: 0 auto 5rem;
+        position: relative;
 		text-align: center;
 		text-transform: uppercase;
 		width: 15rem;
+        z-index: 1;
+    }
+
+    .gallery {
+        @include clearfix;
+        margin: 2rem 0;
+
+        figure {
+            float: left;
+            margin: 1rem 0.49rem;
+            width: 331px;
+        }
+    }
+
+    table, th, td {
+        border-color: $blue;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 0 auto;
+
+        th, td {
+            padding: 0.5rem;
+        }
+
+        thead, tfoot {
+            color: $blue;
+
+            tr {
+                th, td {
+                    font-weight: 600;
+                    text-align: left;
+                }
+            }
+        }
+
+        tbody {
+            color: $brown;
+        }
+
+        tfoot {
+            background-color: white;
+        }
+
+        .money {
+            font-style: italic;
+            font-weight: 600;
+        }
     }
 }
 
@@ -35,3 +115,4 @@ p {
 @import 'first';
 @import 'we-are';
 @import 'proyect';
+@import 'budget';

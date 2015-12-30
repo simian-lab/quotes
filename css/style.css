@@ -9,42 +9,103 @@
 body {
   margin: 0; }
 
-h1, h2, p, figcaption {
+h1, h2, h3, p, li, figcaption, table {
   font-family: "Source Sans Pro"; }
 
 p {
-  color: #50423a; }
+  color: #50423a;
+  margin: 1rem 0 3rem; }
+
+strong {
+  font-style: italic; }
+
+figure figcaption {
+  color: #979795;
+  font-size: 0.8rem; }
+
+ul {
+  list-style-image: url("../img/blue-bullet.png");
+  margin: 1rem 0 2rem;
+  padding: 0 6rem; }
+  ul li {
+    color: #50423a;
+    margin: 1rem 0; }
+    ul li ul {
+      list-style-image: url("../img/green-bullet.png");
+      padding: 0 1rem; }
 
 .content {
   margin: 0 auto;
   overflow: hidden;
   padding: 1rem 0;
-  width: 65rem; }
+  max-width: 65rem; }
   .content .section-title {
     color: #99be33;
     font-size: 1.6rem;
     font-weight: 500;
-    margin: 0 auto;
+    margin: 0 auto 5rem;
+    position: relative;
     text-align: center;
     text-transform: uppercase;
-    width: 15rem; }
+    width: 15rem;
+    z-index: 1; }
+  .content .gallery {
+    margin: 2rem 0; }
+    .content .gallery::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .content .gallery figure {
+      float: left;
+      margin: 1rem 0.49rem;
+      width: 331px; }
+  .content table, .content th, .content td {
+    border-color: #2b9291;
+    border-style: solid;
+    border-width: 1px; }
+  .content table {
+    border-collapse: collapse;
+    margin: 0 auto; }
+    .content table th, .content table td {
+      padding: 0.5rem; }
+    .content table thead, .content table tfoot {
+      color: #2b9291; }
+      .content table thead tr th, .content table thead tr td, .content table tfoot tr th, .content table tfoot tr td {
+        font-weight: 600;
+        text-align: left; }
+    .content table tbody {
+      color: #50423a; }
+    .content table tfoot {
+      background-color: white; }
+    .content table .money {
+      font-style: italic;
+      font-weight: 600; }
 
 header {
   height: 64px;
   text-transform: uppercase; }
 
-.first {
+#first {
   background: url("../img/title-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   height: calc(100vh - 64px);
   overflow: hidden; }
-  .first .triangle {
+  #first:before {
+    background: url("../img/monkey-hand.png");
+    background-position-y: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    height: 100vh;
+    position: absolute;
+    width: 23%; }
+  #first .triangle {
     height: 56%;
     overflow: hidden;
     position: relative;
     text-align: center; }
-    .first .triangle h1, .first .triangle h2, .first .triangle img {
+    #first .triangle h1, #first .triangle h2, #first .triangle img {
       -webkit-transform: translateX(-50%);
       -moz-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -52,11 +113,11 @@ header {
       transform: translateX(-50%);
       left: 50%;
       position: absolute; }
-    .first .triangle img {
+    #first .triangle img {
       margin: 0;
       left: 50%;
       bottom: 65%; }
-    .first .triangle h1 {
+    #first .triangle h1 {
       bottom: 35%;
       color: #50423a;
       font-size: 1.3rem;
@@ -64,14 +125,14 @@ header {
       margin: 1rem auto;
       text-transform: uppercase;
       width: 30%; }
-    .first .triangle h2 {
+    #first .triangle h2 {
       bottom: 22%;
       color: #2b9291;
       font-size: 1.1rem;
       font-weight: 300;
       margin: 1rem 0;
       width: 25%; }
-  .first p {
+  #first p {
     font-size: 1rem;
     font-weight: 500;
     margin: 0 auto;
@@ -79,38 +140,41 @@ header {
     max-width: 795px;
     text-align: center; }
 
-.we-are {
-  background-color: #f5f4f3; }
-  .we-are h2 {
+#we-are {
+  background-color: #f5f4f3;
+  position: relative; }
+  #we-are:after {
+    background-image: url("../img/screw.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 1%;
+    content: '';
+    height: 18%;
+    position: absolute;
+    right: 0;
+    width: 16%; }
+  #we-are h2 {
     color: #2b9291;
-    padding-left: 4rem; }
-  .we-are p {
-    padding: 0 4rem; }
-  .we-are .video h2 {
     font-size: 1.1rem;
     font-weight: 600;
+    padding-left: 4rem; }
+  #we-are p {
+    padding: 0 4rem; }
+  #we-are .simian-logo {
+    display: block;
+    height: 137px;
+    margin: 1rem auto;
+    width: 334px; }
+  #we-are .video h2 {
     padding: 0;
     text-align: center; }
-  .we-are .video iframe {
+  #we-are .video iframe {
     display: block;
     height: 522px;
     margin: 0 auto;
     width: 923px; }
-  .we-are .gallery {
-    margin: 2rem 0; }
-    .we-are .gallery::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .we-are .gallery figure {
-      float: left;
-      margin: 1rem 0.49rem;
-      width: 331px; }
-      .we-are .gallery figure figcaption {
-        color: #979795;
-        font-size: 0.8rem; }
 
-.proyect:before {
+#proyect:before {
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -120,8 +184,50 @@ header {
   position: absolute;
   border-color: #f5f4f3 transparent transparent transparent;
   border-style: solid;
-  border-width: 100px 100px 0 100px;
+  border-width: 100px 170px 0 170px;
   content: "";
   height: 0;
-  z-index: -1;
+  z-index: 0;
   width: 0; }
+
+#proyect h2, #proyect h3 {
+  color: #2b9291; }
+
+#proyect h2 {
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 30rem; }
+
+#proyect h3 {
+  font-weight: 600;
+  padding-left: 4rem; }
+
+#proyect p {
+  padding: 0 4rem; }
+
+#proyect .big-image {
+  display: block;
+  margin: 0 auto 3rem;
+  width: 58rem; }
+  #proyect .big-image img {
+    display: block;
+    margin: 0 auto; }
+
+#budget {
+  background-color: #f5f4f3; }
+  #budget:before {
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    border-color: white transparent transparent transparent;
+    border-style: solid;
+    border-width: 100px 170px 0 170px;
+    content: "";
+    height: 0;
+    z-index: 0;
+    width: 0; }
