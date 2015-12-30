@@ -1,4 +1,37 @@
-$baseURL: "..";
+@import "bourbon";
+@import "variables";
+@import "mixins";
 
-@import "base";
-@import "sample_client";
+body {
+	margin: 0;
+}
+
+h1, h2, p, figcaption {
+	font-family: $font;
+}
+
+p {
+	color: $brown;
+}
+
+.content {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 1rem 0;
+    width: 65rem;
+
+    .section-title {
+    	color: $green;
+    	font-size: 1.6rem;
+    	font-weight: 500;
+		margin: 0 auto;
+		text-align: center;
+		text-transform: uppercase;
+		width: 15rem;
+    }
+}
+
+@import 'header';
+@import 'first';
+@import 'we-are';
+@import 'proyect';

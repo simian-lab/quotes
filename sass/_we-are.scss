@@ -1,0 +1,45 @@
+.we-are {
+	background-color: $grey;
+
+	h2 {
+		color: $blue;
+		padding-left: 4rem;
+	}
+
+	p {
+		padding: 0 4rem;
+	}
+
+	.video {
+
+		h2 {
+    		font-size: 1.1rem;
+    		font-weight: 600;
+			padding: 0;
+    		text-align: center;
+		}
+
+		iframe {
+			display: block;
+			height: 522px;
+			margin: 0 auto;
+			width: 923px;
+		}
+	}
+
+	.gallery {
+		@include clearfix;
+		margin: 2rem 0;
+
+		figure {
+			float: left;
+			margin: 1rem 0.49rem;
+    		width: 331px;
+
+    		figcaption {
+    			color:  #979795;
+    			font-size: 0.8rem;
+    		}
+		}
+	}
+}
