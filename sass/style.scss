@@ -2,17 +2,24 @@
 @import "variables";
 @import "mixins";
 
+@import 'titles';
+
 body {
 	margin: 0;
 }
 
-h1, h2, h3, p, li, figcaption, table {
-	font-family: $font;
+p, li, figcaption, table {
+	font-family: $main-font;
+}
+
+p, li {
+    color: $brown;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 p {
-	color: $brown;
-    margin: 1rem 0 3rem;
+    margin: 0.5rem 0 3rem;
 }
 
 strong {
@@ -20,9 +27,31 @@ strong {
 }
 
 figure {
+    display: block;
+    margin: 1rem 0 3rem;
+
     figcaption {
-        color:  #979795;
-        font-size: 0.8rem;
+        color:  $grey-light;
+        font-size: 1.3rem;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.gallery {
+    @include clearfix;
+    margin: 1rem 0 4rem;
+
+    figure {
+        float: left;
+        margin: 0 1%;
+        width: 31.333%;
+
+        img {
+            width: 100%;
+        }
     }
 }
 
@@ -32,12 +61,15 @@ ul {
     padding: 0 6rem;
 
     li {
-        color: $brown;
         margin: 1rem 0;
 
         ul {
             list-style-image: url('../img/green-bullet.png');
             padding: 0 1rem;
+
+            li {
+                font-size: 1.3rem;
+            }
         }
     }
 }
@@ -45,31 +77,7 @@ ul {
 .content {
     margin: 0 auto;
     overflow: hidden;
-    padding: 1rem 0;
-    max-width: 65rem;
-
-    .section-title {
-    	color: $green;
-    	font-size: 1.6rem;
-    	font-weight: 500;
-		margin: 0 auto 5rem;
-        position: relative;
-		text-align: center;
-		text-transform: uppercase;
-		width: 15rem;
-        z-index: 1;
-    }
-
-    .gallery {
-        @include clearfix;
-        margin: 2rem 0;
-
-        figure {
-            float: left;
-            margin: 1rem 0.49rem;
-            width: 331px;
-        }
-    }
+    max-width: 58rem;
 
     table, th, td {
         border-color: $blue;
@@ -116,3 +124,5 @@ ul {
 @import 'we-are';
 @import 'proyect';
 @import 'budget';
+@import 'contact';
+@import 'footer';

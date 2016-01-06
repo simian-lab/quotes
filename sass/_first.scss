@@ -22,7 +22,7 @@
 		position: relative;
 		text-align: center;
 
-		h1, h2, img{
+		h1, h2, img {
 			@include center-absolute;
 		}
 
@@ -31,33 +31,12 @@
     		left: 50%;
     		bottom: 65%;
 		}
-
-		h1 {
-			bottom: 35%;
-			color: $brown;
-			font-size: 1.3rem;
-	    	font-weight: 700;
-	    	margin: 1rem auto;
-			text-transform: uppercase;
-			width: 30%;
-		}
-
-		h2 {
-			bottom: 22%;
-			color: $blue;
-			font-size: 1.1rem;
-    		font-weight: 300;
-			margin: 1rem 0;
-			width: 25%;
-		}
 	}
 
 	p {
-		font-size: 1rem;
-    	font-weight: 500;
 		margin: 0 auto;
-		margin-top: 5%;
-		max-width: 795px;
+		margin-top: 2%;
+		max-width: 60%;
 		text-align: center;
 	}
 }

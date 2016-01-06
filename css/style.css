@@ -6,59 +6,106 @@
  * @param  {[type]} $color [description]
  * @return {[type]}        [description]
  */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro"; }
+
+h2, h4, h5 {
+  color: #2b9291; }
+
+h1 {
+  bottom: 35%;
+  color: #50423a;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 1rem auto;
+  max-width: 40%;
+  text-transform: uppercase; }
+
+h2 {
+  bottom: 19%;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 1rem 0;
+  max-width: 25%; }
+
+h3 {
+  color: #99be33;
+  font-size: 2.813rem;
+  font-weight: 600;
+  margin: 1rem auto 5rem;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 25rem;
+  z-index: 1; }
+
+h4 {
+  font-size: 2.813rem;
+  font-weight: 700;
+  margin: 0 auto 3rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+h5 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0; }
+
 body {
   margin: 0; }
 
-h1, h2, h3, p, li, figcaption, table {
+p, li, figcaption, table {
   font-family: "Source Sans Pro"; }
 
-p {
+p, li {
   color: #50423a;
-  margin: 1rem 0 3rem; }
+  font-size: 1.5rem;
+  font-weight: 400; }
+
+p {
+  margin: 0.5rem 0 3rem; }
 
 strong {
   font-style: italic; }
 
-figure figcaption {
-  color: #979795;
-  font-size: 0.8rem; }
+figure {
+  display: block;
+  margin: 1rem 0 3rem; }
+  figure figcaption {
+    color: #979795;
+    font-size: 1.3rem; }
+  figure img {
+    width: 100%; }
+
+.gallery {
+  margin: 1rem 0 4rem; }
+  .gallery::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .gallery figure {
+    float: left;
+    margin: 0 1%;
+    width: 31.333%; }
+    .gallery figure img {
+      width: 100%; }
 
 ul {
   list-style-image: url("../img/blue-bullet.png");
   margin: 1rem 0 2rem;
   padding: 0 6rem; }
   ul li {
-    color: #50423a;
     margin: 1rem 0; }
     ul li ul {
       list-style-image: url("../img/green-bullet.png");
       padding: 0 1rem; }
+      ul li ul li {
+        font-size: 1.3rem; }
 
 .content {
   margin: 0 auto;
   overflow: hidden;
-  padding: 1rem 0;
-  max-width: 65rem; }
-  .content .section-title {
-    color: #99be33;
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin: 0 auto 5rem;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    width: 15rem;
-    z-index: 1; }
-  .content .gallery {
-    margin: 2rem 0; }
-    .content .gallery::after {
-      clear: both;
-      content: "";
-      display: table; }
-    .content .gallery figure {
-      float: left;
-      margin: 1rem 0.49rem;
-      width: 331px; }
+  max-width: 58rem; }
   .content table, .content th, .content td {
     border-color: #2b9291;
     border-style: solid;
@@ -117,27 +164,10 @@ header {
       margin: 0;
       left: 50%;
       bottom: 65%; }
-    #first .triangle h1 {
-      bottom: 35%;
-      color: #50423a;
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin: 1rem auto;
-      text-transform: uppercase;
-      width: 30%; }
-    #first .triangle h2 {
-      bottom: 22%;
-      color: #2b9291;
-      font-size: 1.1rem;
-      font-weight: 300;
-      margin: 1rem 0;
-      width: 25%; }
   #first p {
-    font-size: 1rem;
-    font-weight: 500;
     margin: 0 auto;
-    margin-top: 5%;
-    max-width: 795px;
+    margin-top: 2%;
+    max-width: 60%;
     text-align: center; }
 
 #we-are {
@@ -153,26 +183,17 @@ header {
     position: absolute;
     right: 0;
     width: 16%; }
-  #we-are h2 {
-    color: #2b9291;
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding-left: 4rem; }
-  #we-are p {
-    padding: 0 4rem; }
   #we-are .simian-logo {
     display: block;
     height: 137px;
-    margin: 1rem auto;
+    margin: 1rem auto 2rem;
     width: 334px; }
-  #we-are .video h2 {
-    padding: 0;
+  #we-are .video h5 {
     text-align: center; }
   #we-are .video iframe {
-    display: block;
     height: 522px;
-    margin: 0 auto;
-    width: 923px; }
+    margin: 1rem 0 3rem;
+    width: 100%; }
 
 #proyect:before {
   -webkit-transform: translateX(-50%);
@@ -189,30 +210,6 @@ header {
   height: 0;
   z-index: 0;
   width: 0; }
-
-#proyect h2, #proyect h3 {
-  color: #2b9291; }
-
-#proyect h2 {
-  margin: 0 auto;
-  text-align: center;
-  text-transform: uppercase;
-  width: 30rem; }
-
-#proyect h3 {
-  font-weight: 600;
-  padding-left: 4rem; }
-
-#proyect p {
-  padding: 0 4rem; }
-
-#proyect .big-image {
-  display: block;
-  margin: 0 auto 3rem;
-  width: 58rem; }
-  #proyect .big-image img {
-    display: block;
-    margin: 0 auto; }
 
 #budget {
   background-color: #f5f4f3; }
@@ -231,3 +228,78 @@ header {
     height: 0;
     z-index: 0;
     width: 0; }
+
+#contact:before {
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  border-color: #f5f4f3 transparent transparent transparent;
+  border-style: solid;
+  border-width: 100px 170px 0 170px;
+  content: "";
+  height: 0;
+  z-index: 0;
+  width: 0; }
+
+#contact p {
+  color: #4f423a;
+  font-size: 1.654rem;
+  font-weight: 700; }
+
+#contact .signature {
+  margin: 0 auto;
+  width: 30rem; }
+  #contact .signature::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #contact .signature img, #contact .signature .info {
+    float: left; }
+  #contact .signature img {
+    width: 10rem; }
+  #contact .signature .info {
+    color: #82665d;
+    font-family: "HelveticaLTStd";
+    font-weight: 100;
+    padding: 0 1rem;
+    width: 18rem; }
+    #contact .signature .info h1 {
+      color: #4f423a;
+      font-size: 1.854rem;
+      font-weight: 700;
+      margin-bottom: 0; }
+    #contact .signature .info label {
+      display: block;
+      font-size: 1.232rem; }
+    #contact .signature .info a {
+      color: #82665d;
+      font-size: 1.03rem;
+      text-decoration: none; }
+    #contact .signature .info .site {
+      color: #2b9291; }
+
+footer {
+  background: url("../img/footer-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31rem;
+  position: relative;
+  width: 100%; }
+  footer p {
+    bottom: 0;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+    position: absolute;
+    text-align: center;
+    width: 100%; }
+    footer p strong {
+      font-style: normal;
+      font-weight: 600;
+      text-transform: uppercase; }

@@ -1,0 +1,26 @@
+footer {
+	background: url('../img/footer-bg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 31rem;
+	position: relative;
+    width: 100%;
+
+    p {
+    	bottom: 0;
+    	color: white;
+    	font-size: 0.9rem;
+    	font-weight: 100;
+    	margin-bottom: 0.5rem;
+    	position: absolute;
+    	text-align: center;
+   	 	width: 100%;
+
+   	 	strong {
+   	 		font-style: normal;
+    		font-weight: 600;
+   	 		text-transform: uppercase;
+   	 	}
+    }
+}

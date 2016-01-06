@@ -14,36 +14,23 @@
     	width: 16%;
 	}
 
-	h2 {
-		color: $blue;
-		font-size: 1.1rem;
-		font-weight: 600;
-		padding-left: 4rem;
-	}
-
-	p {
-		padding: 0 4rem;
-	}
-
 	.simian-logo {
 		display: block;
 		height: 137px;
-    	margin: 1rem auto;
+	    margin: 1rem auto 2rem;
 		width: 334px;
 	}
 
 	.video {
 
-		h2 {
-			padding: 0;
-    		text-align: center;
+		h5 {
+		    text-align: center;
 		}
 
 		iframe {
-			display: block;
 			height: 522px;
-			margin: 0 auto;
-			width: 923px;
+			margin: 1rem 0 3rem;
+			width: 100%;
 		}
 	}
 }

@@ -1,0 +1,51 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: $main-font;
+}
+
+h2, h4, h5 {
+	color: $blue;
+}
+
+h1 {
+	bottom: 35%;
+	color: $brown;
+	font-size: 1.9rem;
+	font-weight: 700;
+	margin: 1rem auto;
+	max-width: 40%;
+	text-transform: uppercase;
+}
+
+h2 {
+	bottom: 19%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 1rem 0;
+    max-width: 25%;
+}
+
+h3 {
+	color: $green;
+	font-size: 2.813rem;
+	font-weight: 600;
+	margin: 1rem auto 5rem;
+    position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	max-width: 25rem;
+    z-index: 1;
+}
+
+h4 {
+	font-size: 2.813rem;
+    font-weight: 700;
+    margin: 0 auto 3rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 1.75rem;
+	font-weight: 600;
+	margin: 0;
+}
