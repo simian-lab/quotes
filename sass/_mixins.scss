@@ -1,7 +1,15 @@
 /**
  * 
  */
-@mixin center-absolute {
+@mixin horizontal-center-absolute {
+	@include transform(translateY(-50%));
+	position: absolute;
+	top: 50%;
+}
+/**
+ * 
+ */
+@mixin vertical-center-absolute {
 	@include transform(translateX(-50%));
 	left: 50%;
 	position: absolute;
@@ -14,10 +22,10 @@
  */
 @mixin triangle ($color){
 	&:before {
-		@include center-absolute;
+		@include vertical-center-absolute;
 		border-color: $color transparent transparent transparent;
 		border-style: solid;
-		border-width: 100px 170px 0 170px;
+		border-width: 155px 260px 0 260px;
 		content: "";
 		height: 0;
 		z-index: 0;

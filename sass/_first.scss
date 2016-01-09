@@ -23,7 +23,7 @@
 		text-align: center;
 
 		h1, h2, img {
-			@include center-absolute;
+			@include vertical-center-absolute;
 		}
 
 		img {

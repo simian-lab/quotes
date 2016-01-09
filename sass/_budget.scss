@@ -1,4 +1,24 @@
 #budget {
 	@include triangle(white);
 	background-color: $grey;
+
+	.time, .payment {
+		&:after {
+			left: 10px;
+			position: relative;
+    		top: 5px;
+		}
+	}
+
+	.payment {
+		&:after {
+			content: url('../img/money.png');
+		}
+	}
+
+	.time {
+		&:after {
+			content: url('../img/clock.png');
+		}
+	}
 }

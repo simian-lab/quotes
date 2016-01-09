@@ -27,11 +27,17 @@
 			padding: 0 1rem;
 			width: 18rem;
 
+			a, h1, label {
+				font-family: $secondary-font;
+			}
+
 			h1 {
 				color:  #4f423a;
+			    display: inline;
 				font-size: 1.854rem;
 				font-weight: 700;
 				margin-bottom: 0;
+				text-transform: capitalize;
 			}
 
 			label {
