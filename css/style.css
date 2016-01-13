@@ -23,6 +23,9 @@ h1 {
   margin: 1rem auto;
   max-width: 40%;
   text-transform: uppercase; }
+  @media screen and (max-width: 400px) {
+    h1 {
+      font-size: 1.563rem; } }
 
 h2 {
   bottom: 19%;
@@ -30,6 +33,9 @@ h2 {
   font-weight: 300;
   margin: 1rem 0;
   max-width: 25%; }
+  @media screen and (max-width: 400px) {
+    h2 {
+      font-size: 1.161rem; } }
 
 h3 {
   color: #99be33;
@@ -41,6 +47,9 @@ h3 {
   text-transform: uppercase;
   max-width: 25rem;
   z-index: 1; }
+  @media screen and (max-width: 400px) {
+    h3 {
+      font-size: 1.562rem; } }
 
 h4 {
   font-size: 2.813rem;
@@ -48,11 +57,17 @@ h4 {
   margin: 0 auto 3rem;
   text-align: center;
   text-transform: uppercase; }
+  @media screen and (max-width: 400px) {
+    h4 {
+      font-size: 1.563rem; } }
 
 h5 {
   font-size: 1.75rem;
   font-weight: 600;
   margin: 0; }
+  @media screen and (max-width: 400px) {
+    h5 {
+      font-size: 1.25rem; } }
 
 body {
   margin: 0; }
@@ -64,6 +79,9 @@ p, li {
   color: #50423a;
   font-size: 1.5rem;
   font-weight: 400; }
+  @media screen and (max-width: 400px) {
+    p, li {
+      font-size: 1.25rem; } }
 
 p {
   margin: 0.5rem 0 3rem; }
@@ -77,6 +95,9 @@ figure {
   figure figcaption {
     color: #979795;
     font-size: 1.3rem; }
+    @media screen and (max-width: 400px) {
+      figure figcaption {
+        font-size: 1rem; } }
   figure img {
     width: 100%; }
 
@@ -90,6 +111,11 @@ figure {
     float: left;
     margin: 0 1%;
     width: 31.333%; }
+    @media screen and (max-width: 400px) {
+      .gallery figure {
+        float: none;
+        margin: 1rem auto;
+        width: 90%; } }
     .gallery figure img {
       width: 100%; }
 
@@ -97,6 +123,10 @@ ul {
   list-style-image: url("../img/blue-bullet.png");
   margin: 1rem 0 2rem;
   padding: 0 6rem; }
+  @media screen and (max-width: 400px) {
+    ul {
+      padding: 0;
+      padding-left: 40px; } }
   ul li {
     margin: 1rem 0; }
     ul li ul {
@@ -109,6 +139,9 @@ ul {
   margin: 0 auto;
   overflow: hidden;
   max-width: 58rem; }
+  @media screen and (max-width: 400px) {
+    .content {
+      margin: 0 1rem; } }
   .content table, .content th, .content td {
     border-color: #2b9291;
     border-style: solid;
@@ -146,7 +179,8 @@ header {
     height: 5px;
     overflow: hidden;
     position: absolute;
-    top: 63px; }
+    top: 63px;
+    width: 100%; }
   header .menu {
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -216,6 +250,9 @@ header {
   background-size: contain;
   height: calc(100vh - 64px);
   overflow: hidden; }
+  @media screen and (max-width: 400px) {
+    #first {
+      background: none; } }
   #first:before {
     background: url("../img/monkey-hand.png");
     background-position-y: 2rem;
@@ -335,6 +372,9 @@ header {
   color: #4f423a;
   font-size: 1.654rem;
   font-weight: 700; }
+  @media screen and (max-width: 400px) {
+    #contact p {
+      font-size: 1.249rem; } }
 
 #contact .signature {
   margin: 0 auto;
@@ -343,6 +383,9 @@ header {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 400px) {
+    #contact .signature {
+      width: 100%; } }
   #contact .signature img, #contact .signature .info {
     float: left; }
   #contact .signature img {

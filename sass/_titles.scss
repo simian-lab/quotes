@@ -14,6 +14,10 @@ h1 {
 	margin: 1rem auto;
 	max-width: 40%;
 	text-transform: uppercase;
+
+	@media screen and (max-width: $smartphone-width) {
+		font-size: 1.563rem;
+	}
 }
 
 h2 {
@@ -22,6 +26,10 @@ h2 {
     font-weight: 300;
     margin: 1rem 0;
     max-width: 25%;
+
+    @media screen and (max-width: $smartphone-width) {
+    	font-size: 1.161rem;
+    }
 }
 
 h3 {
@@ -34,6 +42,10 @@ h3 {
 	text-transform: uppercase;
 	max-width: 25rem;
     z-index: 1;
+
+    @media screen and (max-width: $smartphone-width) {
+    	font-size: 1.562rem;
+    }
 }
 
 h4 {
@@ -42,10 +54,18 @@ h4 {
     margin: 0 auto 3rem;
 	text-align: center;
 	text-transform: uppercase;
+
+	@media screen and (max-width: $smartphone-width) {
+    	font-size: 1.563rem;
+    }
 }
 
 h5 {
 	font-size: 1.75rem;
 	font-weight: 600;
 	margin: 0;
+
+	@media screen and (max-width: $smartphone-width) {
+		font-size: 1.25rem;
+	}
 }

@@ -16,6 +16,10 @@ p, li {
     color: $brown;
     font-size: 1.5rem;
     font-weight: 400;
+
+    @media screen and (max-width: $smartphone-width) {
+        font-size: 1.25rem;
+    }
 }
 
 p {
@@ -33,6 +37,10 @@ figure {
     figcaption {
         color:  $grey-light;
         font-size: 1.3rem;
+
+        @media screen and (max-width: $smartphone-width) {
+            font-size: 1rem;
+        }
     }
 
     img {
@@ -49,6 +57,12 @@ figure {
         margin: 0 1%;
         width: 31.333%;
 
+        @media screen and (max-width: $smartphone-width) {
+            float: none;
+            margin: 1rem auto;
+            width: 90%;
+        }
+
         img {
             width: 100%;
         }
@@ -59,6 +73,11 @@ ul {
     list-style-image: url('../img/blue-bullet.png');
     margin: 1rem 0 2rem;
     padding: 0 6rem;
+
+    @media screen and (max-width: $smartphone-width) {
+        padding: 0;
+        padding-left: 40px;
+    }
 
     li {
         margin: 1rem 0;
@@ -78,6 +97,10 @@ ul {
     margin: 0 auto;
     overflow: hidden;
     max-width: 58rem;
+
+    @media screen and (max-width: $smartphone-width) {
+        margin: 0 1rem;
+    }
 
     table, th, td {
         border-color: $blue;
