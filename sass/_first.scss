@@ -7,6 +7,8 @@
 
 	@media screen and (max-width: $smartphone-width) {
     	background: none;
+	    height: initial;
+	    margin: 0 2rem 2rem;
     }
 
 	&:before {
@@ -18,6 +20,10 @@
 	    height: 100vh;
 	    position: absolute;
 	    width: 23%;
+
+	    @media screen and (max-width: $smartphone-width) {
+			background: none;
+		}
 	}
 
 	.triangle {
@@ -26,14 +32,25 @@
 		position: relative;
 		text-align: center;
 
-		h1, h2, img {
-			@include vertical-center-absolute;
-		}
-
 		img {
     		margin: 0;
     		left: 50%;
     		bottom: 65%;
+
+    		@media screen and (max-width: $smartphone-width) {
+    			margin: 1rem;
+    		}
+		}
+
+		h1, h2, img {
+			@include vertical-center-absolute;
+
+			@media screen and (max-width: $smartphone-width) {
+				bottom: 0;
+				left: 0;
+				position: relative;
+				transform: none;
+			}
 		}
 	}
 
@@ -42,5 +59,9 @@
 		margin-top: 2%;
 		max-width: 60%;
 		text-align: center;
+
+		@media screen and (max-width: $smartphone-width) {
+			max-width: 100%;
+		}
 	}
 }

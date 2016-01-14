@@ -30,6 +30,10 @@
 
 		img {
 			width: 10rem;
+
+			@media screen and (max-width: $smartphone-width) {
+				width: calc(100% - 13rem);
+			}
 		}
 
 		.info {
@@ -38,6 +42,10 @@
 			font-weight: 100;
 			padding: 0 1rem;
 			width: 18rem;
+
+			@media screen and (max-width: $smartphone-width) {
+				width: 11rem;
+			}
 
 			a, h1, label {
 				font-family: $secondary-font;

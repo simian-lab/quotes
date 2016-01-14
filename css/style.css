@@ -25,7 +25,8 @@ h1 {
   text-transform: uppercase; }
   @media screen and (max-width: 400px) {
     h1 {
-      font-size: 1.563rem; } }
+      font-size: 1.563rem;
+      max-width: 100%; } }
 
 h2 {
   bottom: 19%;
@@ -35,7 +36,8 @@ h2 {
   max-width: 25%; }
   @media screen and (max-width: 400px) {
     h2 {
-      font-size: 1.161rem; } }
+      font-size: 1.161rem;
+      max-width: 100%; } }
 
 h3 {
   color: #99be33;
@@ -49,7 +51,8 @@ h3 {
   z-index: 1; }
   @media screen and (max-width: 400px) {
     h3 {
-      font-size: 1.562rem; } }
+      font-size: 1.562rem;
+      margin: 1rem auto 5rem; } }
 
 h4 {
   font-size: 2.813rem;
@@ -67,7 +70,8 @@ h5 {
   margin: 0; }
   @media screen and (max-width: 400px) {
     h5 {
-      font-size: 1.25rem; } }
+      font-size: 1.25rem;
+      margin-bottom: 2rem; } }
 
 body {
   margin: 0; }
@@ -107,6 +111,9 @@ figure {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 400px) {
+    .gallery {
+      margin: 1rem 0 2rem; } }
   .gallery figure {
     float: left;
     margin: 0 1%;
@@ -252,7 +259,9 @@ header {
   overflow: hidden; }
   @media screen and (max-width: 400px) {
     #first {
-      background: none; } }
+      background: none;
+      height: initial;
+      margin: 0 2rem 2rem; } }
   #first:before {
     background: url("../img/monkey-hand.png");
     background-position-y: 2rem;
@@ -262,11 +271,21 @@ header {
     height: 100vh;
     position: absolute;
     width: 23%; }
+    @media screen and (max-width: 400px) {
+      #first:before {
+        background: none; } }
   #first .triangle {
     height: 56%;
     overflow: hidden;
     position: relative;
     text-align: center; }
+    #first .triangle img {
+      margin: 0;
+      left: 50%;
+      bottom: 65%; }
+      @media screen and (max-width: 400px) {
+        #first .triangle img {
+          margin: 1rem; } }
     #first .triangle h1, #first .triangle h2, #first .triangle img {
       -webkit-transform: translateX(-50%);
       -moz-transform: translateX(-50%);
@@ -275,19 +294,40 @@ header {
       transform: translateX(-50%);
       left: 50%;
       position: absolute; }
-    #first .triangle img {
-      margin: 0;
-      left: 50%;
-      bottom: 65%; }
+      @media screen and (max-width: 400px) {
+        #first .triangle h1, #first .triangle h2, #first .triangle img {
+          bottom: 0;
+          left: 0;
+          position: relative;
+          transform: none; } }
   #first p {
     margin: 0 auto;
     margin-top: 2%;
     max-width: 60%;
     text-align: center; }
+    @media screen and (max-width: 400px) {
+      #first p {
+        max-width: 100%; } }
 
 #we-are {
   background-color: #f5f4f3;
   position: relative; }
+  @media screen and (max-width: 400px) {
+    #we-are:before {
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      left: 50%;
+      position: absolute;
+      border-color: white transparent transparent transparent;
+      border-style: solid;
+      border-width: 100px 150px 0 150px;
+      content: "";
+      height: 0;
+      z-index: 0;
+      width: 0; } }
   #we-are:after {
     background-image: url("../img/screw.png");
     background-repeat: no-repeat;
@@ -298,17 +338,28 @@ header {
     position: absolute;
     right: 0;
     width: 16%; }
+    @media screen and (max-width: 400px) {
+      #we-are:after {
+        background: none; } }
   #we-are .simian-logo {
     display: block;
     height: 137px;
     margin: 1rem auto 2rem;
     width: 334px; }
+    @media screen and (max-width: 400px) {
+      #we-are .simian-logo {
+        height: 91px;
+        width: 221px; } }
   #we-are .video h5 {
     text-align: center; }
   #we-are .video iframe {
     height: 522px;
     margin: 1rem 0 3rem;
     width: 100%; }
+    @media screen and (max-width: 400px) {
+      #we-are .video iframe {
+        height: 152px;
+        margin: 1rem 0; } }
 
 #project:before {
   -webkit-transform: translateX(-50%);
@@ -440,12 +491,18 @@ header {
     float: left; }
   #contact .signature img {
     width: 10rem; }
+    @media screen and (max-width: 400px) {
+      #contact .signature img {
+        width: calc(100% - 13rem); } }
   #contact .signature .info {
     color: #82665d;
     font-family: "HelveticaLTStd";
     font-weight: 100;
     padding: 0 1rem;
     width: 18rem; }
+    @media screen and (max-width: 400px) {
+      #contact .signature .info {
+        width: 11rem; } }
     #contact .signature .info a, #contact .signature .info h1, #contact .signature .info label {
       font-family: "HelveticaLTStd"; }
     #contact .signature .info h1 {

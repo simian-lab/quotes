@@ -2,6 +2,10 @@
 	background-color: $grey;
 	position: relative;
 
+	@media screen and (max-width: $smartphone-width) {
+		@include triangle(white, $triangle-mobile-height, $triangle-mobile-width);
+	}
+
 	&:after {
 		background-image: url("../img/screw.png");
 		background-repeat: no-repeat;
@@ -12,6 +16,10 @@
     	position: absolute;
     	right: 0;
     	width: 16%;
+
+    	@media screen and (max-width: $smartphone-width) {
+    		background: none;
+    	}
 	}
 
 	.simian-logo {
@@ -19,6 +27,11 @@
 		height: 137px;
 	    margin: 1rem auto 2rem;
 		width: 334px;
+
+		@media screen and (max-width: $smartphone-width) {
+			height: 91px;
+			width: 221px;
+		}
 	}
 
 	.video {
@@ -31,6 +44,11 @@
 			height: 522px;
 			margin: 1rem 0 3rem;
 			width: 100%;
+
+			@media screen and (max-width: $smartphone-width) {
+				height: 152px;
+			    margin: 1rem 0;
+			}
 		}
 	}
 }

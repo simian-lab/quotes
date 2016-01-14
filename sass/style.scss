@@ -52,6 +52,10 @@ figure {
     @include clearfix;
     margin: 1rem 0 4rem;
 
+    @media screen and (max-width: $smartphone-width) {
+        margin: 1rem 0 2rem;
+    }
+
     figure {
         float: left;
         margin: 0 1%;
