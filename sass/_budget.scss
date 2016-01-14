@@ -1,6 +1,10 @@
 #budget {
-	@include triangle(white);
+	@include triangle(white, $triangle-desktop-height, $triangle-desktop-width);
 	background-color: $grey;
+
+	@media screen and (max-width: $smartphone-width) {
+        @include triangle(white, $triangle-mobile-height, $triangle-mobile-width);
+    }
 
 	.time, .payment {
 		&:after {

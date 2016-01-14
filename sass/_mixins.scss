@@ -20,12 +20,12 @@
  * @param  {[type]} $color [description]
  * @return {[type]}        [description]
  */
-@mixin triangle ($color){
+@mixin triangle ($color, $height, $width){
 	&:before {
 		@include vertical-center-absolute;
 		border-color: $color transparent transparent transparent;
 		border-style: solid;
-		border-width: 155px 260px 0 260px;
+		border-width: $height $width/2 0 $width/2;
 		content: "";
 		height: 0;
 		z-index: 0;

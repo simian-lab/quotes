@@ -141,7 +141,7 @@ ul {
   max-width: 58rem; }
   @media screen and (max-width: 400px) {
     .content {
-      margin: 0 1rem; } }
+      margin: 0 2rem; } }
   .content table, .content th, .content td {
     border-color: #2b9291;
     border-style: solid;
@@ -326,6 +326,23 @@ header {
   z-index: 0;
   width: 0; }
 
+@media screen and (max-width: 400px) {
+  #project:before {
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    border-color: #f5f4f3 transparent transparent transparent;
+    border-style: solid;
+    border-width: 100px 150px 0 150px;
+    content: "";
+    height: 0;
+    z-index: 0;
+    width: 0; } }
+
 #budget {
   background-color: #f5f4f3; }
   #budget:before {
@@ -343,6 +360,22 @@ header {
     height: 0;
     z-index: 0;
     width: 0; }
+  @media screen and (max-width: 400px) {
+    #budget:before {
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      left: 50%;
+      position: absolute;
+      border-color: white transparent transparent transparent;
+      border-style: solid;
+      border-width: 100px 150px 0 150px;
+      content: "";
+      height: 0;
+      z-index: 0;
+      width: 0; } }
   #budget .time:after, #budget .payment:after {
     left: 10px;
     position: relative;
@@ -367,6 +400,23 @@ header {
   height: 0;
   z-index: 0;
   width: 0; }
+
+@media screen and (max-width: 400px) {
+  #contact:before {
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    border-color: #f5f4f3 transparent transparent transparent;
+    border-style: solid;
+    border-width: 100px 150px 0 150px;
+    content: "";
+    height: 0;
+    z-index: 0;
+    width: 0; } }
 
 #contact p {
   color: #4f423a;

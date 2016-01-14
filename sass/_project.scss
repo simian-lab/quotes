@@ -1,3 +1,7 @@
 #project {
-	@include triangle($grey);
+	@include triangle($grey, $triangle-desktop-height, $triangle-desktop-width);
+
+	@media screen and (max-width: $smartphone-width) {
+        @include triangle($grey, $triangle-mobile-height, $triangle-mobile-width);
+    }
 }
