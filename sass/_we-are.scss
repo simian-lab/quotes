@@ -5,6 +5,7 @@
 
 	@media screen and (max-width: $smartphone-width) {
 		@include triangle(white, $triangle-mobile-height, $triangle-mobile-width);
+		padding-top: 0;
 	}
 
 	&:after {
