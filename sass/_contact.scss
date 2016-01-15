@@ -6,7 +6,6 @@
     }
 
 	.content {
-		margin: 0 2rem;
 
 		p {
 			color:  #4f423a;
@@ -15,6 +14,7 @@
 
 			@media screen and (max-width: $smartphone-width) {
 				font-size: 1.249rem;
+				margin: 0 2rem;
 			}
 		}
 
@@ -24,7 +24,8 @@
 			width: 30rem;
 
 			@media screen and (max-width: $smartphone-width) {
-				width: 100%;
+			    margin: 2rem auto 0;
+				width: 23rem;
 			}
 
 			img, .info {
@@ -33,10 +34,6 @@
 
 			img {
 				width: 10rem;
-
-				@media screen and (max-width: $smartphone-width) {
-					width: calc(100% - 13rem);
-				}
 			}
 
 			.info {

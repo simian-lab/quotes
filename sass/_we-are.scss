@@ -1,5 +1,6 @@
 #we-are {
 	background-color: $grey;
+    padding-top: 2rem;
 	position: relative;
 
 	@media screen and (max-width: $smartphone-width) {
@@ -51,8 +52,11 @@
 			margin: 1rem 0 3rem;
 			width: 100%;
 
+			@media screen and (max-width: 600px) {
+				height: 300px;
+			}
+
 			@media screen and (max-width: $smartphone-width) {
-				height: 152px;
 			    margin: 1rem 0;
 			}
 		}

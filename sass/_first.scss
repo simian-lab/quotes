@@ -32,9 +32,8 @@
 		text-align: center;
 
 		img {
-    		margin: 0;
+    		margin-top: 2rem;
     		left: 50%;
-    		bottom: 65%;
 
     		@media screen and (max-width: $smartphone-width) {
     			margin: 1rem;
@@ -61,7 +60,16 @@
 		margin: 0 auto;
 		margin-top: 2%;
 		max-width: 60%;
+		position: relative;
 		text-align: center;
+
+		@media screen and (max-width: 1250px) {
+			bottom: 5%;
+		}
+
+		@media screen and (max-width: 1015px) {
+			bottom: 15%;
+		}
 
 		@media screen and (max-width: $smartphone-width) {
 			max-width: 100%;

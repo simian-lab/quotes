@@ -3,6 +3,7 @@
 @import "mixins";
 
 @import 'titles';
+@import 'table';
 
 body {
 	margin: 0;
@@ -97,60 +98,9 @@ strong {
     }
 }
 
-table, th, td {
-    border-color: $blue;
-    border-style: solid;
-    border-width: 1px;
-}
-
-table {
-    border-collapse: collapse;
-    margin: 3rem auto;
-
-    @media screen and (max-width: $smartphone-width) {
-        margin-bottom: 0;
-    }
-
-    th, td {
-        padding: 0.5rem;
-    }
-
-    thead, tfoot {
-        color: $blue;
-
-        tr {
-            th, td {
-                font-weight: 600;
-                text-align: left;
-            }
-        }
-    }
-
-    tbody {
-        color: $brown;
-
-        td {
-            font-size: 1.374rem;
-        }
-    }
-
-    tfoot {
-        background-color: white;
-    }
-
-    .money {
-        font-style: italic;
-        font-weight: 600;
-
-        &:after {
-            content: 'COP';
-        }
-    }
-}
-
 .content {
+    @include clearfix;
     margin: 0 auto;
-    overflow: hidden;
     max-width: 58rem;
 }
 

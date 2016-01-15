@@ -26,7 +26,32 @@ h1 {
   margin: 1rem auto;
   max-width: 40%;
   text-transform: uppercase; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 1390px) {
+    h1 {
+      bottom: 40%; } }
+  @media screen and (max-width: 1350px) {
+    h1 {
+      bottom: 45%; } }
+  @media screen and (max-width: 1290px) {
+    h1 {
+      font-size: 1.7rem; } }
+  @media screen and (max-width: 1220px) {
+    h1 {
+      font-size: 1.5rem; } }
+  @media screen and (max-width: 1150px) {
+    h1 {
+      bottom: 48%; } }
+  @media screen and (max-width: 1100px) {
+    h1 {
+      bottom: 50%;
+      font-size: 1.4rem; } }
+  @media screen and (max-width: 1050px) {
+    h1 {
+      font-size: 1.3rem; } }
+  @media screen and (max-width: 1000px) {
+    h1 {
+      bottom: 53%; } }
+  @media screen and (max-width: 900px) {
     h1 {
       font-size: 1.563rem;
       margin: 1rem 2rem;
@@ -38,7 +63,27 @@ h2 {
   font-weight: 300;
   margin: 1rem 0;
   max-width: 25%; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 1390px) {
+    h2 {
+      bottom: 25%; } }
+  @media screen and (max-width: 1350px) {
+    h2 {
+      bottom: 30%; } }
+  @media screen and (max-width: 1200px) {
+    h2 {
+      bottom: 33%;
+      font-size: 1.1rem; } }
+  @media screen and (max-width: 1150px) {
+    h2 {
+      bottom: 35%; } }
+  @media screen and (max-width: 1100px) {
+    h2 {
+      bottom: 38%;
+      font-size: 1rem; } }
+  @media screen and (max-width: 1000px) {
+    h2 {
+      bottom: 42%; } }
+  @media screen and (max-width: 900px) {
     h2 {
       font-size: 1.161rem;
       margin: 1rem 2rem;
@@ -48,16 +93,16 @@ h3 {
   color: #99be33;
   font-size: 2.813rem;
   font-weight: 600;
-  margin: 1rem auto 7rem;
+  margin: 0 auto 7rem;
   position: relative;
   text-align: center;
   text-transform: uppercase;
   max-width: 25rem;
   z-index: 1; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 900px) {
     h3 {
       font-size: 1.562rem;
-      margin: 1rem auto 5rem; } }
+      margin: 0 auto 5rem; } }
 
 h4 {
   font-size: 2.813rem;
@@ -65,7 +110,7 @@ h4 {
   margin: 0 auto 3rem;
   text-align: center;
   text-transform: uppercase; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 900px) {
     h4 {
       font-size: 1.563rem;
       margin: 0 2rem 3rem; } }
@@ -74,10 +119,90 @@ h5 {
   font-size: 1.75rem;
   font-weight: 600;
   margin: 0; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 900px) {
     h5 {
       font-size: 1.25rem;
       margin: 0 2rem 2rem; } }
+
+table, th, td {
+  border-color: #2b9291;
+  border-style: solid;
+  border-width: 1px; }
+
+table {
+  border-collapse: collapse;
+  margin: 3rem auto; }
+  @media screen and (max-width: 900px) {
+    table {
+      border: none;
+      margin-bottom: 0; } }
+  table th, table td {
+    padding: 0.5rem; }
+    @media screen and (max-width: 900px) {
+      table th, table td {
+        display: block;
+        padding: 1rem; } }
+  table thead, table tfoot {
+    color: #2b9291; }
+    table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
+      font-weight: 600;
+      text-align: left; }
+  table td:first-child::before, table td:last-child::before {
+    color: #2b9291;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500; }
+  table thead tr th:last-child {
+    width: 35%; }
+  @media screen and (max-width: 900px) {
+    table thead {
+      display: none; } }
+  table tbody {
+    color: #50423a; }
+    table tbody tr td {
+      font-size: 1.374rem; }
+      @media screen and (max-width: 900px) {
+        table tbody tr td {
+          font-size: 1.25rem; } }
+    @media screen and (max-width: 900px) {
+      table tbody tr .money {
+        border: none; } }
+    @media screen and (max-width: 900px) {
+      table tbody tr td:first-child::before {
+        content: 'Concepto';
+        display: block;
+        margin: 0.3rem 0; }
+      table tbody tr td:last-child::before {
+        content: 'Valor';
+        margin-right: 25%; } }
+  table tfoot {
+    background-color: white; }
+    @media screen and (max-width: 900px) {
+      table tfoot tr td:first-child {
+        display: none; } }
+    table tfoot tr .money h5 {
+      display: inline; }
+      @media screen and (max-width: 900px) {
+        table tfoot tr .money h5 {
+          margin: 0; } }
+    table tfoot tr .money:after {
+      content: 'COP + IVA';
+      font-size: 1.75rem; }
+      @media screen and (max-width: 900px) {
+        table tfoot tr .money:after {
+          font-size: 1.25rem; } }
+    @media screen and (max-width: 900px) {
+      table tfoot tr .money::before {
+        content: 'Total';
+        margin-right: 25%; } }
+  table .money {
+    font-style: italic;
+    font-weight: 600; }
+    table .money:after {
+      content: 'COP';
+      font-style: normal;
+      font-weight: 300;
+      padding-left: 0.5rem; }
 
 body {
   margin: 0; }
@@ -89,7 +214,7 @@ p, li {
   color: #50423a;
   font-size: 1.5rem;
   font-weight: 400; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 900px) {
     p, li {
       font-size: 1.25rem; } }
 
@@ -100,7 +225,7 @@ ul {
   list-style-image: url("../img/blue-bullet.png");
   margin: 1rem 0 2rem;
   padding: 0 6rem; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 900px) {
     ul {
       padding: 0;
       padding-left: 40px; } }
@@ -118,7 +243,7 @@ figure {
   figure figcaption {
     color: #979795;
     font-size: 1.3rem; }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 900px) {
       figure figcaption {
         font-size: 1rem; } }
   figure img {
@@ -133,14 +258,14 @@ strong {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 900px) {
     .gallery {
       margin: 1rem 0 2rem; } }
   .gallery figure {
     float: left;
     margin: 0 1%;
     width: 31.333%; }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 900px) {
       .gallery figure {
         float: none;
         margin: 1rem auto;
@@ -148,42 +273,15 @@ strong {
     .gallery figure img {
       width: 100%; }
 
-table, th, td {
-  border-color: #2b9291;
-  border-style: solid;
-  border-width: 1px; }
-
-table {
-  border-collapse: collapse;
-  margin: 3rem auto; }
-  @media screen and (max-width: 400px) {
-    table {
-      margin-bottom: 0; } }
-  table th, table td {
-    padding: 0.5rem; }
-  table thead, table tfoot {
-    color: #2b9291; }
-    table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
-      font-weight: 600;
-      text-align: left; }
-  table tbody {
-    color: #50423a; }
-    table tbody td {
-      font-size: 1.374rem; }
-  table tfoot {
-    background-color: white; }
-  table .money {
-    font-style: italic;
-    font-weight: 600; }
-    table .money:after {
-      content: 'COP'; }
-
 .content {
   margin: 0 auto;
-  overflow: hidden;
   max-width: 58rem; }
+  .content::after {
+    clear: both;
+    content: "";
+    display: table; }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
   p, figure, .gallery, ul, .video {
     margin-left: 2rem;
     margin-right: 2rem; } }
@@ -242,7 +340,7 @@ header {
         background-color: #50423a; }
     header nav .social {
       margin: 2rem 1rem;
-      width: 20rem; }
+      width: 23rem; }
       header nav .social a {
         display: inline-block;
         margin: 0 0.5rem; }
@@ -270,7 +368,7 @@ header {
   background-size: contain;
   height: calc(100vh - 64px);
   overflow: hidden; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 900px) {
     #first {
       background: none;
       height: initial; } }
@@ -283,7 +381,7 @@ header {
     height: 100vh;
     position: absolute;
     width: 23%; }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 900px) {
       #first:before {
         background: none; } }
   #first .triangle {
@@ -292,10 +390,9 @@ header {
     position: relative;
     text-align: center; }
     #first .triangle img {
-      margin: 0;
-      left: 50%;
-      bottom: 65%; }
-      @media screen and (max-width: 400px) {
+      margin-top: 2rem;
+      left: 50%; }
+      @media screen and (max-width: 900px) {
         #first .triangle img {
           margin: 1rem; } }
     #first .triangle h1, #first .triangle h2, #first .triangle img {
@@ -306,7 +403,7 @@ header {
       transform: translateX(-50%);
       left: 50%;
       position: absolute; }
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 900px) {
         #first .triangle h1, #first .triangle h2, #first .triangle img {
           bottom: 0;
           left: 0;
@@ -314,7 +411,7 @@ header {
           transform: none; } }
   #first .monkey-hand, #first .screw {
     display: none; }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 900px) {
       #first .monkey-hand, #first .screw {
         display: block;
         width: 100%; } }
@@ -322,16 +419,24 @@ header {
     margin: 0 auto;
     margin-top: 2%;
     max-width: 60%;
+    position: relative;
     text-align: center; }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 1250px) {
+      #first p {
+        bottom: 5%; } }
+    @media screen and (max-width: 1015px) {
+      #first p {
+        bottom: 15%; } }
+    @media screen and (max-width: 900px) {
       #first p {
         max-width: 100%;
         margin: 0 2rem; } }
 
 #we-are {
   background-color: #f5f4f3;
+  padding-top: 2rem;
   position: relative; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 900px) {
     #we-are:before {
       -webkit-transform: translateX(-50%);
       -moz-transform: translateX(-50%);
@@ -357,10 +462,10 @@ header {
     position: absolute;
     right: 0;
     width: 16%; }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 900px) {
       #we-are:after {
         background: none; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 900px) {
     #we-are h3 {
       margin: 0 auto 5rem; } }
   #we-are .simian-logo {
@@ -368,7 +473,7 @@ header {
     height: 137px;
     margin: 1rem auto 2rem;
     width: 334px; }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 900px) {
       #we-are .simian-logo {
         height: 91px;
         width: 221px; } }
@@ -378,9 +483,11 @@ header {
     height: 522px;
     margin: 1rem 0 3rem;
     width: 100%; }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 600px) {
       #we-are .video iframe {
-        height: 152px;
+        height: 300px; } }
+    @media screen and (max-width: 900px) {
+      #we-are .video iframe {
         margin: 1rem 0; } }
 
 #project:before {
@@ -399,7 +506,7 @@ header {
   z-index: 0;
   width: 0; }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
   #project:before {
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -416,9 +523,36 @@ header {
     z-index: 0;
     width: 0; } }
 
+#project .alignnone {
+  position: relative; }
+  #project .alignnone::before, #project .alignnone::after {
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    position: absolute;
+    z-index: -1; }
+    @media screen and (max-width: 900px) {
+      #project .alignnone::before, #project .alignnone::after {
+        display: none; } }
+  #project .alignnone::before {
+    background-image: url("../img/legos-left.png");
+    bottom: 2rem;
+    height: 25%;
+    left: -25%;
+    width: 30%; }
+  #project .alignnone::after {
+    background-image: url("../img/legos-right.png");
+    bottom: 5%;
+    height: 44%;
+    left: 98%;
+    width: 29%; }
+
 #project .legos-mobile {
-  display: none; }
-  @media screen and (max-width: 400px) {
+  display: none;
+  margin: -4rem 0 2rem;
+  position: relative;
+  z-index: -1; }
+  @media screen and (max-width: 900px) {
     #project .legos-mobile {
       display: block;
       width: 100%; } }
@@ -440,7 +574,7 @@ header {
     height: 0;
     z-index: 0;
     width: 0; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 900px) {
     #budget:before {
       -webkit-transform: translateX(-50%);
       -moz-transform: translateX(-50%);
@@ -458,7 +592,7 @@ header {
       width: 0; } }
   #budget .money-mobile {
     display: none; }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 900px) {
       #budget .money-mobile {
         display: block;
         width: 100%; } }
@@ -487,7 +621,7 @@ header {
   z-index: 0;
   width: 0; }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
   #contact:before {
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -504,62 +638,60 @@ header {
     z-index: 0;
     width: 0; } }
 
-#contact .content {
-  margin: 0 2rem; }
-  #contact .content p {
-    color: #4f423a;
-    font-size: 1.654rem;
-    font-weight: 700; }
-    @media screen and (max-width: 400px) {
-      #contact .content p {
-        font-size: 1.249rem; } }
-  #contact .content .signature {
-    margin: 0 auto;
-    width: 30rem; }
-    #contact .content .signature::after {
-      clear: both;
-      content: "";
-      display: table; }
-    @media screen and (max-width: 400px) {
-      #contact .content .signature {
-        width: 100%; } }
-    #contact .content .signature img, #contact .content .signature .info {
-      float: left; }
-    #contact .content .signature img {
-      width: 10rem; }
-      @media screen and (max-width: 400px) {
-        #contact .content .signature img {
-          width: calc(100% - 13rem); } }
-    #contact .content .signature .info {
+#contact .content p {
+  color: #4f423a;
+  font-size: 1.654rem;
+  font-weight: 700; }
+  @media screen and (max-width: 900px) {
+    #contact .content p {
+      font-size: 1.249rem;
+      margin: 0 2rem; } }
+
+#contact .content .signature {
+  margin: 0 auto;
+  width: 30rem; }
+  #contact .content .signature::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 900px) {
+    #contact .content .signature {
+      margin: 2rem auto 0;
+      width: 23rem; } }
+  #contact .content .signature img, #contact .content .signature .info {
+    float: left; }
+  #contact .content .signature img {
+    width: 10rem; }
+  #contact .content .signature .info {
+    color: #82665d;
+    font-family: "HelveticaLTStd";
+    font-weight: 100;
+    padding: 0 1rem;
+    width: 18rem; }
+    @media screen and (max-width: 900px) {
+      #contact .content .signature .info {
+        width: 11rem; } }
+    #contact .content .signature .info a, #contact .content .signature .info h1, #contact .content .signature .info label {
+      font-family: "HelveticaLTStd"; }
+    #contact .content .signature .info h1 {
+      color: #4f423a;
+      display: inline;
+      font-size: 1.854rem;
+      font-weight: 700;
+      margin-bottom: 0;
+      text-transform: capitalize; }
+      @media screen and (max-width: 900px) {
+        #contact .content .signature .info h1 {
+          margin: 0; } }
+    #contact .content .signature .info label {
+      display: block;
+      font-size: 1.232rem; }
+    #contact .content .signature .info a {
       color: #82665d;
-      font-family: "HelveticaLTStd";
-      font-weight: 100;
-      padding: 0 1rem;
-      width: 18rem; }
-      @media screen and (max-width: 400px) {
-        #contact .content .signature .info {
-          width: 11rem; } }
-      #contact .content .signature .info a, #contact .content .signature .info h1, #contact .content .signature .info label {
-        font-family: "HelveticaLTStd"; }
-      #contact .content .signature .info h1 {
-        color: #4f423a;
-        display: inline;
-        font-size: 1.854rem;
-        font-weight: 700;
-        margin-bottom: 0;
-        text-transform: capitalize; }
-        @media screen and (max-width: 400px) {
-          #contact .content .signature .info h1 {
-            margin: 0; } }
-      #contact .content .signature .info label {
-        display: block;
-        font-size: 1.232rem; }
-      #contact .content .signature .info a {
-        color: #82665d;
-        font-size: 1.03rem;
-        text-decoration: none; }
-      #contact .content .signature .info .site {
-        color: #2b9291; }
+      font-size: 1.03rem;
+      text-decoration: none; }
+    #contact .content .signature .info .site {
+      color: #2b9291; }
 
 footer {
   background: url("../img/footer-bg.png");
@@ -569,7 +701,7 @@ footer {
   height: 31rem;
   position: relative;
   width: 100%; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 900px) {
     footer {
       background: url("../img/footer-mobile.jpg");
       background-position: center;
@@ -584,7 +716,7 @@ footer {
     position: absolute;
     text-align: center;
     width: 100%; }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 900px) {
       footer p {
         font-size: 1.063rem;
         margin-bottom: 2rem;
