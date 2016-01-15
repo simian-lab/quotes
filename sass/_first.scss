@@ -8,7 +8,6 @@
 	@media screen and (max-width: $smartphone-width) {
     	background: none;
 	    height: initial;
-	    margin: 0 2rem 2rem;
     }
 
 	&:before {
@@ -54,6 +53,10 @@
 		}
 	}
 
+	.monkey-hand, .screw {
+		@include full-width-mobile-images;
+	}
+
 	p {
 		margin: 0 auto;
 		margin-top: 2%;
@@ -62,6 +65,7 @@
 
 		@media screen and (max-width: $smartphone-width) {
 			max-width: 100%;
+			margin: 0 2rem;
 		}
 	}
 }

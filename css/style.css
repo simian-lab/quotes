@@ -9,6 +9,9 @@
  * @param  {[type]} $color [description]
  * @return {[type]}        [description]
  */
+/**
+ * 
+ */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro"; }
 
@@ -26,6 +29,7 @@ h1 {
   @media screen and (max-width: 400px) {
     h1 {
       font-size: 1.563rem;
+      margin: 1rem 2rem;
       max-width: 100%; } }
 
 h2 {
@@ -37,6 +41,7 @@ h2 {
   @media screen and (max-width: 400px) {
     h2 {
       font-size: 1.161rem;
+      margin: 1rem 2rem;
       max-width: 100%; } }
 
 h3 {
@@ -62,7 +67,8 @@ h4 {
   text-transform: uppercase; }
   @media screen and (max-width: 400px) {
     h4 {
-      font-size: 1.563rem; } }
+      font-size: 1.563rem;
+      margin: 0 2rem 3rem; } }
 
 h5 {
   font-size: 1.75rem;
@@ -71,7 +77,7 @@ h5 {
   @media screen and (max-width: 400px) {
     h5 {
       font-size: 1.25rem;
-      margin-bottom: 2rem; } }
+      margin: 0 2rem 2rem; } }
 
 body {
   margin: 0; }
@@ -90,8 +96,21 @@ p, li {
 p {
   margin: 0.5rem 0 3rem; }
 
-strong {
-  font-style: italic; }
+ul {
+  list-style-image: url("../img/blue-bullet.png");
+  margin: 1rem 0 2rem;
+  padding: 0 6rem; }
+  @media screen and (max-width: 400px) {
+    ul {
+      padding: 0;
+      padding-left: 40px; } }
+  ul li {
+    margin: 1rem 0; }
+    ul li ul {
+      list-style-image: url("../img/green-bullet.png");
+      padding: 0 1rem; }
+      ul li ul li {
+        font-size: 1.3rem; }
 
 figure {
   display: block;
@@ -104,6 +123,9 @@ figure {
         font-size: 1rem; } }
   figure img {
     width: 100%; }
+
+strong {
+  font-style: italic; }
 
 .gallery {
   margin: 1rem 0 4rem; }
@@ -126,54 +148,45 @@ figure {
     .gallery figure img {
       width: 100%; }
 
-ul {
-  list-style-image: url("../img/blue-bullet.png");
-  margin: 1rem 0 2rem;
-  padding: 0 6rem; }
+table, th, td {
+  border-color: #2b9291;
+  border-style: solid;
+  border-width: 1px; }
+
+table {
+  border-collapse: collapse;
+  margin: 3rem auto; }
   @media screen and (max-width: 400px) {
-    ul {
-      padding: 0;
-      padding-left: 40px; } }
-  ul li {
-    margin: 1rem 0; }
-    ul li ul {
-      list-style-image: url("../img/green-bullet.png");
-      padding: 0 1rem; }
-      ul li ul li {
-        font-size: 1.3rem; }
+    table {
+      margin-bottom: 0; } }
+  table th, table td {
+    padding: 0.5rem; }
+  table thead, table tfoot {
+    color: #2b9291; }
+    table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
+      font-weight: 600;
+      text-align: left; }
+  table tbody {
+    color: #50423a; }
+    table tbody td {
+      font-size: 1.374rem; }
+  table tfoot {
+    background-color: white; }
+  table .money {
+    font-style: italic;
+    font-weight: 600; }
+    table .money:after {
+      content: 'COP'; }
 
 .content {
   margin: 0 auto;
   overflow: hidden;
   max-width: 58rem; }
-  @media screen and (max-width: 400px) {
-    .content {
-      margin: 0 2rem; } }
-  .content table, .content th, .content td {
-    border-color: #2b9291;
-    border-style: solid;
-    border-width: 1px; }
-  .content table {
-    border-collapse: collapse;
-    margin: 3rem auto; }
-    .content table th, .content table td {
-      padding: 0.5rem; }
-    .content table thead, .content table tfoot {
-      color: #2b9291; }
-      .content table thead tr th, .content table thead tr td, .content table tfoot tr th, .content table tfoot tr td {
-        font-weight: 600;
-        text-align: left; }
-    .content table tbody {
-      color: #50423a; }
-      .content table tbody td {
-        font-size: 1.374rem; }
-    .content table tfoot {
-      background-color: white; }
-    .content table .money {
-      font-style: italic;
-      font-weight: 600; }
-      .content table .money:after {
-        content: 'COP'; }
+
+@media screen and (max-width: 400px) {
+  p, figure, .gallery, ul, .video {
+    margin-left: 2rem;
+    margin-right: 2rem; } }
 
 .hidden {
   display: none; }
@@ -260,8 +273,7 @@ header {
   @media screen and (max-width: 400px) {
     #first {
       background: none;
-      height: initial;
-      margin: 0 2rem 2rem; } }
+      height: initial; } }
   #first:before {
     background: url("../img/monkey-hand.png");
     background-position-y: 2rem;
@@ -300,6 +312,12 @@ header {
           left: 0;
           position: relative;
           transform: none; } }
+  #first .monkey-hand, #first .screw {
+    display: none; }
+    @media screen and (max-width: 400px) {
+      #first .monkey-hand, #first .screw {
+        display: block;
+        width: 100%; } }
   #first p {
     margin: 0 auto;
     margin-top: 2%;
@@ -307,7 +325,8 @@ header {
     text-align: center; }
     @media screen and (max-width: 400px) {
       #first p {
-        max-width: 100%; } }
+        max-width: 100%;
+        margin: 0 2rem; } }
 
 #we-are {
   background-color: #f5f4f3;
@@ -341,6 +360,9 @@ header {
     @media screen and (max-width: 400px) {
       #we-are:after {
         background: none; } }
+  @media screen and (max-width: 400px) {
+    #we-are h3 {
+      margin: 0 auto 5rem; } }
   #we-are .simian-logo {
     display: block;
     height: 137px;
@@ -394,6 +416,13 @@ header {
     z-index: 0;
     width: 0; } }
 
+#project .legos-mobile {
+  display: none; }
+  @media screen and (max-width: 400px) {
+    #project .legos-mobile {
+      display: block;
+      width: 100%; } }
+
 #budget {
   background-color: #f5f4f3; }
   #budget:before {
@@ -427,6 +456,12 @@ header {
       height: 0;
       z-index: 0;
       width: 0; } }
+  #budget .money-mobile {
+    display: none; }
+    @media screen and (max-width: 400px) {
+      #budget .money-mobile {
+        display: block;
+        width: 100%; } }
   #budget .time:after, #budget .payment:after {
     left: 10px;
     position: relative;
@@ -469,58 +504,62 @@ header {
     z-index: 0;
     width: 0; } }
 
-#contact p {
-  color: #4f423a;
-  font-size: 1.654rem;
-  font-weight: 700; }
-  @media screen and (max-width: 400px) {
-    #contact p {
-      font-size: 1.249rem; } }
-
-#contact .signature {
-  margin: 0 auto;
-  width: 30rem; }
-  #contact .signature::after {
-    clear: both;
-    content: "";
-    display: table; }
-  @media screen and (max-width: 400px) {
-    #contact .signature {
-      width: 100%; } }
-  #contact .signature img, #contact .signature .info {
-    float: left; }
-  #contact .signature img {
-    width: 10rem; }
+#contact .content {
+  margin: 0 2rem; }
+  #contact .content p {
+    color: #4f423a;
+    font-size: 1.654rem;
+    font-weight: 700; }
     @media screen and (max-width: 400px) {
-      #contact .signature img {
-        width: calc(100% - 13rem); } }
-  #contact .signature .info {
-    color: #82665d;
-    font-family: "HelveticaLTStd";
-    font-weight: 100;
-    padding: 0 1rem;
-    width: 18rem; }
+      #contact .content p {
+        font-size: 1.249rem; } }
+  #contact .content .signature {
+    margin: 0 auto;
+    width: 30rem; }
+    #contact .content .signature::after {
+      clear: both;
+      content: "";
+      display: table; }
     @media screen and (max-width: 400px) {
-      #contact .signature .info {
-        width: 11rem; } }
-    #contact .signature .info a, #contact .signature .info h1, #contact .signature .info label {
-      font-family: "HelveticaLTStd"; }
-    #contact .signature .info h1 {
-      color: #4f423a;
-      display: inline;
-      font-size: 1.854rem;
-      font-weight: 700;
-      margin-bottom: 0;
-      text-transform: capitalize; }
-    #contact .signature .info label {
-      display: block;
-      font-size: 1.232rem; }
-    #contact .signature .info a {
+      #contact .content .signature {
+        width: 100%; } }
+    #contact .content .signature img, #contact .content .signature .info {
+      float: left; }
+    #contact .content .signature img {
+      width: 10rem; }
+      @media screen and (max-width: 400px) {
+        #contact .content .signature img {
+          width: calc(100% - 13rem); } }
+    #contact .content .signature .info {
       color: #82665d;
-      font-size: 1.03rem;
-      text-decoration: none; }
-    #contact .signature .info .site {
-      color: #2b9291; }
+      font-family: "HelveticaLTStd";
+      font-weight: 100;
+      padding: 0 1rem;
+      width: 18rem; }
+      @media screen and (max-width: 400px) {
+        #contact .content .signature .info {
+          width: 11rem; } }
+      #contact .content .signature .info a, #contact .content .signature .info h1, #contact .content .signature .info label {
+        font-family: "HelveticaLTStd"; }
+      #contact .content .signature .info h1 {
+        color: #4f423a;
+        display: inline;
+        font-size: 1.854rem;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-transform: capitalize; }
+        @media screen and (max-width: 400px) {
+          #contact .content .signature .info h1 {
+            margin: 0; } }
+      #contact .content .signature .info label {
+        display: block;
+        font-size: 1.232rem; }
+      #contact .content .signature .info a {
+        color: #82665d;
+        font-size: 1.03rem;
+        text-decoration: none; }
+      #contact .content .signature .info .site {
+        color: #2b9291; }
 
 footer {
   background: url("../img/footer-bg.png");
@@ -530,6 +569,12 @@ footer {
   height: 31rem;
   position: relative;
   width: 100%; }
+  @media screen and (max-width: 400px) {
+    footer {
+      background: url("../img/footer-mobile.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; } }
   footer p {
     bottom: 0;
     color: white;
@@ -539,6 +584,12 @@ footer {
     position: absolute;
     text-align: center;
     width: 100%; }
+    @media screen and (max-width: 400px) {
+      footer p {
+        font-size: 1.063rem;
+        margin-bottom: 2rem;
+        text-align: left;
+        width: initial; } }
     footer p strong {
       font-style: normal;
       font-weight: 600;

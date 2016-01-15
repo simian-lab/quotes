@@ -4,4 +4,8 @@
 	@media screen and (max-width: $smartphone-width) {
         @include triangle($grey, $triangle-mobile-height, $triangle-mobile-width);
     }
+
+    .legos-mobile {
+    	@include full-width-mobile-images;
+    }
 }

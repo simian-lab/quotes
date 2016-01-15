@@ -5,22 +5,36 @@ footer {
 	background-size: cover;
 	height: 31rem;
 	position: relative;
-    width: 100%;
+  width: 100%;
 
-    p {
-    	bottom: 0;
-    	color: white;
-    	font-size: 0.9rem;
-    	font-weight: 100;
-    	margin-bottom: 0.5rem;
-    	position: absolute;
-    	text-align: center;
-   	 	width: 100%;
+  @media screen and (max-width: $smartphone-width) {
+    background: url('../img/footer-mobile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-   	 	strong {
-   	 		font-style: normal;
-    		font-weight: 600;
-   	 		text-transform: uppercase;
-   	 	}
+  p {
+  	bottom: 0;
+  	color: white;
+  	font-size: 0.9rem;
+  	font-weight: 100;
+  	margin-bottom: 0.5rem;
+  	position: absolute;
+  	text-align: center;
+ 	 	width: 100%;
+
+    @media screen and (max-width: $smartphone-width) {
+      font-size: 1.063rem;
+      margin-bottom: 2rem;
+      text-align: left;
+      width: initial;
     }
+
+ 	 	strong {
+ 	 		font-style: normal;
+  		font-weight: 600;
+ 	 		text-transform: uppercase;
+ 	 	}
+  }
 }

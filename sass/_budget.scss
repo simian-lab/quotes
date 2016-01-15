@@ -6,6 +6,10 @@
         @include triangle(white, $triangle-mobile-height, $triangle-mobile-width);
     }
 
+    .money-mobile {
+    	@include full-width-mobile-images;
+    }
+
 	.time, .payment {
 		&:after {
 			left: 10px;
