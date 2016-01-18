@@ -9,9 +9,6 @@
  * @param  {[type]} $color [description]
  * @return {[type]}        [description]
  */
-/**
- * 
- */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro"; }
 
@@ -135,7 +132,7 @@ table {
   @media screen and (max-width: 900px) {
     table {
       border: none;
-      margin-bottom: 0; } }
+      margin-bottom: 2rem; } }
   table th, table td {
     padding: 0.5rem; }
     @media screen and (max-width: 900px) {
@@ -183,7 +180,7 @@ table {
     @media screen and (max-width: 900px) {
       table tfoot tr .money::before {
         content: 'Total';
-        margin-right: 25%; } }
+        margin-right: 10%; } }
     table tfoot tr .money h5 {
       display: inline; }
       @media screen and (max-width: 900px) {
@@ -375,7 +372,8 @@ header {
   @media screen and (max-width: 900px) {
     #first {
       background: none;
-      height: initial; } }
+      height: initial;
+      margin-bottom: 2rem; } }
   #first:before {
     background: url("../img/monkey-hand.png");
     background-position-y: 2rem;
@@ -413,11 +411,20 @@ header {
           left: 0;
           position: relative;
           transform: none; } }
-  #first .monkey-hand, #first .screw {
+  #first .monkey-hand {
     display: none; }
     @media screen and (max-width: 900px) {
-      #first .monkey-hand, #first .screw {
+      #first .monkey-hand {
         display: block;
+        margin: 2rem auto;
+        max-width: 25rem;
+        width: 100%; } }
+  #first .screw {
+    display: none; }
+    @media screen and (max-width: 500px) {
+      #first .screw {
+        display: block;
+        max-width: 100%;
         width: 100%; } }
   #first p {
     margin: 0 auto;
@@ -555,14 +562,14 @@ header {
       left: 98%;
       width: 29%; }
   #project .legos-mobile {
-    display: none;
-    margin: -4rem 0 2rem;
-    position: relative;
-    z-index: -1; }
-    @media screen and (max-width: 900px) {
+    display: none; }
+    @media screen and (max-width: 500px) {
       #project .legos-mobile {
         display: block;
-        width: 100%; } }
+        margin: -4rem 0 2rem;
+        position: relative;
+        width: 100%;
+        z-index: -1; } }
 
 #budget {
   background-color: #f5f4f3;
@@ -627,9 +634,11 @@ header {
         background: none; } }
   #budget .money-mobile {
     display: none; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 500px) {
       #budget .money-mobile {
         display: block;
+        margin: 2rem auto;
+        max-width: 30rem;
         width: 100%; } }
   #budget .time:after, #budget .payment:after {
     left: 10px;
@@ -691,11 +700,15 @@ header {
   @media screen and (max-width: 900px) {
     #contact .content .signature {
       margin: 2rem auto 0;
-      width: 23rem; } }
+      width: 18.2rem; } }
   #contact .content .signature img, #contact .content .signature .info {
     float: left; }
   #contact .content .signature img {
     width: 10rem; }
+    @media screen and (max-width: 900px) {
+      #contact .content .signature img {
+        height: 103px;
+        width: 98px; } }
   #contact .content .signature .info {
     color: #82665d;
     font-weight: 100;
@@ -703,7 +716,7 @@ header {
     width: 18rem; }
     @media screen and (max-width: 900px) {
       #contact .content .signature .info {
-        width: 11rem; } }
+        width: 10rem; } }
     #contact .content .signature .info a, #contact .content .signature .info h1, #contact .content .signature .info label {
       font-family: HelveticaLTStd, sans-serif; }
     #contact .content .signature .info h1 {
@@ -731,15 +744,16 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 31rem;
+  height: 30rem;
   position: relative;
   width: 100%; }
   @media screen and (max-width: 900px) {
     footer {
       background: url("../img/footer-mobile.jpg");
-      background-position: center;
+      background-position: center top;
       background-repeat: no-repeat;
-      background-size: cover; } }
+      background-size: cover;
+      height: 35rem; } }
   footer p {
     bottom: 0;
     color: white;

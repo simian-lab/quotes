@@ -3,15 +3,16 @@ footer {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 31rem;
+	height: 30rem;
 	position: relative;
   width: 100%;
 
   @media screen and (max-width: $smartphone-width) {
     background: url('../img/footer-mobile.jpg');
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 35rem;
   }
 
   p {

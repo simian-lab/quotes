@@ -33,15 +33,3 @@
 		width: 0;
 	}
 }
-
-/**
- * 
- */
-@mixin full-width-mobile-images {
-	display: none;
-    	
-	@media screen and (max-width: $smartphone-width) {
-		display: block;
-		width: 100%;
-	}
-}

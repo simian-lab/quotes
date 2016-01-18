@@ -10,7 +10,7 @@ table {
 
     @media screen and (max-width: $smartphone-width) {
         border: none;
-        margin-bottom: 0;
+        margin-bottom: 2rem;
     }
 
     th, td {
@@ -101,7 +101,7 @@ table {
                 @media screen and (max-width: $smartphone-width) {
                     &::before {
                         content: 'Total';
-                        margin-right: 25%;
+                        margin-right: 10%;
                     }
                 }
 

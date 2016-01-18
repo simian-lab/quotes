@@ -24,7 +24,7 @@
 
 			@media screen and (max-width: $smartphone-width) {
 			    margin: 2rem auto 0;
-				width: 23rem;
+				width: 18.2rem;
 			}
 
 			img, .info {
@@ -33,6 +33,11 @@
 
 			img {
 				width: 10rem;
+
+				@media screen and (max-width: $smartphone-width) {
+					height: 103px;
+    				width: 98px;
+				}
 			}
 
 			.info {
@@ -42,7 +47,7 @@
 				width: 18rem;
 
 				@media screen and (max-width: $smartphone-width) {
-					width: 11rem;
+					width: 10rem;
 				}
 
 				a, h1, label {
