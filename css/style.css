@@ -180,29 +180,31 @@ table {
     @media screen and (max-width: 900px) {
       table tfoot tr td:first-child {
         display: none; } }
+    @media screen and (max-width: 900px) {
+      table tfoot tr .money::before {
+        content: 'Total';
+        margin-right: 25%; } }
     table tfoot tr .money h5 {
       display: inline; }
       @media screen and (max-width: 900px) {
         table tfoot tr .money h5 {
           margin: 0; } }
-    table tfoot tr .money:after {
-      content: 'COP + IVA';
-      font-size: 1.75rem; }
-      @media screen and (max-width: 900px) {
-        table tfoot tr .money:after {
-          font-size: 1.25rem; } }
-    @media screen and (max-width: 900px) {
-      table tfoot tr .money::before {
-        content: 'Total';
-        margin-right: 25%; } }
+    table tfoot tr .money span {
+      color: #50423a; }
+    table tfoot tr .money .iva {
+      color: #2b9291;
+      font-style: italic;
+      font-weight: 600;
+      text-transform: uppercase; }
   table .money {
     font-style: italic;
     font-weight: 600; }
-    table .money:after {
-      content: 'COP';
+    table .money span {
+      font-size: 1.25rem;
       font-style: normal;
       font-weight: 300;
-      padding-left: 0.5rem; }
+      padding-left: 0.5rem;
+      text-transform: uppercase; }
 
 body {
   margin: 0; }
@@ -230,19 +232,20 @@ ul {
       padding: 0;
       padding-left: 40px; } }
   ul li {
-    margin: 1rem 0; }
+    margin: 0rem 0 2rem; }
     ul li ul {
       list-style-image: url("../img/green-bullet.png");
       padding: 0 1rem; }
-      ul li ul li {
-        font-size: 1.3rem; }
+      ul li ul li ul li {
+        font-size: 1.313rem;
+        margin: 0; }
 
 figure {
   display: block;
   margin: 1rem 0 3rem; }
   figure figcaption {
     color: #979795;
-    font-size: 1.3rem; }
+    font-size: 1.25rem; }
     @media screen and (max-width: 900px) {
       figure figcaption {
         font-size: 1rem; } }
@@ -253,7 +256,7 @@ strong {
   font-style: italic; }
 
 .gallery {
-  margin: 1rem 0 4rem; }
+  margin: 1rem 0; }
   .gallery::after {
     clear: both;
     content: "";
@@ -263,12 +266,12 @@ strong {
       margin: 1rem 0 2rem; } }
   .gallery figure {
     float: left;
-    margin: 0 1%;
+    margin: 0 1% 3rem;
     width: 31.333%; }
     @media screen and (max-width: 900px) {
       .gallery figure {
         float: none;
-        margin: 1rem auto;
+        margin: 1rem;
         width: 90%; } }
     .gallery figure img {
       width: 100%; }
@@ -356,7 +359,8 @@ header {
         header nav .social a .icon-twitter {
           background-color: #5babdb; }
         header nav .social a .icon-linkedin2 {
-          background-color: #006896; }
+          background-color: #006896;
+          border-radius: 42%; }
         header nav .social a .icon-google-plus {
           background-color: #d65c43; }
         header nav .social a .icon-youtube {
@@ -467,9 +471,11 @@ header {
     @media screen and (max-width: 900px) {
       #we-are:after {
         background: none; } }
-  @media screen and (max-width: 900px) {
-    #we-are h3 {
-      margin: 0 auto 5rem; } }
+  #we-are h3 {
+    margin: 0 auto 1rem; }
+    @media screen and (max-width: 900px) {
+      #we-are h3 {
+        margin: 0 auto 5rem; } }
   #we-are .simian-logo {
     display: block;
     height: 137px;
@@ -492,23 +498,8 @@ header {
       #we-are .video iframe {
         margin: 1rem 0; } }
 
-#project:before {
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  left: 50%;
-  position: absolute;
-  border-color: #f5f4f3 transparent transparent transparent;
-  border-style: solid;
-  border-width: 155px 260px 0 260px;
-  content: "";
-  height: 0;
-  z-index: 0;
-  width: 0; }
-
-@media screen and (max-width: 900px) {
+#project {
+  overflow: hidden; }
   #project:before {
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -519,48 +510,63 @@ header {
     position: absolute;
     border-color: #f5f4f3 transparent transparent transparent;
     border-style: solid;
-    border-width: 100px 150px 0 150px;
+    border-width: 155px 260px 0 260px;
     content: "";
     height: 0;
     z-index: 0;
-    width: 0; } }
-
-#project .alignnone {
-  position: relative; }
-  #project .alignnone::before, #project .alignnone::after {
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: '';
-    position: absolute;
+    width: 0; }
+  @media screen and (max-width: 900px) {
+    #project:before {
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      left: 50%;
+      position: absolute;
+      border-color: #f5f4f3 transparent transparent transparent;
+      border-style: solid;
+      border-width: 100px 150px 0 150px;
+      content: "";
+      height: 0;
+      z-index: 0;
+      width: 0; } }
+  #project .alignnone {
+    position: relative; }
+    #project .alignnone::before, #project .alignnone::after {
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      position: absolute;
+      z-index: -1; }
+      @media screen and (max-width: 900px) {
+        #project .alignnone::before, #project .alignnone::after {
+          display: none; } }
+    #project .alignnone::before {
+      background-image: url("../img/legos-left.png");
+      bottom: 2rem;
+      height: 25%;
+      left: -25%;
+      width: 30%; }
+    #project .alignnone::after {
+      background-image: url("../img/legos-right.png");
+      bottom: 5%;
+      height: 44%;
+      left: 98%;
+      width: 29%; }
+  #project .legos-mobile {
+    display: none;
+    margin: -4rem 0 2rem;
+    position: relative;
     z-index: -1; }
     @media screen and (max-width: 900px) {
-      #project .alignnone::before, #project .alignnone::after {
-        display: none; } }
-  #project .alignnone::before {
-    background-image: url("../img/legos-left.png");
-    bottom: 2rem;
-    height: 25%;
-    left: -25%;
-    width: 30%; }
-  #project .alignnone::after {
-    background-image: url("../img/legos-right.png");
-    bottom: 5%;
-    height: 44%;
-    left: 98%;
-    width: 29%; }
-
-#project .legos-mobile {
-  display: none;
-  margin: -4rem 0 2rem;
-  position: relative;
-  z-index: -1; }
-  @media screen and (max-width: 900px) {
-    #project .legos-mobile {
-      display: block;
-      width: 100%; } }
+      #project .legos-mobile {
+        display: block;
+        width: 100%; } }
 
 #budget {
-  background-color: #f5f4f3; }
+  background-color: #f5f4f3;
+  position: relative; }
   #budget:before {
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -592,6 +598,33 @@ header {
       height: 0;
       z-index: 0;
       width: 0; } }
+  #budget:after {
+    background-image: url("../img/money-sign2.png");
+    background-position: 0 bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 2rem;
+    content: '';
+    height: 35%;
+    position: absolute;
+    right: 0;
+    width: 10%; }
+    @media screen and (max-width: 900px) {
+      #budget:after {
+        background: none; } }
+  #budget .content::before {
+    background-image: url("../img/money-sign1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    height: 21%;
+    left: 0;
+    position: absolute;
+    top: -12%;
+    width: 8%; }
+    @media screen and (max-width: 900px) {
+      #budget .content::before {
+        background: none; } }
   #budget .money-mobile {
     display: none; }
     @media screen and (max-width: 900px) {
@@ -650,7 +683,6 @@ header {
       margin: 0 2rem; } }
 
 #contact .content .signature {
-  margin: 0 auto;
   width: 30rem; }
   #contact .content .signature::after {
     clear: both;
@@ -666,7 +698,6 @@ header {
     width: 10rem; }
   #contact .content .signature .info {
     color: #82665d;
-    font-family: "HelveticaLTStd";
     font-weight: 100;
     padding: 0 1rem;
     width: 18rem; }
@@ -674,7 +705,7 @@ header {
       #contact .content .signature .info {
         width: 11rem; } }
     #contact .content .signature .info a, #contact .content .signature .info h1, #contact .content .signature .info label {
-      font-family: "HelveticaLTStd"; }
+      font-family: HelveticaLTStd, sans-serif; }
     #contact .content .signature .info h1 {
       color: #4f423a;
       display: inline;

@@ -38,14 +38,19 @@ ul {
     }
 
     li {
-        margin: 1rem 0;
+        margin: 0rem 0 2rem;
 
         ul {
             list-style-image: url('../img/green-bullet.png');
             padding: 0 1rem;
 
             li {
-                font-size: 1.3rem;
+                ul {
+                    li {
+                        font-size: 1.313rem;
+                        margin: 0;
+                    }
+                }
             }
         }
     }
@@ -57,7 +62,7 @@ figure {
 
     figcaption {
         color:  $grey-light;
-        font-size: 1.3rem;
+        font-size: 1.25rem;
 
         @media screen and (max-width: $smartphone-width) {
             font-size: 1rem;
@@ -75,7 +80,7 @@ strong {
 
 .gallery {
     @include clearfix;
-    margin: 1rem 0 4rem;
+    margin: 1rem 0;
 
     @media screen and (max-width: $smartphone-width) {
         margin: 1rem 0 2rem;
@@ -83,12 +88,12 @@ strong {
 
     figure {
         float: left;
-        margin: 0 1%;
+        margin: 0 1% 3rem;
         width: 31.333%;
 
         @media screen and (max-width: $smartphone-width) {
             float: none;
-            margin: 1rem auto;
+            margin: 1rem;
             width: 90%;
         }
 

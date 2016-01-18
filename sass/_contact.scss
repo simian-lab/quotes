@@ -20,7 +20,6 @@
 
 		.signature {
 			@include clearfix();
-			margin: 0 auto;
 			width: 30rem;
 
 			@media screen and (max-width: $smartphone-width) {
@@ -38,7 +37,6 @@
 
 			.info {
 				color:  #82665d;
-				font-family: $secondary-font;
 				font-weight: 100;
 				padding: 0 1rem;
 				width: 18rem;
@@ -48,7 +46,7 @@
 				}
 
 				a, h1, label {
-					font-family: $secondary-font;
+					font-family: HelveticaLTStd, sans-serif;
 				}
 
 				h1 {

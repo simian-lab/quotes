@@ -25,6 +25,8 @@
 	}
 
 	h3 {
+		margin: 0 auto 1rem;
+
 		@media screen and (max-width: $smartphone-width) {
 		    margin: 0 auto 5rem;
 		}
