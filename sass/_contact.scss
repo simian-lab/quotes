@@ -1,0 +1,87 @@
+#contact {
+	@include triangle($grey, $triangle-desktop-height, $triangle-desktop-width);
+
+	@media screen and (max-width: $smartphone-width) {
+        @include triangle($grey, $triangle-mobile-height, $triangle-mobile-width);
+    }
+
+	.content {
+
+		p {
+			color:  #4f423a;
+			font-size: 1.654rem;
+			font-weight: 700;
+
+			@media screen and (max-width: $smartphone-width) {
+				font-size: 1.249rem;
+				margin: 0 2rem;
+			}
+		}
+
+		.signature {
+			@include clearfix();
+			width: 30rem;
+
+			@media screen and (max-width: $smartphone-width) {
+			    margin: 2rem auto 0;
+				width: 18.2rem;
+			}
+
+			img, .info {
+				float: left;
+			}
+
+			img {
+				width: 10rem;
+
+				@media screen and (max-width: $smartphone-width) {
+					height: 103px;
+    				width: 98px;
+				}
+			}
+
+			.info {
+				color:  #82665d;
+				font-weight: 100;
+				padding: 0 1rem;
+				width: 18rem;
+
+				@media screen and (max-width: $smartphone-width) {
+					width: 10rem;
+				}
+
+				a, h1, label {
+					font-family: HelveticaLTStd, sans-serif;
+				}
+
+				h1 {
+					color:  #4f423a;
+				    display: inline;
+					font-size: 1.854rem;
+					font-weight: 700;
+					margin-bottom: 0;
+					text-transform: capitalize;
+
+					@media screen and (max-width: $smartphone-width) {
+						margin: 0;
+					}
+				}
+
+				label {
+					display: block;
+					font-size: 1.232rem;
+				}
+
+				a {
+					color:  #82665d;
+					font-size: 1.03rem;
+					text-decoration: none;
+				}
+
+				.site {
+					color: $blue;
+				}
+			}
+		}
+	}
+}

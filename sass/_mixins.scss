@@ -1,0 +1,46 @@
+/**
+ * 
+ */
+@mixin horizontal-center-absolute {
+	@include transform(translateY(-50%));
+	position: absolute;
+	top: 50%;
+}
+
+/**
+ * 
+ */
+@mixin vertical-center-absolute {
+	@include transform(translateX(-50%));
+	left: 50%;
+	position: absolute;
+}
+
+/**
+ * [triangle description]
+ * @param  {[type]} $color [description]
+ * @return {[type]}        [description]
+ */
+@mixin triangle ($color, $height, $width) {
+	&:before {
+		@include vertical-center-absolute;
+		border-color: $color transparent transparent transparent;
+		border-style: solid;
+		border-width: $height $width/2 0 $width/2;
+		content: "";
+		height: 0;
+		z-index: 0;
+		width: 0;
+	}
+}
+
+@mixin full-size-theme-images {
+	display: none;
+
+    @media screen and (max-width: $smartphone-width) {
+        display: block;
+        margin: 1rem auto;
+        max-width: 30rem;
+        width: 100%;
+    }
+}

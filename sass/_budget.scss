@@ -1,0 +1,68 @@
+#budget {
+	@include triangle(white, $triangle-desktop-height, $triangle-desktop-width);
+	background-color: $grey;
+	position: relative;
+
+	@media screen and (max-width: $smartphone-width) {
+        @include triangle(white, $triangle-mobile-height, $triangle-mobile-width);
+    }
+
+    &:after {
+		background-image: url("../img/money-sign2.png");
+		background-position: 0 bottom;
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    bottom: 2rem;
+	    content: '';
+	    height: 35%;
+	    position: absolute;
+	    right: 0;
+	    width: 10%;
+
+    	@media screen and (max-width: $smartphone-width) {
+    		background: none;
+    	}
+	}
+
+	.content {
+		&::before {
+			background-image: url("../img/money-sign1.png");
+		    background-repeat: no-repeat;
+		    background-size: contain;
+		    content: '';
+		    height: 21%;
+		    left: 0;
+		    position: absolute;
+		    top: -12%;
+		    width: 8%;
+
+	    	@media screen and (max-width: $smartphone-width) {
+	    		background: none;
+	    	}
+		}
+	}
+
+    .money-mobile {
+    	@include full-size-theme-images();
+    }
+
+	.time, .payment {
+		&:after {
+			left: 10px;
+			position: relative;
+    		top: 5px;
+		}
+	}
+
+	.payment {
+		&:after {
+			content: url('../img/money.png');
+		}
+	}
+
+	.time {
+		&:after {
+			content: url('../img/clock.png');
+		}
+	}
+}

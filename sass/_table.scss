@@ -1,0 +1,142 @@
+table, th, td {
+    border-color: $blue;
+    border-style: solid;
+    border-width: 1px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 3rem auto;
+
+    @media screen and (max-width: $smartphone-width) {
+        border: none;
+        margin-bottom: 2rem;
+    }
+
+    th, td {
+        padding: 0.5rem;
+
+        @media screen and (max-width: $smartphone-width) {
+            display: block;
+            padding: 1rem;
+        }
+    }
+
+    thead, tfoot {
+        color: $blue;
+
+        tr {
+            th, td {
+                font-weight: 600;
+                text-align: left;
+            }
+        }
+    }
+
+    td:first-child::before, td:last-child::before {
+    	color: $blue;
+    	font-size: 1.25rem;
+    	font-style: normal;
+        font-weight: 500;
+    }
+	
+    thead {
+        tr {
+            th:last-child {
+                width: 35%;
+            }
+        }
+
+        @media screen and (max-width: $smartphone-width) {
+            display: none;
+        }
+    }
+
+    tbody {
+        color: $brown;
+
+        tr {
+            td {
+                font-size: 1.374rem;
+
+                @media screen and (max-width: $smartphone-width) {
+                    font-size: 1.25rem;
+                }
+            }
+
+            .money {
+				@media screen and (max-width: $smartphone-width) {
+					border: none;
+				}
+            }
+
+            @media screen and (max-width: $smartphone-width) {
+            	
+	            td:first-child::before {
+	                content: 'Concepto';
+	                display: block;
+	                margin: 0.3rem 0;
+	            }
+
+	            td:last-child::before {
+	                content: 'Valor';
+	                margin-right: 25%;
+	            }
+            }
+        }
+    }
+
+    tfoot {
+        background-color: white;
+
+        tr {
+        	td:first-child {
+        		@media screen and (max-width: $smartphone-width) {
+        			display: none;
+        		}
+        	}
+
+            .money {
+
+                @media screen and (max-width: $smartphone-width) {
+                    &::before {
+                        content: 'Total';
+                        margin-right: 10%;
+                    }
+                }
+
+                h5 {
+                    display: inline;
+
+                    @media screen and (max-width: $smartphone-width) {
+                    	margin: 0;
+                    }
+                }
+
+                span {
+                    color: $brown;
+                }
+
+                .iva {
+                    color: $blue;
+                    font-style: italic;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .money {
+        font-style: italic;
+        font-weight: 600;
+
+        span {
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 300;
+            padding-left: 0.5rem;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+header {
+	height: 64px;
+	position: relative;
+
+	&:after {
+    	content: url('../img/menu-border.png');
+    	height: 5px;
+    	overflow: hidden;
+    	position: absolute;
+    	top: 63px;
+        width: 100%;
+    }
+
+	.menu {
+		@include horizontal-center-absolute;
+	    margin: 0 1.5rem;
+
+		a {
+			text-decoration: none;
+		}
+
+		label {
+			bottom: 7px;
+			color: $brown;
+			font-weight: 600;
+		    margin: 0 0.3rem;
+			position: relative;
+			text-transform: uppercase;
+		}
+	}
+
+	nav {
+		background-color: white;
+		position: absolute;
+	    top: 68px;
+	    width: 25rem;
+        z-index: 1;
+
+    	.sections {
+    		a {
+    			border-bottom-style: solid;
+    			border-bottom-width: 1px;
+    			color: $brown;
+    			display: block;
+    			font-size: 1.248rem;
+				font-weight: 700;
+				height: 55px;
+				line-height: 2.7;
+    			padding: 0 1rem;
+				text-decoration: none;
+				text-transform: uppercase;
+
+				&:hover {
+					color: white;
+					background-color: $brown;
+				}
+    		}
+    	}
+
+    	.social {
+    		margin: 2rem 1rem;
+    		width: 23rem;
+
+    		a {
+    			display: inline-block;
+			    margin: 0 0.5rem;
+
+    			.icon {
+    				border-radius: 50%;
+    				color: white;
+    				fill: currentColor;
+    				height: 1.4rem;
+				    padding: 0.7rem;
+    				width: 1.4rem;
+    			}
+
+    			.icon-facebook {
+    				background-color: #355e9a;
+    			}
+
+    			.icon-twitter {
+    				background-color: #5babdb;
+    			}
+
+    			.icon-linkedin2 {
+    				background-color: #006896;
+                    border-radius: 42%;
+    			}
+
+    			.icon-google-plus {
+    				background-color: #d65c43;
+    			}
+
+    			.icon-youtube {
+    				background-color: #de3834;
+    			}
+    		}
+    	}
+	}
+}
