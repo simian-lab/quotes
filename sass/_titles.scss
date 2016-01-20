@@ -1,0 +1,137 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: $main-font;
+}
+
+h2, h4, h5 {
+	color: $blue;
+}
+
+h1 {
+	bottom: 35%;
+	color: $brown;
+	font-size: 1.9rem;
+	font-weight: 700;
+	margin: 1rem auto;
+	max-width: 40%;
+	text-transform: uppercase;
+
+	@media screen and (max-width: 1390px) {
+		bottom: 40%;
+	}
+
+	@media screen and (max-width: 1350px) {
+		bottom: 45%;
+	}
+
+	@media screen and (max-width: 1290px) {
+		font-size: 1.7rem;
+	}
+
+	@media screen and (max-width: 1220px) {
+		font-size: 1.5rem;
+	}
+
+	@media screen and (max-width: 1150px) {
+		bottom: 48%;
+	}
+
+	@media screen and (max-width: 1100px) {
+		bottom: 50%;
+		font-size: 1.4rem;
+	}
+
+	@media screen and (max-width: 1050px) {
+	    font-size: 1.3rem;
+	}
+
+	@media screen and (max-width: 1000px) {
+	    bottom: 53%;
+	}
+
+	@media screen and (max-width: $smartphone-width) {
+		font-size: 1.563rem;
+		margin: 1rem 2rem;
+		max-width: 100%;
+	}
+}
+
+h2 {
+	bottom: 19%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 1rem 0;
+    max-width: 25%;
+
+    @media screen and (max-width: 1390px) {
+		bottom: 25%;
+	}
+
+	@media screen and (max-width: 1350px) {
+		bottom: 30%;
+	}
+
+	@media screen and (max-width: 1200px) {
+		bottom: 33%;
+		font-size: 1.1rem;
+	}
+
+	@media screen and (max-width: 1150px) {
+		bottom: 35%;
+	}
+
+	@media screen and (max-width: 1100px) {
+		bottom: 38%;
+		font-size: 1rem;
+	}
+
+	@media screen and (max-width: 1000px) {
+	    bottom: 42%;
+	}
+
+    @media screen and (max-width: $smartphone-width) {
+    	font-size: 1.161rem;
+    	margin: 1rem 2rem;
+    	max-width: 100%;
+    }
+}
+
+h3 {
+	color: $green;
+	font-size: 2.813rem;
+	font-weight: 600;
+	margin: 0 auto 7rem;
+    position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	max-width: 25rem;
+    z-index: 1;
+
+    @media screen and (max-width: $smartphone-width) {
+    	font-size: 1.562rem;
+    	margin: 0 auto 5rem;
+    }
+}
+
+h4 {
+	font-size: 2.813rem;
+    font-weight: 700;
+    margin: 0 auto 3rem;
+	text-align: center;
+	text-transform: uppercase;
+
+	@media screen and (max-width: $smartphone-width) {
+    	font-size: 1.563rem;
+    	margin: 0 2rem 3rem;
+    }
+}
+
+h5 {
+	font-size: 1.75rem;
+	font-weight: 600;
+	margin: 0;
+
+	@media screen and (max-width: $smartphone-width) {
+		font-size: 1.25rem;
+	    margin: 0 2rem 2rem;
+	}
+}

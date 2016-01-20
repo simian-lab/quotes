@@ -1,42 +1,6 @@
-require(["lib/jquery.fittext"], function(util) {
-  $("#project-title").fitText( 1.01, { minFontSize: '50px' });
+$('.menu').click(function(event) {
+	event.preventDefault();
+	$('#menu-options').toggleClass('hidden');
 });
 
-require(["lib/jquery.fitvids"], function(util) {
-  $("figure").fitVids();
-
-  // kinda ugly, but... meh
-  $("figure").fitVids({ customSelector: "iframe[src^='http://']"});
-});
-
-require(["lib/storyjs-embed"], function(util) {
-  if($('#timeline-placeholder')) {
-    var dataSource = $('#timeline-placeholder').data('spreadsheet');
-
-    createStoryJS({
-      type:       'timeline',
-      width:      '100%',
-      height:     '600',
-      source:     dataSource,
-      embed_id:   'timeline-placeholder',
-      js:         'js/lib/timeline-min.js',
-      font:       'PTSerif-PTSans'
-    });
-  }
-});
-
-require(["lib/jquery-ui.widget.min", "lib/rwd-table"], function(util){
-	$(".budget").table({
-      idprefix: "co-",
-      persist: "persist",
-      displayText: "Show",
-   });
-});
-
-require(["lib/menu"], function(util) {
-  $("#menu").menu();
-});
-
-require(["lib/smooth-scroll"], function(util) {
-  // Do nothing :D
-});
+$(".video iframe").fitVids();

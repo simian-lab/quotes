@@ -1,4 +1,133 @@
-$baseURL: "..";
+@import "bourbon";
+@import "variables";
+@import "mixins";
 
-@import "base";
-@import "sample_client";
+@import 'titles';
+@import 'table';
+
+body {
+	margin: 0;
+}
+
+a, p, label, li, figcaption, table {
+	font-family: $main-font;
+}
+
+p, li {
+    color: $brown;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    @media screen and (max-width: $smartphone-width) {
+        font-size: 1.25rem;
+    }
+}
+
+p {
+    margin: 0.5rem 0 3rem;
+}
+
+ul {
+    list-style-image: url('../img/blue-bullet.png');
+    margin: 1rem 0 2rem;
+    padding: 0 6rem;
+
+    @media screen and (max-width: $smartphone-width) {
+        padding: 0;
+        padding-left: 40px;
+    }
+
+    li {
+        margin: 0rem 0 2rem;
+
+        ul {
+            list-style-image: url('../img/green-bullet.png');
+            padding: 0 1rem;
+
+            @media screen and (max-width: $smartphone-width) {
+                margin: 1rem 0 2rem;
+            }
+
+            li {
+                ul {
+                    li {
+                        font-size: 1.313rem;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+figure {
+    display: block;
+    margin: 1rem 0 3rem;
+
+    figcaption {
+        color:  $grey-light;
+        font-size: 1.25rem;
+
+        @media screen and (max-width: $smartphone-width) {
+            font-size: 1rem;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+strong {
+    font-style: italic;
+}
+
+.gallery {
+    @include clearfix;
+    margin: 1rem 0;
+
+    @media screen and (max-width: $smartphone-width) {
+        margin: 1rem 0 2rem;
+    }
+
+    figure {
+        float: left;
+        margin: 0 1% 3rem;
+        width: 31.333%;
+
+        @media screen and (max-width: $smartphone-width) {
+            float: none;
+            margin: 1rem;
+            width: 90%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.content {
+    @include clearfix;
+    margin: 0 auto;
+    max-width: 58rem;
+}
+
+p, figure, .gallery, ul, .video {
+    @media screen and (max-width: $smartphone-width) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+@import 'header';
+@import 'first';
+@import 'we-are';
+@import 'project';
+@import 'budget';
+@import 'contact';
+@import 'footer';

@@ -1,0 +1,44 @@
+#project {
+	@include triangle($grey, $triangle-desktop-height, $triangle-desktop-width);
+    overflow: hidden;
+    
+	@media screen and (max-width: $smartphone-width) {
+        @include triangle($grey, $triangle-mobile-height, $triangle-mobile-width);
+    }
+
+    .alignnone {
+    	position: relative;
+
+    	&::before, &::after {
+    		background-repeat: no-repeat;
+		    background-size: contain;
+    		content: '';
+    		position: absolute;
+    		z-index: -1;
+
+    		@media screen and (max-width: $smartphone-width) {
+    			display: none;
+    		}
+    	}
+
+    	&::before {
+    		background-image: url("../img/legos-left.png");
+		    bottom: 2rem;
+		    height: 25%;
+		    left: -25%;
+		    width: 30%;
+    	}
+
+    	&::after {
+    		background-image: url("../img/legos-right.png");
+    		bottom: 5%;
+		    height: 44%;
+		    left: 98%;
+		    width: 29%;
+    	}
+    }
+
+    .legos-mobile {
+    	@include full-size-theme-images();
+    }
+}
