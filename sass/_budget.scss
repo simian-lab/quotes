@@ -43,14 +43,7 @@
 	}
 
     .money-mobile {
-    	display: none;
-    	
-		@media screen and (max-width: 500px) {
-			display: block;
-			margin: 2rem auto;
-    		max-width: 30rem;
-			width: 100%;
-		}
+    	@include full-size-theme-images();
     }
 
 	.time, .payment {

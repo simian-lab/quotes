@@ -39,14 +39,6 @@
     }
 
     .legos-mobile {
-    	display: none;
-
-        @media screen and (max-width: 500px) {
-            display: block;
-            margin: -4rem 0 2rem;
-            position: relative;
-            width: 100%;
-            z-index: -1;
-        }
+    	@include full-size-theme-images();
     }
 }

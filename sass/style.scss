@@ -44,6 +44,10 @@ ul {
             list-style-image: url('../img/green-bullet.png');
             padding: 0 1rem;
 
+            @media screen and (max-width: $smartphone-width) {
+                margin: 1rem 0 2rem;
+            }
+
             li {
                 ul {
                     li {

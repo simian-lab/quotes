@@ -48,7 +48,7 @@ h1 {
   @media screen and (max-width: 1000px) {
     h1 {
       bottom: 53%; } }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     h1 {
       font-size: 1.563rem;
       margin: 1rem 2rem;
@@ -80,7 +80,7 @@ h2 {
   @media screen and (max-width: 1000px) {
     h2 {
       bottom: 42%; } }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     h2 {
       font-size: 1.161rem;
       margin: 1rem 2rem;
@@ -96,7 +96,7 @@ h3 {
   text-transform: uppercase;
   max-width: 25rem;
   z-index: 1; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     h3 {
       font-size: 1.562rem;
       margin: 0 auto 5rem; } }
@@ -107,7 +107,7 @@ h4 {
   margin: 0 auto 3rem;
   text-align: center;
   text-transform: uppercase; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     h4 {
       font-size: 1.563rem;
       margin: 0 2rem 3rem; } }
@@ -116,7 +116,7 @@ h5 {
   font-size: 1.75rem;
   font-weight: 600;
   margin: 0; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     h5 {
       font-size: 1.25rem;
       margin: 0 2rem 2rem; } }
@@ -129,13 +129,13 @@ table, th, td {
 table {
   border-collapse: collapse;
   margin: 3rem auto; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     table {
       border: none;
       margin-bottom: 2rem; } }
   table th, table td {
     padding: 0.5rem; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       table th, table td {
         display: block;
         padding: 1rem; } }
@@ -151,20 +151,20 @@ table {
     font-weight: 500; }
   table thead tr th:last-child {
     width: 35%; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     table thead {
       display: none; } }
   table tbody {
     color: #50423a; }
     table tbody tr td {
       font-size: 1.374rem; }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 1020px) {
         table tbody tr td {
           font-size: 1.25rem; } }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       table tbody tr .money {
         border: none; } }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       table tbody tr td:first-child::before {
         content: 'Concepto';
         display: block;
@@ -174,16 +174,16 @@ table {
         margin-right: 25%; } }
   table tfoot {
     background-color: white; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       table tfoot tr td:first-child {
         display: none; } }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       table tfoot tr .money::before {
         content: 'Total';
         margin-right: 10%; } }
     table tfoot tr .money h5 {
       display: inline; }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 1020px) {
         table tfoot tr .money h5 {
           margin: 0; } }
     table tfoot tr .money span {
@@ -213,7 +213,7 @@ p, li {
   color: #50423a;
   font-size: 1.5rem;
   font-weight: 400; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     p, li {
       font-size: 1.25rem; } }
 
@@ -224,7 +224,7 @@ ul {
   list-style-image: url("../img/blue-bullet.png");
   margin: 1rem 0 2rem;
   padding: 0 6rem; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     ul {
       padding: 0;
       padding-left: 40px; } }
@@ -233,6 +233,9 @@ ul {
     ul li ul {
       list-style-image: url("../img/green-bullet.png");
       padding: 0 1rem; }
+      @media screen and (max-width: 1020px) {
+        ul li ul {
+          margin: 1rem 0 2rem; } }
       ul li ul li ul li {
         font-size: 1.313rem;
         margin: 0; }
@@ -243,7 +246,7 @@ figure {
   figure figcaption {
     color: #979795;
     font-size: 1.25rem; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       figure figcaption {
         font-size: 1rem; } }
   figure img {
@@ -258,14 +261,14 @@ strong {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     .gallery {
       margin: 1rem 0 2rem; } }
   .gallery figure {
     float: left;
     margin: 0 1% 3rem;
     width: 31.333%; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       .gallery figure {
         float: none;
         margin: 1rem;
@@ -281,7 +284,7 @@ strong {
     content: "";
     display: table; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1020px) {
   p, figure, .gallery, ul, .video {
     margin-left: 2rem;
     margin-right: 2rem; } }
@@ -369,7 +372,7 @@ header {
   background-size: contain;
   height: calc(100vh - 64px);
   overflow: hidden; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     #first {
       background: none;
       height: initial;
@@ -383,7 +386,7 @@ header {
     height: 100vh;
     position: absolute;
     width: 23%; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       #first:before {
         background: none; } }
   #first .triangle {
@@ -394,7 +397,7 @@ header {
     #first .triangle img {
       margin-top: 2rem;
       left: 50%; }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 1020px) {
         #first .triangle img {
           margin: 1rem; } }
     #first .triangle h1, #first .triangle h2, #first .triangle img {
@@ -405,7 +408,7 @@ header {
       transform: translateX(-50%);
       left: 50%;
       position: absolute; }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 1020px) {
         #first .triangle h1, #first .triangle h2, #first .triangle img {
           bottom: 0;
           left: 0;
@@ -413,7 +416,7 @@ header {
           transform: none; } }
   #first .monkey-hand {
     display: none; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       #first .monkey-hand {
         display: block;
         margin: 2rem auto;
@@ -421,10 +424,11 @@ header {
         width: 100%; } }
   #first .screw {
     display: none; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 1020px) {
       #first .screw {
         display: block;
-        max-width: 100%;
+        margin: 1rem auto;
+        max-width: 30rem;
         width: 100%; } }
   #first p {
     margin: 0 auto;
@@ -438,7 +442,7 @@ header {
     @media screen and (max-width: 1015px) {
       #first p {
         bottom: 15%; } }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       #first p {
         max-width: 100%;
         margin: 0 2rem; } }
@@ -447,7 +451,7 @@ header {
   background-color: #f5f4f3;
   padding-top: 2rem;
   position: relative; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     #we-are {
       padding-top: 0; }
       #we-are:before {
@@ -475,12 +479,12 @@ header {
     position: absolute;
     right: 0;
     width: 16%; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       #we-are:after {
         background: none; } }
   #we-are h3 {
     margin: 0 auto 1rem; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       #we-are h3 {
         margin: 0 auto 5rem; } }
   #we-are .simian-logo {
@@ -488,7 +492,7 @@ header {
     height: 137px;
     margin: 1rem auto 2rem;
     width: 334px; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       #we-are .simian-logo {
         height: 91px;
         width: 221px; } }
@@ -501,7 +505,7 @@ header {
     @media screen and (max-width: 600px) {
       #we-are .video iframe {
         height: 300px; } }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       #we-are .video iframe {
         margin: 1rem 0; } }
 
@@ -522,7 +526,7 @@ header {
     height: 0;
     z-index: 0;
     width: 0; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     #project:before {
       -webkit-transform: translateX(-50%);
       -moz-transform: translateX(-50%);
@@ -546,7 +550,7 @@ header {
       content: '';
       position: absolute;
       z-index: -1; }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 1020px) {
         #project .alignnone::before, #project .alignnone::after {
           display: none; } }
     #project .alignnone::before {
@@ -563,13 +567,12 @@ header {
       width: 29%; }
   #project .legos-mobile {
     display: none; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 1020px) {
       #project .legos-mobile {
         display: block;
-        margin: -4rem 0 2rem;
-        position: relative;
-        width: 100%;
-        z-index: -1; } }
+        margin: 1rem auto;
+        max-width: 30rem;
+        width: 100%; } }
 
 #budget {
   background-color: #f5f4f3;
@@ -589,7 +592,7 @@ header {
     height: 0;
     z-index: 0;
     width: 0; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     #budget:before {
       -webkit-transform: translateX(-50%);
       -moz-transform: translateX(-50%);
@@ -616,7 +619,7 @@ header {
     position: absolute;
     right: 0;
     width: 10%; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       #budget:after {
         background: none; } }
   #budget .content::before {
@@ -629,15 +632,15 @@ header {
     position: absolute;
     top: -12%;
     width: 8%; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       #budget .content::before {
         background: none; } }
   #budget .money-mobile {
     display: none; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 1020px) {
       #budget .money-mobile {
         display: block;
-        margin: 2rem auto;
+        margin: 1rem auto;
         max-width: 30rem;
         width: 100%; } }
   #budget .time:after, #budget .payment:after {
@@ -665,7 +668,7 @@ header {
   z-index: 0;
   width: 0; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1020px) {
   #contact:before {
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -686,7 +689,7 @@ header {
   color: #4f423a;
   font-size: 1.654rem;
   font-weight: 700; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     #contact .content p {
       font-size: 1.249rem;
       margin: 0 2rem; } }
@@ -697,7 +700,7 @@ header {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     #contact .content .signature {
       margin: 2rem auto 0;
       width: 18.2rem; } }
@@ -705,7 +708,7 @@ header {
     float: left; }
   #contact .content .signature img {
     width: 10rem; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       #contact .content .signature img {
         height: 103px;
         width: 98px; } }
@@ -714,7 +717,7 @@ header {
     font-weight: 100;
     padding: 0 1rem;
     width: 18rem; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       #contact .content .signature .info {
         width: 10rem; } }
     #contact .content .signature .info a, #contact .content .signature .info h1, #contact .content .signature .info label {
@@ -726,7 +729,7 @@ header {
       font-weight: 700;
       margin-bottom: 0;
       text-transform: capitalize; }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 1020px) {
         #contact .content .signature .info h1 {
           margin: 0; } }
     #contact .content .signature .info label {
@@ -747,7 +750,7 @@ footer {
   height: 30rem;
   position: relative;
   width: 100%; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1020px) {
     footer {
       background: url("../img/footer-mobile.jpg");
       background-position: center top;
@@ -763,7 +766,7 @@ footer {
     position: absolute;
     text-align: center;
     width: 100%; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1020px) {
       footer p {
         font-size: 1.063rem;
         margin-bottom: 2rem;

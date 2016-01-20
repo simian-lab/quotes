@@ -65,13 +65,7 @@
 	}
 
 	.screw {
-		display: none;
-
-		@media screen and (max-width: 500px) {
-			display: block;
-			max-width: 100%;
-			width: 100%;
-		}
+		@include full-size-theme-images();
 	}
 
 	p {

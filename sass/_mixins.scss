@@ -21,7 +21,7 @@
  * @param  {[type]} $color [description]
  * @return {[type]}        [description]
  */
-@mixin triangle ($color, $height, $width){
+@mixin triangle ($color, $height, $width) {
 	&:before {
 		@include vertical-center-absolute;
 		border-color: $color transparent transparent transparent;
@@ -32,4 +32,15 @@
 		z-index: 0;
 		width: 0;
 	}
+}
+
+@mixin full-size-theme-images {
+	display: none;
+
+    @media screen and (max-width: $smartphone-width) {
+        display: block;
+        margin: 1rem auto;
+        max-width: 30rem;
+        width: 100%;
+    }
 }
