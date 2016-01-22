@@ -2,7 +2,6 @@
 	background: url('../img/title-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: contain;
-	height: calc(100vh - 64px);
 	overflow: hidden;
 
 	@media screen and (max-width: $smartphone-width) {
@@ -27,7 +26,6 @@
 	}
 
 	.triangle {
-		height: 56%;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
@@ -42,7 +40,6 @@
 		}
 
 		h1, h2, img {
-			@include vertical-center-absolute;
 
 			@media screen and (max-width: $smartphone-width) {
 				bottom: 0;
@@ -69,19 +66,9 @@
 	}
 
 	p {
-		margin: 0 auto;
-		margin-top: 2%;
+		margin: 10% auto 3rem;
 		max-width: 60%;
-		position: relative;
 		text-align: center;
-
-		@media screen and (max-width: 1250px) {
-			bottom: 5%;
-		}
-
-		@media screen and (max-width: 1015px) {
-			bottom: 15%;
-		}
 
 		@media screen and (max-width: $smartphone-width) {
 			max-width: 100%;
