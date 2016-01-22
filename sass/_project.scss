@@ -6,7 +6,7 @@
         @include triangle($grey, $triangle-mobile-height, $triangle-mobile-width);
     }
 
-    .alignnone {
+    .alignnone:nth-of-type(1) {
     	position: relative;
 
     	&::before, &::after {

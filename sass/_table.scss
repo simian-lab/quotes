@@ -11,6 +11,7 @@ table {
     @media screen and (max-width: $smartphone-width) {
         border: none;
         margin-bottom: 2rem;
+        width: 100%;
     }
 
     th, td {
@@ -130,6 +131,7 @@ table {
     .money {
         font-style: italic;
         font-weight: 600;
+        min-width: 15rem;
 
         span {
             font-size: 1.25rem;
