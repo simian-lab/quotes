@@ -1,4 +1,4 @@
-quotes
+Quotes
 ======
 
 A template for our quote estimates.
