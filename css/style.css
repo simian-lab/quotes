@@ -132,7 +132,8 @@ table {
   @media screen and (max-width: 1020px) {
     table {
       border: none;
-      margin-bottom: 2rem; } }
+      margin-bottom: 2rem;
+      width: 100%; } }
   table th, table td {
     padding: 0.5rem; }
     @media screen and (max-width: 1020px) {
@@ -195,7 +196,8 @@ table {
       text-transform: uppercase; }
   table .money {
     font-style: italic;
-    font-weight: 600; }
+    font-weight: 600;
+    min-width: 15rem; }
     table .money span {
       font-size: 1.25rem;
       font-style: normal;
@@ -219,6 +221,16 @@ p, li {
 
 p {
   margin: 0.5rem 0 3rem; }
+  p iframe {
+    height: 522px;
+    margin: 1rem 0 3rem;
+    width: 100%; }
+    @media screen and (max-width: 600px) {
+      p iframe {
+        height: 300px; } }
+    @media screen and (max-width: 1020px) {
+      p iframe {
+        margin: 1rem 0; } }
 
 ul {
   list-style-image: url("../img/blue-bullet.png");
@@ -250,6 +262,7 @@ figure {
       figure figcaption {
         font-size: 1rem; } }
   figure img {
+    height: auto;
     width: 100%; }
 
 strong {
@@ -326,6 +339,9 @@ header {
     top: 68px;
     width: 25rem;
     z-index: 1; }
+    @media screen and (max-width: 1020px) {
+      header nav {
+        width: 100%; } }
     header nav .sections a {
       border-bottom-style: solid;
       border-bottom-width: 1px;
@@ -471,6 +487,7 @@ header {
         width: 0; } }
   #we-are:after {
     background-image: url("../img/screw.png");
+    background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
     bottom: 1%;
@@ -496,18 +513,6 @@ header {
       #we-are .simian-logo {
         height: 91px;
         width: 221px; } }
-  #we-are .video h5 {
-    text-align: center; }
-  #we-are .video iframe {
-    height: 522px;
-    margin: 1rem 0 3rem;
-    width: 100%; }
-    @media screen and (max-width: 600px) {
-      #we-are .video iframe {
-        height: 300px; } }
-    @media screen and (max-width: 1020px) {
-      #we-are .video iframe {
-        margin: 1rem 0; } }
 
 #project {
   overflow: hidden; }
@@ -542,24 +547,24 @@ header {
       height: 0;
       z-index: 0;
       width: 0; } }
-  #project .alignnone {
+  #project .alignnone:nth-of-type(1) {
     position: relative; }
-    #project .alignnone::before, #project .alignnone::after {
+    #project .alignnone:nth-of-type(1)::before, #project .alignnone:nth-of-type(1)::after {
       background-repeat: no-repeat;
       background-size: contain;
       content: '';
       position: absolute;
       z-index: -1; }
       @media screen and (max-width: 1020px) {
-        #project .alignnone::before, #project .alignnone::after {
+        #project .alignnone:nth-of-type(1)::before, #project .alignnone:nth-of-type(1)::after {
           display: none; } }
-    #project .alignnone::before {
+    #project .alignnone:nth-of-type(1)::before {
       background-image: url("../img/legos-left.png");
       bottom: 2rem;
       height: 25%;
       left: -25%;
       width: 30%; }
-    #project .alignnone::after {
+    #project .alignnone:nth-of-type(1)::after {
       background-image: url("../img/legos-right.png");
       bottom: 5%;
       height: 44%;
