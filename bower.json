@@ -1,12 +1,13 @@
 {
   "name": "quotes",
-  "version": "1.0.2",
+  "version": "2.0.2",
   "homepage": "https://github.com/simian-lab/quotes",
   "authors": [
     "Ivan Vasquez <ivan@simian.co>"
   ],
   "description": "A cool project for doing online quotes, or proposals",
   "license": "MIT",
+  "main": "",
   "private": true,
   "ignore": [
     "**/.*",
