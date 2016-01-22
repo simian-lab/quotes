@@ -11,6 +11,7 @@
 			color:  #4f423a;
 			font-size: 1.654rem;
 			font-weight: 700;
+			text-align: center;
 
 			@media screen and (max-width: $smartphone-width) {
 				font-size: 1.249rem;
@@ -20,6 +21,7 @@
 
 		.signature {
 			@include clearfix();
+			margin: 0 auto;
 			width: 30rem;
 
 			@media screen and (max-width: $smartphone-width) {

@@ -58,7 +58,7 @@ h2 {
   bottom: 19%;
   font-size: 1.2rem;
   font-weight: 300;
-  margin: 1rem 0;
+  margin: 1rem auto;
   max-width: 25%; }
   @media screen and (max-width: 1390px) {
     h2 {
@@ -386,7 +386,6 @@ header {
   background: url("../img/title-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  height: calc(100vh - 64px);
   overflow: hidden; }
   @media screen and (max-width: 1020px) {
     #first {
@@ -406,7 +405,6 @@ header {
       #first:before {
         background: none; } }
   #first .triangle {
-    height: 56%;
     overflow: hidden;
     position: relative;
     text-align: center; }
@@ -416,20 +414,12 @@ header {
       @media screen and (max-width: 1020px) {
         #first .triangle img {
           margin: 1rem; } }
-    #first .triangle h1, #first .triangle h2, #first .triangle img {
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      -o-transform: translateX(-50%);
-      transform: translateX(-50%);
-      left: 50%;
-      position: absolute; }
-      @media screen and (max-width: 1020px) {
-        #first .triangle h1, #first .triangle h2, #first .triangle img {
-          bottom: 0;
-          left: 0;
-          position: relative;
-          transform: none; } }
+    @media screen and (max-width: 1020px) {
+      #first .triangle h1, #first .triangle h2, #first .triangle img {
+        bottom: 0;
+        left: 0;
+        position: relative;
+        transform: none; } }
   #first .monkey-hand {
     display: none; }
     @media screen and (max-width: 1020px) {
@@ -447,17 +437,9 @@ header {
         max-width: 30rem;
         width: 100%; } }
   #first p {
-    margin: 0 auto;
-    margin-top: 2%;
+    margin: 10% auto 3rem;
     max-width: 60%;
-    position: relative;
     text-align: center; }
-    @media screen and (max-width: 1250px) {
-      #first p {
-        bottom: 5%; } }
-    @media screen and (max-width: 1015px) {
-      #first p {
-        bottom: 15%; } }
     @media screen and (max-width: 1020px) {
       #first p {
         max-width: 100%;
@@ -495,7 +477,7 @@ header {
     height: 18%;
     position: absolute;
     right: 0;
-    width: 16%; }
+    width: 14%; }
     @media screen and (max-width: 1020px) {
       #we-are:after {
         background: none; } }
@@ -693,13 +675,15 @@ header {
 #contact .content p {
   color: #4f423a;
   font-size: 1.654rem;
-  font-weight: 700; }
+  font-weight: 700;
+  text-align: center; }
   @media screen and (max-width: 1020px) {
     #contact .content p {
       font-size: 1.249rem;
       margin: 0 2rem; } }
 
 #contact .content .signature {
+  margin: 0 auto;
   width: 30rem; }
   #contact .content .signature::after {
     clear: both;
