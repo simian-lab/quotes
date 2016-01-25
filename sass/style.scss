@@ -41,6 +41,10 @@ p {
     }
 }
 
+a {
+    color: $blue;
+}
+
 ul {
     list-style-image: url('../img/blue-bullet.png');
     margin: 1rem 0 2rem;
