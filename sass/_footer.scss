@@ -12,6 +12,14 @@ footer {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 52rem;
+  }
+
+  @media screen and (max-width: 950px) {
+    height: 50rem;
+  }
+
+  @media screen and (max-width: 600px) {
     height: 35rem;
   }
 
