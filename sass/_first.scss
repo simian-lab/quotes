@@ -32,6 +32,8 @@
 
 		img {
     		margin-top: 2rem;
+    		max-height: 6rem;
+    		max-width: 6rem;
     		left: 50%;
 
     		@media screen and (max-width: $smartphone-width) {
