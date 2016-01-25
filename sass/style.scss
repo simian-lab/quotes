@@ -2,6 +2,8 @@
 @import "variables";
 @import "mixins";
 
+@import 'wordpress-core';
+
 @import 'titles';
 @import 'table';
 
@@ -31,7 +33,7 @@ p {
         margin: 1rem 0 3rem;
         width: 100%;
 
-        @media screen and (max-width: 600px) {
+        @media screen and (min-width: 600px) and (max-width: $smartphone-width) {
             height: 300px;
         }
 
@@ -39,6 +41,10 @@ p {
             margin: 1rem 0;
         }
     }
+}
+
+a {
+    color: $blue;
 }
 
 ul {
