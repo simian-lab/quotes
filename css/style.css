@@ -69,7 +69,7 @@ a img.aligncenter {
   z-index: 100000;
   /* Above WP toolbar. */ }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   font-family: "Source Sans Pro"; }
 
 h2, h4, h5 {
@@ -264,6 +264,44 @@ table {
       font-weight: 300;
       padding-left: 0.5rem;
       text-transform: uppercase; }
+
+#error-403 {
+  min-height: 100vh;
+  overflow: hidden; }
+  #error-403 .text {
+    height: 15rem;
+    position: relative; }
+    #error-403 .text .container {
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      position: absolute;
+      top: 50%;
+      width: 100%; }
+      #error-403 .text .container span {
+        display: block;
+        text-align: center;
+        text-transform: uppercase; }
+      #error-403 .text .container .number {
+        color: #99be33;
+        font-size: 2rem; }
+        @media screen and (max-width: 600px) {
+          #error-403 .text .container .number {
+            font-size: 1.5rem; } }
+      #error-403 .text .container .title {
+        color: #2b9291;
+        font-size: 4rem; }
+        @media screen and (max-width: 600px) {
+          #error-403 .text .container .title {
+            font-size: 2rem; } }
+  #error-403 .monkey {
+    height: calc(100vh - 15rem);
+    background-image: url("../img/403.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 body {
   margin: 0; }
