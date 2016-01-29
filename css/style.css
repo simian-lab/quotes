@@ -69,7 +69,7 @@ a img.aligncenter {
   z-index: 100000;
   /* Above WP toolbar. */ }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro"; }
 
 h2, h4, h5 {
@@ -269,7 +269,7 @@ table {
   min-height: 100vh;
   overflow: hidden; }
   #error-403 .text {
-    height: 15rem;
+    height: 10rem;
     position: relative; }
     #error-403 .text .container {
       -webkit-transform: translateY(-50%);
@@ -297,9 +297,9 @@ table {
           #error-403 .text .container .title {
             font-size: 2rem; } }
   #error-403 .monkey {
-    height: calc(100vh - 15rem);
+    height: calc(100vh - 10rem);
     background-image: url("../img/403.png");
-    background-position: center bottom;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover; }
 
