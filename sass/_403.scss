@@ -1,0 +1,48 @@
+#error-403 {
+    min-height: 100vh;
+    overflow: hidden;
+
+	.text {
+		height: 15rem;
+		position: relative;
+
+		.container {
+			@include transform(translateY(-50%));
+			position: absolute;
+			top: 50%;
+			width: 100%;
+
+				span {
+				display: block;
+				text-align: center;
+				text-transform: uppercase;
+			}
+
+			.number {
+				color: $green;
+				font-size: 2rem;
+
+				@media screen and (max-width: 600px) {
+					font-size: 1.5rem;
+				}
+			}
+
+			.title {
+				color: $blue;
+				font-size: 4rem;
+
+				@media screen and (max-width: 600px) {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+	.monkey {
+		height: calc(100vh - 15rem);
+		background-image: url('../img/403.png');
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
