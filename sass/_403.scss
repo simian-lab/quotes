@@ -3,7 +3,7 @@
     overflow: hidden;
 
 	.text {
-		height: 15rem;
+		height: 10rem;
 		position: relative;
 
 		.container {
@@ -39,9 +39,9 @@
 	}
 
 	.monkey {
-		height: calc(100vh - 15rem);
+		height: calc(100vh - 10rem);
 		background-image: url('../img/403.png');
-		background-position: center bottom;
+		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
