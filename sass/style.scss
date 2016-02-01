@@ -105,6 +105,14 @@ strong {
     font-style: italic;
 }
 
+blockquote {
+    p {
+        color: $green;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
 .gallery {
     @include clearfix;
     margin: 1rem 0;
@@ -138,8 +146,8 @@ strong {
 
 p, figure, .gallery, ul, .video {
     @media screen and (max-width: $smartphone-width) {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
     }
 }
 

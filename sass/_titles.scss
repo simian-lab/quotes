@@ -6,7 +6,7 @@ h2, h4, h5 {
 	color: $blue;
 }
 
-h1 {
+.main-title {
 	bottom: 35%;
 	color: $brown;
 	font-size: 1.9rem;
@@ -55,7 +55,7 @@ h1 {
 	}
 }
 
-h2 {
+.secondary-title {
 	bottom: 19%;
     font-size: 1.2rem;
     font-weight: 300;
@@ -95,7 +95,7 @@ h2 {
     }
 }
 
-h3 {
+.section-title {
 	color: $green;
 	font-size: 2.813rem;
 	font-weight: 600;
@@ -112,26 +112,29 @@ h3 {
     }
 }
 
-h4 {
-	font-size: 2.813rem;
-    font-weight: 700;
-    margin: 0 auto 3rem;
-	text-align: center;
-	text-transform: uppercase;
+#we-are, #project, table {
+	h1 {
+		color: $blue;
+		font-size: 2.813rem;
+	    font-weight: 700;
+	    margin: 0 auto 3rem;
+		text-align: center;
+		text-transform: uppercase;
 
-	@media screen and (max-width: $smartphone-width) {
-    	font-size: 1.563rem;
-    	margin: 0 2rem 3rem;
-    }
-}
-
-h5 {
-	font-size: 1.75rem;
-	font-weight: 600;
-	margin: 0;
-
-	@media screen and (max-width: $smartphone-width) {
-		font-size: 1.25rem;
-	    margin: 0 2rem 2rem;
+		@media screen and (max-width: $smartphone-width) {
+	    	font-size: 1.563rem;
+	    	margin: 0 2rem 3rem;
+	    }
 	}
-}
+
+	h2 {
+		font-size: 1.75rem;
+		font-weight: 600;
+		margin: 0;
+
+		@media screen and (max-width: $smartphone-width) {
+			font-size: 1.25rem;
+		    margin: 0 2rem 2rem;
+		}
+	}
+} 
