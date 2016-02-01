@@ -69,13 +69,13 @@ a img.aligncenter {
   z-index: 100000;
   /* Above WP toolbar. */ }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro"; }
 
 h2, h4, h5 {
   color: #2b9291; }
 
-h1 {
+.main-title {
   bottom: 35%;
   color: #50423a;
   font-size: 1.9rem;
@@ -84,69 +84,69 @@ h1 {
   max-width: 40%;
   text-transform: uppercase; }
   @media screen and (max-width: 1390px) {
-    h1 {
+    .main-title {
       bottom: 40%; } }
   @media screen and (max-width: 1350px) {
-    h1 {
+    .main-title {
       bottom: 45%; } }
   @media screen and (max-width: 1290px) {
-    h1 {
+    .main-title {
       font-size: 1.7rem; } }
   @media screen and (max-width: 1220px) {
-    h1 {
+    .main-title {
       font-size: 1.5rem; } }
   @media screen and (max-width: 1150px) {
-    h1 {
+    .main-title {
       bottom: 48%; } }
   @media screen and (max-width: 1100px) {
-    h1 {
+    .main-title {
       bottom: 50%;
       font-size: 1.4rem; } }
   @media screen and (max-width: 1050px) {
-    h1 {
+    .main-title {
       font-size: 1.3rem; } }
   @media screen and (max-width: 1000px) {
-    h1 {
+    .main-title {
       bottom: 53%; } }
   @media screen and (max-width: 1020px) {
-    h1 {
+    .main-title {
       font-size: 1.563rem;
       margin: 1rem 2rem;
       max-width: 100%; } }
 
-h2 {
+.secondary-title {
   bottom: 19%;
   font-size: 1.2rem;
   font-weight: 300;
   margin: 1rem auto;
   max-width: 25%; }
   @media screen and (max-width: 1390px) {
-    h2 {
+    .secondary-title {
       bottom: 25%; } }
   @media screen and (max-width: 1350px) {
-    h2 {
+    .secondary-title {
       bottom: 30%; } }
   @media screen and (max-width: 1200px) {
-    h2 {
+    .secondary-title {
       bottom: 33%;
       font-size: 1.1rem; } }
   @media screen and (max-width: 1150px) {
-    h2 {
+    .secondary-title {
       bottom: 35%; } }
   @media screen and (max-width: 1100px) {
-    h2 {
+    .secondary-title {
       bottom: 38%;
       font-size: 1rem; } }
   @media screen and (max-width: 1000px) {
-    h2 {
+    .secondary-title {
       bottom: 42%; } }
   @media screen and (max-width: 1020px) {
-    h2 {
+    .secondary-title {
       font-size: 1.161rem;
       margin: 1rem 2rem;
       max-width: 100%; } }
 
-h3 {
+.section-title {
   color: #99be33;
   font-size: 2.813rem;
   font-weight: 600;
@@ -157,27 +157,28 @@ h3 {
   max-width: 25rem;
   z-index: 1; }
   @media screen and (max-width: 1020px) {
-    h3 {
+    .section-title {
       font-size: 1.562rem;
       margin: 0 auto 5rem; } }
 
-h4 {
+#we-are h1, #project h1, table h1 {
+  color: #2b9291;
   font-size: 2.813rem;
   font-weight: 700;
   margin: 0 auto 3rem;
   text-align: center;
   text-transform: uppercase; }
   @media screen and (max-width: 1020px) {
-    h4 {
+    #we-are h1, #project h1, table h1 {
       font-size: 1.563rem;
       margin: 0 2rem 3rem; } }
 
-h5 {
+#we-are h2, #project h2, table h2 {
   font-size: 1.75rem;
   font-weight: 600;
   margin: 0; }
   @media screen and (max-width: 1020px) {
-    h5 {
+    #we-are h2, #project h2, table h2 {
       font-size: 1.25rem;
       margin: 0 2rem 2rem; } }
 
@@ -269,7 +270,7 @@ table {
   min-height: 100vh;
   overflow: hidden; }
   #error-403 .text {
-    height: 15rem;
+    height: 10rem;
     position: relative; }
     #error-403 .text .container {
       -webkit-transform: translateY(-50%);
@@ -297,9 +298,9 @@ table {
           #error-403 .text .container .title {
             font-size: 2rem; } }
   #error-403 .monkey {
-    height: calc(100vh - 15rem);
+    height: calc(100vh - 10rem);
     background-image: url("../img/403.png");
-    background-position: center bottom;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover; }
 
@@ -369,6 +370,11 @@ figure {
 strong {
   font-style: italic; }
 
+blockquote p {
+  color: #99be33;
+  font-weight: 600;
+  text-transform: uppercase; }
+
 .gallery {
   margin: 1rem 0; }
   .gallery::after {
@@ -400,8 +406,8 @@ strong {
 
 @media screen and (max-width: 1020px) {
   p, figure, .gallery, ul, .video {
-    margin-left: 2rem;
-    margin-right: 2rem; } }
+    margin-left: 2rem !important;
+    margin-right: 2rem !important; } }
 
 .hidden {
   display: none; }
