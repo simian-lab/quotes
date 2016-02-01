@@ -243,10 +243,10 @@ table {
       table tfoot tr .money::before {
         content: 'Total';
         margin-right: 10%; } }
-    table tfoot tr .money h5 {
+    table tfoot tr .money h2 {
       display: inline; }
       @media screen and (max-width: 1020px) {
-        table tfoot tr .money h5 {
+        table tfoot tr .money h2 {
           margin: 0; } }
     table tfoot tr .money span {
       color: #50423a; }
