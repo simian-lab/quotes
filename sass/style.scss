@@ -49,6 +49,26 @@ a {
     color: $blue;
 }
 
+ol {
+    margin: 2rem 0;
+    padding-left: 5rem;
+
+    li {
+        list-style-type: none;
+        counter-increment: list;
+        position: relative;
+
+        &::after {
+            content: counter(list) ".";
+            position: absolute;
+            left: -2.5em;
+            width: 2em;
+            text-align: right;
+            color: $blue;
+        }
+    }
+}
+
 ul {
     list-style-image: url('../img/blue-bullet.png');
     margin: 1rem 0 2rem;
@@ -144,7 +164,7 @@ blockquote {
     max-width: 58rem;
 }
 
-p, figure, .gallery, ul, .video {
+p, figure, .gallery, ol, ul, .video {
     @media screen and (max-width: $smartphone-width) {
         margin-left: 2rem !important;
         margin-right: 2rem !important;

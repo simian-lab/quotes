@@ -161,7 +161,7 @@ h2, h4, h5 {
       font-size: 1.562rem;
       margin: 0 auto 5rem; } }
 
-#we-are h1, #project h1, table h1 {
+#we-are h1, #project h1, #budget h1, table h1 {
   color: #2b9291;
   font-size: 2.813rem;
   font-weight: 700;
@@ -169,16 +169,16 @@ h2, h4, h5 {
   text-align: center;
   text-transform: uppercase; }
   @media screen and (max-width: 1020px) {
-    #we-are h1, #project h1, table h1 {
+    #we-are h1, #project h1, #budget h1, table h1 {
       font-size: 1.563rem;
       margin: 0 2rem 3rem; } }
 
-#we-are h2, #project h2, table h2 {
+#we-are h2, #project h2, #budget h2, table h2 {
   font-size: 1.75rem;
   font-weight: 600;
   margin: 0; }
   @media screen and (max-width: 1020px) {
-    #we-are h2, #project h2, table h2 {
+    #we-are h2, #project h2, #budget h2, table h2 {
       font-size: 1.25rem;
       margin: 0 2rem 2rem; } }
 
@@ -334,6 +334,21 @@ p {
 a {
   color: #2b9291; }
 
+ol {
+  margin: 2rem 0;
+  padding-left: 5rem; }
+  ol li {
+    list-style-type: none;
+    counter-increment: list;
+    position: relative; }
+    ol li::after {
+      content: counter(list) ".";
+      position: absolute;
+      left: -2.5em;
+      width: 2em;
+      text-align: right;
+      color: #2b9291; }
+
 ul {
   list-style-image: url("../img/blue-bullet.png");
   margin: 1rem 0 2rem;
@@ -405,7 +420,7 @@ blockquote p {
     display: table; }
 
 @media screen and (max-width: 1020px) {
-  p, figure, .gallery, ul, .video {
+  p, figure, .gallery, ol, ul, .video {
     margin-left: 2rem !important;
     margin-right: 2rem !important; } }
 
@@ -519,7 +534,8 @@ header {
     text-align: center; }
     #first .triangle img {
       margin-top: 2rem;
-      max-width: 6rem;
+      max-height: 7rem;
+      max-width: 15rem;
       left: 50%; }
       @media screen and (max-width: 1020px) {
         #first .triangle img {
