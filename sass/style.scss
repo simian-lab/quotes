@@ -29,6 +29,7 @@ p, li {
 
 p {
     margin: 0.5rem 0 3rem;
+    text-align: justify;
 
     iframe {
         height: 522px;
@@ -133,6 +134,14 @@ blockquote {
     }
 }
 
+.aligncenter {
+    img {
+        display: block;
+        margin: 0 auto;
+        width: initial;
+    }
+}
+
 .gallery {
     @include clearfix;
     margin: 1rem auto;
@@ -173,6 +182,10 @@ p, figure, .gallery, ol, ul, .video {
 
 .hidden {
     display: none;
+}
+
+.wp-video {
+    margin: 2rem auto;
 }
 
 @import 'header';

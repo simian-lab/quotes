@@ -72,7 +72,7 @@ a img.aligncenter {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro"; }
 
-h2, h4, h5 {
+h2, h3, h4, h5 {
   color: #2b9291; }
 
 .main-title {
@@ -319,7 +319,8 @@ p, li {
       font-size: 1.25rem; } }
 
 p {
-  margin: 0.5rem 0 3rem; }
+  margin: 0.5rem 0 3rem;
+  text-align: justify; }
   p iframe {
     height: 522px;
     margin: 1rem auto 3rem;
@@ -390,6 +391,11 @@ blockquote p {
   font-weight: 600;
   text-transform: uppercase; }
 
+.aligncenter img {
+  display: block;
+  margin: 0 auto;
+  width: initial; }
+
 .gallery {
   margin: 1rem auto; }
   .gallery::after {
@@ -426,6 +432,9 @@ blockquote p {
 
 .hidden {
   display: none; }
+
+.wp-video {
+  margin: 2rem auto; }
 
 header {
   height: 64px;
@@ -562,14 +571,20 @@ header {
         margin: 1rem auto;
         max-width: 30rem;
         width: 100%; } }
-  #first p {
+  #first .excerpt {
     margin: 10% auto 3rem;
     max-width: 60%;
     text-align: center; }
     @media screen and (max-width: 1020px) {
-      #first p {
+      #first .excerpt {
         max-width: 100%;
         margin: 0 2rem; } }
+
+.no-logo .triangle {
+  top: 5rem; }
+
+.no-logo .excerpt {
+  margin: 20% auto 3rem !important; }
 
 #we-are {
   background-color: #f5f4f3;
@@ -723,7 +738,7 @@ header {
       width: 0; } }
   #budget:after {
     background-image: url("../img/money-sign2.png");
-    background-position: 0 bottom;
+    background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
     bottom: 2rem;

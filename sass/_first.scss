@@ -67,7 +67,7 @@
 		@include full-size-theme-images();
 	}
 
-	p {
+	.excerpt {
 		margin: 10% auto 3rem;
 		max-width: 60%;
 		text-align: center;
@@ -76,5 +76,15 @@
 			max-width: 100%;
 			margin: 0 2rem;
 		}
+	}
+}
+
+.no-logo {
+	.triangle {
+		top: 5rem;
+	}
+
+	.excerpt {
+		margin: 20% auto 3rem !important;
 	}
 }
