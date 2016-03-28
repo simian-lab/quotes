@@ -322,7 +322,7 @@ p {
   margin: 0.5rem 0 3rem; }
   p iframe {
     height: 522px;
-    margin: 1rem 0 3rem;
+    margin: 1rem auto 3rem;
     width: 100%; }
     @media screen and (min-width: 600px) and (max-width: 1020px) {
       p iframe {
@@ -391,7 +391,7 @@ blockquote p {
   text-transform: uppercase; }
 
 .gallery {
-  margin: 1rem 0; }
+  margin: 1rem auto; }
   .gallery::after {
     clear: both;
     content: "";
