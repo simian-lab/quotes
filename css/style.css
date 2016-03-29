@@ -165,9 +165,7 @@ h2, h3, h4, h5 {
   color: #2b9291;
   font-size: 2.813rem;
   font-weight: 700;
-  margin: 0 auto 3rem;
-  text-align: center;
-  text-transform: uppercase; }
+  margin: 0 auto 3rem; }
   @media screen and (max-width: 1020px) {
     #we-are h1, #project h1, #budget h1, table h1 {
       font-size: 1.563rem;
@@ -319,8 +317,7 @@ p, li {
       font-size: 1.25rem; } }
 
 p {
-  margin: 0.5rem 0 3rem;
-  text-align: justify; }
+  margin: 0.5rem 0 3rem; }
   p iframe {
     height: 522px;
     margin: 1rem auto 3rem;
@@ -335,25 +332,27 @@ p {
 a {
   color: #2b9291; }
 
+ol, ul {
+  padding-left: 6rem; }
+
 ol {
-  margin: 2rem 0;
-  padding-left: 5rem; }
+  margin: 2rem 0; }
   ol li {
     list-style-type: none;
     counter-increment: list;
     position: relative; }
     ol li::after {
+      color: #2b9291;
       content: counter(list) ".";
-      position: absolute;
       left: -2.5em;
-      width: 2em;
+      position: absolute;
       text-align: right;
-      color: #2b9291; }
+      top: 0;
+      width: 2em; }
 
 ul {
   list-style-image: url("../img/blue-bullet.png");
-  margin: 1rem 0 2rem;
-  padding: 0 6rem; }
+  margin: 1rem 0 2rem; }
   @media screen and (max-width: 1020px) {
     ul {
       padding: 0;
@@ -397,7 +396,15 @@ blockquote p {
   width: initial; }
 
 .gallery {
-  margin: 1rem auto; }
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: inline-block;
+  margin: 1rem 0;
+  left: 50%;
+  position: relative; }
   .gallery::after {
     clear: both;
     content: "";
@@ -408,6 +415,7 @@ blockquote p {
   .gallery figure {
     float: left;
     margin: 0 1% 3rem;
+    max-width: 300px;
     width: 31.333%; }
     @media screen and (max-width: 1020px) {
       .gallery figure {
@@ -416,6 +424,9 @@ blockquote p {
         width: 90%; } }
     .gallery figure img {
       width: 100%; }
+
+.gallery-length-2 figure {
+  width: 48%; }
 
 .content {
   margin: 0 auto;
@@ -571,12 +582,12 @@ header {
         margin: 1rem auto;
         max-width: 30rem;
         width: 100%; } }
-  #first .excerpt {
+  #first p {
     margin: 10% auto 3rem;
     max-width: 60%;
     text-align: center; }
     @media screen and (max-width: 1020px) {
-      #first .excerpt {
+      #first p {
         max-width: 100%;
         margin: 0 2rem; } }
 
@@ -671,6 +682,13 @@ header {
       z-index: 0;
       width: 0; } }
   #project .alignnone:nth-of-type(1) {
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: inline-block;
+    left: 50%;
     position: relative; }
     #project .alignnone:nth-of-type(1)::before, #project .alignnone:nth-of-type(1)::after {
       background-repeat: no-repeat;

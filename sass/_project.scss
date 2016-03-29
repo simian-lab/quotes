@@ -7,6 +7,9 @@
     }
 
     .alignnone:nth-of-type(1) {
+        @include transform(translateX(-50%));
+        display: inline-block;
+        left: 50%;
     	position: relative;
 
     	&::before, &::after {
