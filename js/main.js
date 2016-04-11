@@ -3,4 +3,4 @@ $('.menu').click(function(event) {
 	$('#menu-options').toggleClass('hidden');
 });
 
-$(".video iframe").fitVids();
+$("p").fitVids();

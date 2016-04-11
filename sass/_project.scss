@@ -12,6 +12,12 @@
         left: 50%;
     	position: relative;
 
+        @media screen and (max-width: $smartphone-width) {
+            @include transform(none);
+            display: block;
+            left: 0;
+        }
+
     	&::before, &::after {
     		background-repeat: no-repeat;
 		    background-size: contain;

@@ -106,8 +106,12 @@ ul {
 }
 
 figure {
-    display: block;
+    display: inline-block;
     margin: 1rem 0 3rem;
+
+    @media screen and (max-width: $smartphone-width) {
+        display: block;
+    }
 
     figcaption {
         color:  $grey-light;
@@ -151,13 +155,16 @@ blockquote {
     margin: 1rem 0;
     left: 50%;
     position: relative;
+    text-align: center;
 
     @media screen and (max-width: $smartphone-width) {
+        @include transform(none);
+        left: 0;
         margin: 1rem 0 2rem;
     }
 
     figure {
-        float: left;
+        display: inline-block;
         margin: 0 1% 3rem;
         max-width: 300px;
         width: 31.333%;
@@ -165,7 +172,7 @@ blockquote {
         @media screen and (max-width: $smartphone-width) {
             float: none;
             margin: 1rem;
-            width: 90%;
+            width: 90% !important;
         }
 
         img {

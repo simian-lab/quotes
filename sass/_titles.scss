@@ -95,23 +95,6 @@ h2, h3, h4, h5 {
     }
 }
 
-.section-title {
-	color: $green;
-	font-size: 2.813rem;
-	font-weight: 600;
-	margin: 0 auto 7rem;
-    position: relative;
-	text-align: center;
-	text-transform: uppercase;
-	max-width: 25rem;
-    z-index: 1;
-
-    @media screen and (max-width: $smartphone-width) {
-    	font-size: 1.562rem;
-    	margin: 0 auto 5rem;
-    }
-}
-
 #we-are, #project, #budget, table {
 	h1 {
 		color: $blue;
@@ -135,4 +118,27 @@ h2, h3, h4, h5 {
 		    margin: 0 2rem 2rem;
 		}
 	}
-} 
+
+	h3 {
+		@media screen and (max-width: $smartphone-width) {
+			margin: 0 2rem 2rem;
+		}
+	}
+}
+
+.section-title {
+	color: $green;
+	font-size: 2.813rem;
+	font-weight: 600;
+	margin: 0 auto 7rem;
+    position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	max-width: 25rem;
+    z-index: 1;
+
+    @media screen and (max-width: $smartphone-width) {
+    	font-size: 1.562rem;
+    	margin: 0 auto 5rem !important;
+    }
+}
