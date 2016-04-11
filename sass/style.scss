@@ -32,7 +32,7 @@ p {
 
     iframe {
         height: 522px;
-        margin: 1rem 0 3rem;
+        margin: 1rem auto 3rem;
         width: 100%;
 
         @media screen and (min-width: 600px) and (max-width: $smartphone-width) {
@@ -49,9 +49,12 @@ a {
     color: $blue;
 }
 
+ol, ul {
+    padding-left: 6rem;
+}
+
 ol {
     margin: 2rem 0;
-    padding-left: 5rem;
 
     li {
         list-style-type: none;
@@ -59,12 +62,13 @@ ol {
         position: relative;
 
         &::after {
-            content: counter(list) ".";
-            position: absolute;
-            left: -2.5em;
-            width: 2em;
-            text-align: right;
             color: $blue;
+            content: counter(list) ".";
+            left: -2.5em;
+            position: absolute;
+            text-align: right;
+            top: 0;
+            width: 2em;
         }
     }
 }
@@ -72,7 +76,6 @@ ol {
 ul {
     list-style-image: url('../img/blue-bullet.png');
     margin: 1rem 0 2rem;
-    padding: 0 6rem;
 
     @media screen and (max-width: $smartphone-width) {
         padding: 0;
@@ -103,8 +106,12 @@ ul {
 }
 
 figure {
-    display: block;
+    display: inline-block;
     margin: 1rem 0 3rem;
+
+    @media screen and (max-width: $smartphone-width) {
+        display: block;
+    }
 
     figcaption {
         color:  $grey-light;
@@ -133,28 +140,50 @@ blockquote {
     }
 }
 
+.aligncenter {
+    img {
+        display: block;
+        margin: 0 auto;
+        width: initial;
+    }
+}
+
 .gallery {
     @include clearfix;
+    @include transform(translateX(-50%));
+    display: inline-block;
     margin: 1rem 0;
+    left: 50%;
+    position: relative;
+    text-align: center;
 
     @media screen and (max-width: $smartphone-width) {
+        @include transform(none);
+        left: 0;
         margin: 1rem 0 2rem;
     }
 
     figure {
-        float: left;
+        display: inline-block;
         margin: 0 1% 3rem;
+        max-width: 300px;
         width: 31.333%;
 
         @media screen and (max-width: $smartphone-width) {
             float: none;
             margin: 1rem;
-            width: 90%;
+            width: 90% !important;
         }
 
         img {
             width: 100%;
         }
+    }
+}
+
+.gallery-length-2 {
+    figure {
+        width: 48%;
     }
 }
 
@@ -173,6 +202,10 @@ p, figure, .gallery, ol, ul, .video {
 
 .hidden {
     display: none;
+}
+
+.wp-video {
+    margin: 2rem auto;
 }
 
 @import 'header';

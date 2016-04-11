@@ -7,7 +7,16 @@
     }
 
     .alignnone:nth-of-type(1) {
+        @include transform(translateX(-50%));
+        display: inline-block;
+        left: 50%;
     	position: relative;
+
+        @media screen and (max-width: $smartphone-width) {
+            @include transform(none);
+            display: block;
+            left: 0;
+        }
 
     	&::before, &::after {
     		background-repeat: no-repeat;

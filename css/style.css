@@ -72,7 +72,7 @@ a img.aligncenter {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro"; }
 
-h2, h4, h5 {
+h2, h3, h4, h5 {
   color: #2b9291; }
 
 .main-title {
@@ -146,28 +146,11 @@ h2, h4, h5 {
       margin: 1rem 2rem;
       max-width: 100%; } }
 
-.section-title {
-  color: #99be33;
-  font-size: 2.813rem;
-  font-weight: 600;
-  margin: 0 auto 7rem;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  max-width: 25rem;
-  z-index: 1; }
-  @media screen and (max-width: 1020px) {
-    .section-title {
-      font-size: 1.562rem;
-      margin: 0 auto 5rem; } }
-
 #we-are h1, #project h1, #budget h1, table h1 {
   color: #2b9291;
   font-size: 2.813rem;
   font-weight: 700;
-  margin: 0 auto 3rem;
-  text-align: center;
-  text-transform: uppercase; }
+  margin: 0 auto 3rem; }
   @media screen and (max-width: 1020px) {
     #we-are h1, #project h1, #budget h1, table h1 {
       font-size: 1.563rem;
@@ -181,6 +164,25 @@ h2, h4, h5 {
     #we-are h2, #project h2, #budget h2, table h2 {
       font-size: 1.25rem;
       margin: 0 2rem 2rem; } }
+
+@media screen and (max-width: 1020px) {
+  #we-are h3, #project h3, #budget h3, table h3 {
+    margin: 0 2rem 2rem; } }
+
+.section-title {
+  color: #99be33;
+  font-size: 2.813rem;
+  font-weight: 600;
+  margin: 0 auto 7rem;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 25rem;
+  z-index: 1; }
+  @media screen and (max-width: 1020px) {
+    .section-title {
+      font-size: 1.562rem;
+      margin: 0 auto 5rem !important; } }
 
 table, th, td {
   border-color: #2b9291;
@@ -322,7 +324,7 @@ p {
   margin: 0.5rem 0 3rem; }
   p iframe {
     height: 522px;
-    margin: 1rem 0 3rem;
+    margin: 1rem auto 3rem;
     width: 100%; }
     @media screen and (min-width: 600px) and (max-width: 1020px) {
       p iframe {
@@ -334,25 +336,27 @@ p {
 a {
   color: #2b9291; }
 
+ol, ul {
+  padding-left: 6rem; }
+
 ol {
-  margin: 2rem 0;
-  padding-left: 5rem; }
+  margin: 2rem 0; }
   ol li {
     list-style-type: none;
     counter-increment: list;
     position: relative; }
     ol li::after {
+      color: #2b9291;
       content: counter(list) ".";
-      position: absolute;
       left: -2.5em;
-      width: 2em;
+      position: absolute;
       text-align: right;
-      color: #2b9291; }
+      top: 0;
+      width: 2em; }
 
 ul {
   list-style-image: url("../img/blue-bullet.png");
-  margin: 1rem 0 2rem;
-  padding: 0 6rem; }
+  margin: 1rem 0 2rem; }
   @media screen and (max-width: 1020px) {
     ul {
       padding: 0;
@@ -370,8 +374,11 @@ ul {
         margin: 0; }
 
 figure {
-  display: block;
+  display: inline-block;
   margin: 1rem 0 3rem; }
+  @media screen and (max-width: 1020px) {
+    figure {
+      display: block; } }
   figure figcaption {
     color: #979795;
     font-size: 1.25rem; }
@@ -390,26 +397,50 @@ blockquote p {
   font-weight: 600;
   text-transform: uppercase; }
 
+.aligncenter img {
+  display: block;
+  margin: 0 auto;
+  width: initial; }
+
 .gallery {
-  margin: 1rem 0; }
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: inline-block;
+  margin: 1rem 0;
+  left: 50%;
+  position: relative;
+  text-align: center; }
   .gallery::after {
     clear: both;
     content: "";
     display: table; }
   @media screen and (max-width: 1020px) {
     .gallery {
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
+      transform: none;
+      left: 0;
       margin: 1rem 0 2rem; } }
   .gallery figure {
-    float: left;
+    display: inline-block;
     margin: 0 1% 3rem;
+    max-width: 300px;
     width: 31.333%; }
     @media screen and (max-width: 1020px) {
       .gallery figure {
         float: none;
         margin: 1rem;
-        width: 90%; } }
+        width: 90% !important; } }
     .gallery figure img {
       width: 100%; }
+
+.gallery-length-2 figure {
+  width: 48%; }
 
 .content {
   margin: 0 auto;
@@ -426,6 +457,9 @@ blockquote p {
 
 .hidden {
   display: none; }
+
+.wp-video {
+  margin: 2rem auto; }
 
 header {
   height: 64px;
@@ -564,12 +598,21 @@ header {
         width: 100%; } }
   #first p {
     margin: 10% auto 3rem;
-    max-width: 60%;
+    max-width: 58rem;
     text-align: center; }
     @media screen and (max-width: 1020px) {
       #first p {
         max-width: 100%;
         margin: 0 2rem; } }
+
+.no-logo .triangle {
+  top: 5rem; }
+  @media screen and (max-width: 1020px) {
+    .no-logo .triangle {
+      top: 1rem; } }
+
+.no-logo p {
+  margin: 23% auto 3rem !important; }
 
 #we-are {
   background-color: #f5f4f3;
@@ -656,7 +699,23 @@ header {
       z-index: 0;
       width: 0; } }
   #project .alignnone:nth-of-type(1) {
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: inline-block;
+    left: 50%;
     position: relative; }
+    @media screen and (max-width: 1020px) {
+      #project .alignnone:nth-of-type(1) {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        display: block;
+        left: 0; } }
     #project .alignnone:nth-of-type(1)::before, #project .alignnone:nth-of-type(1)::after {
       background-repeat: no-repeat;
       background-size: contain;
@@ -723,7 +782,7 @@ header {
       width: 0; } }
   #budget:after {
     background-image: url("../img/money-sign2.png");
-    background-position: 0 bottom;
+    background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
     bottom: 2rem;
