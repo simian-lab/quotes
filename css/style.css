@@ -444,7 +444,7 @@ blockquote p {
 
 .content {
   margin: 0 auto;
-  max-width: 58rem; }
+  max-width: 50rem; }
   .content::after {
     clear: both;
     content: "";
@@ -552,20 +552,21 @@ header {
       margin-bottom: 2rem; } }
   #first:before {
     background: url("../img/monkey-hand.png");
-    background-position-y: 2rem;
+    background-position-y: center;
     background-repeat: no-repeat;
     background-size: contain;
     content: '';
     height: 100vh;
     position: absolute;
-    width: 23%; }
+    width: calc(((100vw - 50rem) / 2) + 50px); }
     @media screen and (max-width: 1020px) {
       #first:before {
         background: none; } }
   #first .triangle {
     overflow: hidden;
     position: relative;
-    text-align: center; }
+    text-align: center;
+    min-height: 20rem; }
     #first .triangle img {
       margin-top: 2rem;
       max-height: 7rem;
@@ -597,22 +598,18 @@ header {
         max-width: 30rem;
         width: 100%; } }
   #first p {
-    margin: 10% auto 3rem;
-    max-width: 58rem;
+    margin: 0 auto 3rem;
+    max-width: 43.75rem;
     text-align: center; }
+    #first p:first-of-type {
+      margin: 10% auto 3rem; }
+      #first p:first-of-type:first-line {
+        font-style: italic;
+        font-weight: bold; }
     @media screen and (max-width: 1020px) {
       #first p {
         max-width: 100%;
         margin: 0 2rem; } }
-
-.no-logo .triangle {
-  top: 5rem; }
-  @media screen and (max-width: 1020px) {
-    .no-logo .triangle {
-      top: 1rem; } }
-
-.no-logo p {
-  margin: 23% auto 3rem !important; }
 
 #we-are {
   background-color: #f5f4f3;
