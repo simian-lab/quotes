@@ -18,194 +18,194 @@ a, p, label, li, figcaption, table {
 }
 
 p, li {
-    color: $brown;
-    font-size: 1.5rem;
-    font-weight: 400;
+  color: $brown;
+  font-size: 1.5rem;
+  font-weight: 400;
 
-    @media screen and (max-width: $smartphone-width) {
-        font-size: 1.25rem;
-    }
+  @media screen and (max-width: $smartphone-width) {
+    font-size: 1.25rem;
+  }
 }
 
 p {
-    margin: 0.5rem 0 3rem;
+  margin: 0.5rem 0 3rem;
 
-    iframe {
-        height: 522px;
-        margin: 1rem auto 3rem;
-        width: 100%;
+  iframe {
+    height: 522px;
+    margin: 1rem auto 3rem;
+    width: 100%;
 
-        @media screen and (min-width: 600px) and (max-width: $smartphone-width) {
-            height: 300px;
-        }
-
-        @media screen and (max-width: $smartphone-width) {
-            margin: 1rem 0;
-        }
+    @media screen and (min-width: 600px) and (max-width: $smartphone-width) {
+      height: 300px;
     }
+
+    @media screen and (max-width: $smartphone-width) {
+      margin: 1rem 0;
+    }
+  }
 }
 
 a {
-    color: $blue;
+  color: $blue;
 }
 
 ol, ul {
-    padding-left: 6rem;
+  padding-left: 6rem;
 }
 
 ol {
-    margin: 2rem 0;
+  margin: 2rem 0;
 
-    li {
-        list-style-type: none;
-        counter-increment: list;
-        position: relative;
+  li {
+    list-style-type: none;
+    counter-increment: list;
+    position: relative;
 
-        &::after {
-            color: $blue;
-            content: counter(list) ".";
-            left: -2.5em;
-            position: absolute;
-            text-align: right;
-            top: 0;
-            width: 2em;
-        }
+    &::after {
+      color: $blue;
+      content: counter(list) ".";
+      left: -2.5em;
+      position: absolute;
+      text-align: right;
+      top: 0;
+      width: 2em;
     }
+  }
 }
 
 ul {
-    list-style-image: url('../img/blue-bullet.png');
-    margin: 1rem 0 2rem;
+  list-style-image: url('../img/blue-bullet.png');
+  margin: 1rem 0 2rem;
 
-    @media screen and (max-width: $smartphone-width) {
-        padding: 0;
-        padding-left: 40px;
-    }
+  @media screen and (max-width: $smartphone-width) {
+    padding: 0;
+    padding-left: 40px;
+  }
 
-    li {
-        margin: 0rem 0 2rem;
+  li {
+    margin: 0rem 0 2rem;
 
+    ul {
+      list-style-image: url('../img/green-bullet.png');
+      padding: 0 1rem;
+
+      @media screen and (max-width: $smartphone-width) {
+        margin: 1rem 0 2rem;
+      }
+
+      li {
         ul {
-            list-style-image: url('../img/green-bullet.png');
-            padding: 0 1rem;
-
-            @media screen and (max-width: $smartphone-width) {
-                margin: 1rem 0 2rem;
-            }
-
-            li {
-                ul {
-                    li {
-                        font-size: 1.313rem;
-                        margin: 0;
-                    }
-                }
-            }
+          li {
+            font-size: 1.313rem;
+            margin: 0;
+          }
         }
+      }
     }
+  }
 }
 
 figure {
-    display: inline-block;
-    margin: 1rem 0 3rem;
+  display: inline-block;
+  margin: 1rem 0 3rem;
+
+  @media screen and (max-width: $smartphone-width) {
+    display: block;
+  }
+
+  figcaption {
+    color:  $grey-light;
+    font-size: 1.25rem;
 
     @media screen and (max-width: $smartphone-width) {
-        display: block;
+      font-size: 1rem;
     }
+  }
 
-    figcaption {
-        color:  $grey-light;
-        font-size: 1.25rem;
-
-        @media screen and (max-width: $smartphone-width) {
-            font-size: 1rem;
-        }
-    }
-
-    img {
-        height: auto;
-        width: 100%;
-    }
+  img {
+    height: auto;
+    width: 100%;
+  }
 }
 
 strong {
-    font-style: italic;
+  font-style: italic;
 }
 
 blockquote {
-    p {
-        color: $green;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
+  p {
+    color: $green;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 }
 
 .aligncenter {
-    img {
-        display: block;
-        margin: 0 auto;
-        width: initial;
-    }
+  img {
+    display: block;
+    margin: 0 auto;
+    width: initial;
+  }
 }
 
 .gallery {
-    @include clearfix;
-    @include transform(translateX(-50%));
+  @include clearfix;
+  @include transform(translateX(-50%));
+  display: inline-block;
+  margin: 1rem 0;
+  left: 50%;
+  position: relative;
+  text-align: center;
+
+  @media screen and (max-width: $smartphone-width) {
+    @include transform(none);
+    left: 0;
+    margin: 1rem 0 2rem;
+  }
+
+  figure {
     display: inline-block;
-    margin: 1rem 0;
-    left: 50%;
-    position: relative;
-    text-align: center;
+    margin: 0 1% 3rem;
+    max-width: 300px;
+    width: 31.333%;
 
     @media screen and (max-width: $smartphone-width) {
-        @include transform(none);
-        left: 0;
-        margin: 1rem 0 2rem;
+      float: none;
+      margin: 1rem;
+      width: 90% !important;
     }
 
-    figure {
-        display: inline-block;
-        margin: 0 1% 3rem;
-        max-width: 300px;
-        width: 31.333%;
-
-        @media screen and (max-width: $smartphone-width) {
-            float: none;
-            margin: 1rem;
-            width: 90% !important;
-        }
-
-        img {
-            width: 100%;
-        }
+    img {
+      width: 100%;
     }
+  }
 }
 
 .gallery-length-2 {
-    figure {
-        width: 48%;
-    }
+  figure {
+    width: 48%;
+  }
 }
 
 .content {
-    @include clearfix;
-    margin: 0 auto;
-    max-width: 58rem;
+  @include clearfix;
+  margin: 0 auto;
+  max-width: 58rem;
 }
 
 p, figure, .gallery, ol, ul, .video {
-    @media screen and (max-width: $smartphone-width) {
-        margin-left: 2rem !important;
-        margin-right: 2rem !important;
-    }
+  @media screen and (max-width: $smartphone-width) {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+  }
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .wp-video {
-    margin: 2rem auto;
+  margin: 2rem auto;
 }
 
 @import 'header';
