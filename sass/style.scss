@@ -190,7 +190,7 @@ blockquote {
 .content {
   @include clearfix;
   margin: 0 auto;
-  max-width: 58rem;
+  max-width: $max-width;
 }
 
 p, figure, .gallery, ol, ul, .video {
