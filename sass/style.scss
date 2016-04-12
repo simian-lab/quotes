@@ -46,8 +46,7 @@ p {
 }
 
 iframe {
-  margin: 0 auto;
-  display: block;
+  max-width: 100%;
 }
 
 a {
@@ -116,11 +115,35 @@ figure {
 
   @media screen and (max-width: $smartphone-width) {
     display: block;
+
+    &.hide-mobile {
+      iframe, embed {
+        display: none;
+      }
+      figcaption {
+        display: none;
+      }
+
+      &:after {
+        content: 'Esta propuesta contiene un elemento que solo se puede ver en resoluciones más grandes. Por favor, ingresa desde un computador o tableta para ver este contenido.';
+        display: inline-block;
+        background: $grey;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 5px;
+        color: $grey-light;
+        margin: 1rem auto;
+      }
+    }
   }
 
   figcaption {
     color:  $grey-light;
     font-size: 1.25rem;
+
+    &.centered {
+      text-align: center;
+    }
 
     @media screen and (max-width: $smartphone-width) {
       font-size: 1rem;
@@ -146,6 +169,11 @@ blockquote {
 }
 
 .aligncenter {
+  iframe, embed {
+    margin: 0 auto;
+    display: block;
+  }
+
   img {
     display: block;
     margin: 0 auto;
