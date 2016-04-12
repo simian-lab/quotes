@@ -333,6 +333,10 @@ p {
       p iframe {
         margin: 1rem 0; } }
 
+iframe {
+  margin: 0 auto;
+  display: block; }
+
 a {
   color: #2b9291; }
 
