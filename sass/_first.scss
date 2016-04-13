@@ -87,4 +87,11 @@
       margin: 0 2rem;
     }
   }
+
+  ul {
+    margin: 0 auto 3rem;
+    padding: 0;
+    max-width: $max-first-block-width;
+    text-align: left;
+  }
 }
